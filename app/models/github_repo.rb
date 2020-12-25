@@ -1,5 +1,46 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: github_repos
+#
+#  archived                     :boolean
+#  average_recent_committed_at  :datetime
+#  closed_issues_count          :integer
+#  closed_pull_requests_count   :integer
+#  code_of_conduct_name         :string
+#  code_of_conduct_url          :string
+#  default_branch               :string
+#  description                  :string
+#  fetched_at                   :datetime
+#  forks_count                  :integer          not null
+#  has_issues                   :boolean
+#  has_wiki                     :boolean
+#  homepage_url                 :string
+#  is_fork                      :boolean
+#  is_mirror                    :boolean
+#  issue_closure_rate           :decimal(5, 2)
+#  license                      :string
+#  merged_pull_requests_count   :integer
+#  open_issues_count            :integer
+#  open_pull_requests_count     :integer
+#  path                         :citext           not null, primary key
+#  primary_language             :string
+#  pull_request_acceptance_rate :decimal(5, 2)
+#  repo_created_at              :datetime
+#  repo_pushed_at               :datetime
+#  stargazers_count             :integer          not null
+#  topics                       :string           default([]), not null, is an Array
+#  total_issues_count           :integer
+#  total_pull_requests_count    :integer
+#  watchers_count               :integer          not null
+#  created_at                   :datetime         not null
+#  updated_at                   :datetime         not null
+#
+# Indexes
+#
+#  index_github_repos_on_path  (path) UNIQUE
+#
 class GithubRepo < ApplicationRecord
   self.primary_key = :path
 

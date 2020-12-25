@@ -2,7 +2,7 @@
 
 Today I'm happy to introduce a new **[metrics documentation & statistics section][docs]**.
 
-As part of the [ongoing effort](/blog/2019-01-09/new-landing-page) of **making the site more beginner-friendly** all **project metrics now link to a dedicated page that explains the purpose of the metric** and gives guidance on **how it can help choose a library**.
+As part of the [ongoing effort](/blog/2019-01-09/new-landing-page) of **making the site more beginner-friendly** all **project metrics now link to a dedicated page that explains the purpose of the metric** and gives guid/Users/jacksontom/Documents/fir-projects/rubytoolbox/app/blog_posts/2019-02-14-project-comparisons.mdance on **how it can help choose a library**.
 
 To make those pages more appealing to all visitors the pages also **feature statistics around the Ruby ecosystem**, including **charts that display the distribution of this metric's values** as well as **top project rankings**. Which [year saw the most new Rubygems](/pages/docs/metrics/rubygem_first_release_on)? Which [gems have the most reverse dependencies](/pages/docs/metrics/rubygem_reverse_dependencies_count)? [How many gems saw their last release in which year](/pages/docs/metrics/rubygem_latest_release_on)? You can now find up-to-date answers to those questions on the Ruby Toolbox:
 

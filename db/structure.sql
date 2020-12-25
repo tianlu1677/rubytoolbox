@@ -38,20 +38,6 @@ COMMENT ON EXTENSION citext IS 'data type for case-insensitive character strings
 
 
 --
--- Name: pg_stat_statements; Type: EXTENSION; Schema: -; Owner: -
---
-
-CREATE EXTENSION IF NOT EXISTS pg_stat_statements WITH SCHEMA public;
-
-
---
--- Name: EXTENSION pg_stat_statements; Type: COMMENT; Schema: -; Owner: -
---
-
-COMMENT ON EXTENSION pg_stat_statements IS 'track execution statistics of all SQL statements executed';
-
-
---
 -- Name: categories_update_description_tsvector_trigger(); Type: FUNCTION; Schema: public; Owner: -
 --
 
@@ -118,21 +104,7 @@ DECLARE
     previous_downloads int;
     previous_relative_change decimal;
 BEGIN
-    SELECT total_downloads, relative_change_month INTO previous_downloads, previous_relative_change
-      FROM rubygem_download_stats
-      WHERE
-        rubygem_name = NEW.rubygem_name AND date = NEW.date - 28;
-    
-    IF previous_downloads IS NOT NULL THEN
-      NEW.absolute_change_month := NEW.total_downloads - previous_downloads;
-      IF previous_downloads > 0 THEN
-        NEW.relative_change_month := ROUND((NEW.absolute_change_month * 100.0) / previous_downloads, 2);
-    
-        IF previous_relative_change IS NOT NULL THEN
-          NEW.growth_change_month := NEW.relative_change_month - previous_relative_change;
-        END IF;
-      END IF;
-    END IF;
+    SELECT total_downloads, relative_change_month INTO previous_downloads, previous_relative_change FROM rubygem_download_stats WHERE rubygem_name = NEW.rubygem_name AND date = NEW.date - 28; IF previous_downloads IS NOT NULL THEN NEW.absolute_change_month := NEW.total_downloads - previous_downloads; IF previous_downloads > 0 THEN NEW.relative_change_month := ROUND((NEW.absolute_change_month * 100.0) / previous_downloads, 2); IF previous_relative_change IS NOT NULL THEN NEW.growth_change_month := NEW.relative_change_month - previous_relative_change; END IF; END IF; END IF;
     RETURN NEW;
 END;
 $$;
@@ -140,7 +112,7 @@ $$;
 
 SET default_tablespace = '';
 
-SET default_table_access_method = heap;
+SET default_with_oids = false;
 
 --
 -- Name: ar_internal_metadata; Type: TABLE; Schema: public; Owner: -
@@ -149,8 +121,8 @@ SET default_table_access_method = heap;
 CREATE TABLE public.ar_internal_metadata (
     key character varying NOT NULL,
     value character varying,
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
 );
 
 
@@ -675,35 +647,35 @@ CREATE UNIQUE INDEX index_rubygems_on_name ON public.rubygems USING btree (name)
 -- Name: categories categories_update_description_tsvector_trigger; Type: TRIGGER; Schema: public; Owner: -
 --
 
-CREATE TRIGGER categories_update_description_tsvector_trigger BEFORE INSERT OR UPDATE ON public.categories FOR EACH ROW EXECUTE FUNCTION public.categories_update_description_tsvector_trigger();
+CREATE TRIGGER categories_update_description_tsvector_trigger BEFORE INSERT OR UPDATE ON public.categories FOR EACH ROW EXECUTE PROCEDURE public.categories_update_description_tsvector_trigger();
 
 
 --
 -- Name: categories categories_update_name_tsvector_trigger; Type: TRIGGER; Schema: public; Owner: -
 --
 
-CREATE TRIGGER categories_update_name_tsvector_trigger BEFORE INSERT OR UPDATE ON public.categories FOR EACH ROW EXECUTE FUNCTION public.categories_update_name_tsvector_trigger();
+CREATE TRIGGER categories_update_name_tsvector_trigger BEFORE INSERT OR UPDATE ON public.categories FOR EACH ROW EXECUTE PROCEDURE public.categories_update_name_tsvector_trigger();
 
 
 --
 -- Name: projects projects_update_description_tsvector_trigger; Type: TRIGGER; Schema: public; Owner: -
 --
 
-CREATE TRIGGER projects_update_description_tsvector_trigger BEFORE INSERT OR UPDATE ON public.projects FOR EACH ROW EXECUTE FUNCTION public.projects_update_description_tsvector_trigger();
+CREATE TRIGGER projects_update_description_tsvector_trigger BEFORE INSERT OR UPDATE ON public.projects FOR EACH ROW EXECUTE PROCEDURE public.projects_update_description_tsvector_trigger();
 
 
 --
 -- Name: projects projects_update_permalink_tsvector_trigger; Type: TRIGGER; Schema: public; Owner: -
 --
 
-CREATE TRIGGER projects_update_permalink_tsvector_trigger BEFORE INSERT OR UPDATE ON public.projects FOR EACH ROW EXECUTE FUNCTION public.projects_update_permalink_tsvector_trigger();
+CREATE TRIGGER projects_update_permalink_tsvector_trigger BEFORE INSERT OR UPDATE ON public.projects FOR EACH ROW EXECUTE PROCEDURE public.projects_update_permalink_tsvector_trigger();
 
 
 --
 -- Name: rubygem_download_stats rubygem_stats_calculation_month; Type: TRIGGER; Schema: public; Owner: -
 --
 
-CREATE TRIGGER rubygem_stats_calculation_month BEFORE INSERT OR UPDATE ON public.rubygem_download_stats FOR EACH ROW EXECUTE FUNCTION public.rubygem_stats_calculation_month();
+CREATE TRIGGER rubygem_stats_calculation_month BEFORE INSERT OR UPDATE ON public.rubygem_download_stats FOR EACH ROW EXECUTE PROCEDURE public.rubygem_stats_calculation_month();
 
 
 --

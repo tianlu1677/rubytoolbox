@@ -1,5 +1,28 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: rubygem_trends
+#
+#  id                       :bigint           not null, primary key
+#  date                     :date             not null
+#  position                 :integer          not null
+#  rubygem_name             :string           not null
+#  created_at               :datetime         not null
+#  updated_at               :datetime         not null
+#  rubygem_download_stat_id :integer          not null
+#
+# Indexes
+#
+#  index_rubygem_trends_on_date               (date)
+#  index_rubygem_trends_on_date_and_position  (date,position) UNIQUE
+#  index_rubygem_trends_on_position           (position)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (rubygem_download_stat_id => rubygem_download_stats.id)
+#  fk_rails_...  (rubygem_name => rubygems.name)
+#
 class Rubygem::Trend < ApplicationRecord
   belongs_to :rubygem,
              primary_key: :name,

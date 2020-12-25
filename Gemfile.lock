@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: https://gems.ruby-china.com/
   specs:
     actioncable (6.0.3.4)
       actionpack (= 6.0.3.4)
@@ -58,6 +58,9 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    annotate (3.1.1)
+      activerecord (>= 3.2, < 7.0)
+      rake (>= 10.4, < 14.0)
     appsignal (2.11.0)
       rack
     ast (2.4.1)
@@ -432,6 +435,7 @@ PLATFORMS
 
 DEPENDENCIES
   addressable
+  annotate
   appsignal
   blueprinter
   bootsnap (>= 1.1.0)
@@ -501,7 +505,7 @@ DEPENDENCIES
   webpacker
 
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 2.6.1p33
 
 BUNDLED WITH
-   2.1.4
+   2.2.3

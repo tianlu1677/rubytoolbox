@@ -1,5 +1,17 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: github_ignores
+#
+#  path       :string           not null, primary key
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+# Indexes
+#
+#  index_github_ignores_on_path  (path) UNIQUE
+#
 class GithubIgnore < ApplicationRecord
   self.primary_key = :path
 

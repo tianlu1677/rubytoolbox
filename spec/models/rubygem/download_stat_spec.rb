@@ -1,5 +1,30 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: rubygem_download_stats
+#
+#  id                    :bigint           not null, primary key
+#  absolute_change_month :integer
+#  date                  :date             not null
+#  growth_change_month   :decimal(, )
+#  relative_change_month :decimal(, )
+#  rubygem_name          :string           not null
+#  total_downloads       :integer          not null
+#
+# Indexes
+#
+#  index_rubygem_download_stats_on_absolute_change_month  (absolute_change_month)
+#  index_rubygem_download_stats_on_date                   (date)
+#  index_rubygem_download_stats_on_growth_change_month    (growth_change_month)
+#  index_rubygem_download_stats_on_relative_change_month  (relative_change_month)
+#  index_rubygem_download_stats_on_rubygem_name_and_date  (rubygem_name,date) UNIQUE
+#  index_rubygem_download_stats_on_total_downloads        (total_downloads)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (rubygem_name => rubygems.name)
+#
 require "rails_helper"
 
 # rubocop:disable RSpec/ExampleLength Data-heavy stuff, and I prefer readability over brevity on those

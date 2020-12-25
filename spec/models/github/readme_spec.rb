@@ -1,5 +1,19 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: github_readmes
+#
+#  etag       :string           not null
+#  html       :text             not null
+#  path       :string           not null, primary key
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+# Indexes
+#
+#  index_github_readmes_on_path  (path) UNIQUE
+#
 require "rails_helper"
 
 RSpec.describe Github::Readme, type: :model do

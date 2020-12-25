@@ -1,5 +1,35 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: projects
+#
+#  bugfix_fork_criteria :string           default([]), not null, is an Array
+#  bugfix_fork_of       :string
+#  description          :text
+#  description_tsvector :tsvector
+#  github_repo_path     :citext
+#  is_bugfix_fork       :boolean          default(FALSE), not null
+#  permalink            :string           not null, primary key
+#  permalink_tsvector   :tsvector
+#  rubygem_name         :string
+#  score                :decimal(5, 2)
+#  created_at           :datetime         not null
+#  updated_at           :datetime         not null
+#
+# Indexes
+#
+#  index_projects_on_bugfix_fork_of        (bugfix_fork_of)
+#  index_projects_on_description_tsvector  (description_tsvector) USING gin
+#  index_projects_on_is_bugfix_fork        (is_bugfix_fork)
+#  index_projects_on_permalink             (permalink) UNIQUE
+#  index_projects_on_permalink_tsvector    (permalink_tsvector) USING gin
+#  index_projects_on_rubygem_name          (rubygem_name) UNIQUE
+#
+# Foreign Keys
+#
+#  fk_rails_...  (rubygem_name => rubygems.name)
+#
 # rubocop:disable Metrics/ClassLength
 class Project < ApplicationRecord
   self.primary_key = :permalink

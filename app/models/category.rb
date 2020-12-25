@@ -1,5 +1,32 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: categories
+#
+#  category_group_permalink :citext           not null
+#  description              :text
+#  description_tsvector     :tsvector
+#  name                     :string           not null
+#  name_tsvector            :tsvector
+#  permalink                :citext           not null, primary key
+#  rank                     :integer
+#  created_at               :datetime         not null
+#  updated_at               :datetime         not null
+#
+# Indexes
+#
+#  index_categories_on_category_group_permalink  (category_group_permalink)
+#  index_categories_on_created_at                (created_at)
+#  index_categories_on_description_tsvector      (description_tsvector) USING gin
+#  index_categories_on_name_tsvector             (name_tsvector) USING gin
+#  index_categories_on_permalink                 (permalink) UNIQUE
+#  index_categories_on_rank                      (rank)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (category_group_permalink => category_groups.permalink)
+#
 class Category < ApplicationRecord
   self.primary_key = :permalink
 

@@ -93,7 +93,7 @@ module ComponentHelpers
 
     tooltip = "#{quarter.ordinalize} quarter #{year}: #{count} #{'release'.pluralize(count)}"
 
-    tag.li class: "tooltip is-tooltip-bottom #{rank}", "data-tooltip" => tooltip
+    tag.li class: "tooltip is-tooltip-bottom #{rank}"#, "data-tooltip" => tooltip
   end
 
   def trending_project_card(trend)

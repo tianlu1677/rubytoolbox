@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+# source "https://rubygems.org"
+source "https://gems.ruby-china.com"
 
 ruby File.read(File.join(__dir__, ".ruby-version")).strip
 
@@ -96,6 +97,7 @@ group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
   gem "pry-rails"
   gem "rspec-rails", ">= 4.0"
+  gem "annotate"
 end
 
 group :test do

@@ -1,5 +1,35 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: rubygems
+#
+#  authors                    :string
+#  bug_tracker_url            :string
+#  changelog_url              :string
+#  current_version            :string           not null
+#  description                :text
+#  documentation_url          :string
+#  downloads                  :integer          not null
+#  fetched_at                 :datetime
+#  first_release_on           :date
+#  homepage_url               :string
+#  latest_release_on          :date
+#  licenses                   :string           default([]), is an Array
+#  mailing_list_url           :string
+#  name                       :string           not null, primary key
+#  quarterly_release_counts   :jsonb            not null
+#  releases_count             :integer
+#  reverse_dependencies_count :integer
+#  source_code_url            :string
+#  wiki_url                   :string
+#  created_at                 :datetime         not null
+#  updated_at                 :datetime         not null
+#
+# Indexes
+#
+#  index_rubygems_on_name  (name) UNIQUE
+#
 class Rubygem < ApplicationRecord
   self.primary_key = :name
 
