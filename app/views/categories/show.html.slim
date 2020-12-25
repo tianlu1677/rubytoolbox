@@ -1,12 +1,12 @@
-- content_for :title, "Category: #{@category.name}"
+- content_for :title, "#{t('category')}: #{@category.name}"
 
 .hero
   section.section: .container
     .pull-right
       a.button.is-light href=@category.catalog_edit_url
         span.icon: i.fa.fa-edit
-        span Edit this category
-    p.heading= link_to "Category", categories_path
+        span 编辑分类
+    p.heading= link_to t("category"), categories_path
     h2
       a href=category_path(@category)
         = @category.name
@@ -14,7 +14,7 @@
       - if @category.description.present?
         = @category.description
       - else
-        em This category does not have a description yet. You can <strong><a href="#{@category.catalog_edit_url}">add one on github</a></strong>!
+        em This category does not have a description yet. You can <strong><a href="#{@category.catalog_edit_url}">add one on github</a>没有描述</strong>!
 
     - if current_order.default_direction?
       = bar_chart @category.projects.first(6).map {|p| [p.permalink, p.score]}.to_h, small: true

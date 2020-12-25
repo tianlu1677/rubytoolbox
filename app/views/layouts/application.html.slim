@@ -61,32 +61,32 @@ html.has-navbar-fixed-top lang="en"
             a.navbar-item.is-hidden-widescreen-only href="/" class=active_when(controller: :welcome)
               .wrap
                 span.icon: i.fa.fa-home
-                span Home
+                span 首页
 
             a.navbar-item href=categories_path class=active_when(controller: :categories)
               .wrap
                 span.icon: i.fa.fa-bars
-                span Categories
+                span 分类
 
             a.navbar-item href=comparison_path class=active_when(controller: :comparisons)
               .wrap
                 span.icon: i.fa.fa-arrows-h
-                span Compare
+                span 比较
 
             a.navbar-item href=trends_path class=active_when(controller: :trends)
               .wrap
                 span.icon: i.fa.fa-line-chart
-                span Trends
+                span 趋势
 
             a.navbar-item href=page_path("docs/index") class=active_when(controller: :pages)
               .wrap
                 span.icon: i.fa.fa-life-ring
-                span Documentation
+                span 文档
 
             a.navbar-item href=blog_index_path class=active_when(controller: :blog)
               .wrap
                 span.icon: i.fa.fa-rss-square
-                span News
+                span 咨询
 
             .navbar-item
               = render partial: "search_form"
@@ -100,12 +100,12 @@ html.has-navbar-fixed-top lang="en"
           .column.navigation
             .heading Navigation
             ul
-              li= link_to "Home", root_path
-              li= link_to "Categories", categories_path
-              li= link_to "Trends", trends_path
-              li= link_to "Documentation", page_path("docs/index")
-              li= link_to "News", blog_index_path
-              li= link_to "Search", search_path
+              li= link_to t("Home"), root_path
+              li= link_to t("Categories"), categories_path
+              li= link_to t("Trends"), trends_path
+              li= link_to t("Documentation"), page_path("docs/index")
+              li= link_to t("News"), blog_index_path
+              li= link_to t("search"), search_path
 
           .column.who
             .heading Who

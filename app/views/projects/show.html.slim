@@ -1,9 +1,10 @@
-- content_for :title, "Project: #{@project.permalink}"
+- content_for :title, "分类: #{@project.permalink}"
 
 .hero: section.section: .container
   .columns
     .column
-      p.heading Project
+      p.heading 
+        = t('project')
       h2
         // Note that rails url helpers escape slashes (as seen in github-based projects) and this breaks.
         a href="/projects/#{@project.permalink}"

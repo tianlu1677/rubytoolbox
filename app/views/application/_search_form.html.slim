@@ -5,8 +5,9 @@
 
   .field.has-addons.has-addons-centered
     .control.is-expanded
-      input.input placeholder="Search for libraries" type="text" name="q" value=@query
+      input.input placeholder="搜索 Gem" type="text" name="q" value=@query
     .control
       button.button type="submit"
         span.icon: i.fa.fa-search
-        span Search
+        span 
+          = t('search')

@@ -2,12 +2,13 @@
   = landing_hero title: t(:title, scope: :startpage), image: "startpage/main.png" do
     markdown:
       The Ruby Toolbox is a catalog of all [Rubygems](https://www.rubygems.org) that keeps track of popularity and health metrics to help you choose a reliable library
+      Ruby toolbox 是rubygems的所有分类追踪，帮助你发现最优秀的gem
 
     .columns
       .column
         a.button.is-primary.is-fullwidth href=categories_path
           span.icon: i.fa.fa-bars
-          span Browse by category
+          span 浏览分类
 
       .column
         = render partial: "search_form"
@@ -16,7 +17,7 @@
       .recent-news
         .heading
           span.icon: i.fa.fa-rss-square
-          strong= link_to "Recent News", blog_index_path
+          strong= link_to "最近咨询", blog_index_path
         ul
           - @recent_posts.each do |post|
             li
@@ -27,47 +28,54 @@
 
 
   section.section: .container: .landing-features
-    = landing_feature title: "Categories", image: "startpage/box.png" do
+    = landing_feature title: t("categories"), image: "startpage/box.png" do
       article
         markdown:
           To give you an overview of what open source libraries are available for a given task we group projects for common problems into categories.
 
           The catalog itself is available for contributions on [GitHub](https://github.com/rubytoolbox/catalog).
+          对给定任务可用的开源库进行概述，我们将针对常见问题的项目分组
 
       footer
-        a href=categories_path Browse all categories
+        a href=categories_path 浏览所有分类
 
-    = landing_feature title: "Search", image: "startpage/search.png" do
+    = landing_feature title: t("search"), image: "startpage/search.png" do
       article
         markdown:
           With our search you can find Ruby open source libraries beyond what is listed in our categories.
 
           We index all Rubygems published on [Rubygems.org](https://rubygems.org).
 
+          可以搜索整个Rubygems
+          我们对整个Rubygems进行了索引
       footer
-        a href=search_path(q: "http") Try our search
+        a href=search_path(q: "http") 试试搜索
 
-    = landing_feature title: "Project Popularity", image: "startpage/rocket.png" do
+    = landing_feature title: "项目受欢迎程度", image: "startpage/rocket.png" do
       article
         markdown:
           We sort projects based on their popularity in the Ruby community - Rubygem downloads as well as popularity of the source code repository on GitHub.
 
           This helps to identify projects that have a big user base, which is an indicator of project stability, maturity and maintenance.
 
-    = landing_feature title: "Project Health", image: "startpage/ruby.png" do
+          我们根据gem的下载量进行排序
+
+    = landing_feature title: "项目健康度", image: "startpage/ruby.png" do
       article
         markdown:
           We assess the maintenance status of projects based on recent activity like package releases, commit activity or open issue counts and display colored indicators based on that.
 
           This gives you a quick overview of the health of a project.
 
+          我们根据最近的活跃度来区分项目
+
   - if @featured_categories.any?
     section.section.popular-categories: .container
       / - description = t(:stats, scope: :startpage, projects_with_categories: @stats.projects_with_categories_count, categories: @stats.categories_count, rubygems: @stats.rubygems_count)
-      = section_heading "Popular Categories", help_path: "docs/features/categories" do
+      = section_heading "Popular Categories 热门分类", help_path: "docs/features/categories" do
         a.button href=categories_path
           span.icon: i.fa.fa-bars
-          span Browse all categories
+          span 浏览所有分类
 
       .columns.is-multiline
         - @featured_categories.each do |category|
@@ -76,10 +84,10 @@
 
   - if @trending_projects.any?
     section.section.trending-projects: .container
-      = section_heading "Trending Projects"
+      = section_heading "Trending Projects 上升分类"
         a.button href=trends_path
           span.icon: i.fa.fa-bars
-          span See all trending projects
+          span 查看所有上升分类
 
       .columns.is-multiline
         - @trending_projects.each do |trend|
@@ -89,10 +97,10 @@
 
   - if @new_categories.any?
     section.section.recently-added-categories: .container
-      = section_heading "Recently Added Categories", help_path: "docs/features/categories"
+      = section_heading "Recently Added Categories 新添加分类", help_path: "docs/features/categories"
         a.button href=categories_path
           span.icon: i.fa.fa-bars
-          span Browse all categories
+          span 浏览所有分类
 
       .columns.is-multiline
         - @new_categories.each do |category|

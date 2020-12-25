@@ -11,11 +11,11 @@
     small.content: strong= truncate trend.project.description, length: 400
 
   footer.card-footer
-    .card-footer-item.tooltip.is-tooltip-bottom data-tooltip="Total downloads in past 4 weeks"
+    .card-footer-item.tooltip.is-tooltip-bottom data-tooltip="最近四周下载数"
       small
         span.icon: i.fa.fa-download
         strong= number_with_delimiter trend.absolute_change_month
-    .card-footer-item.tooltip.is-tooltip-bottom data-tooltip="Increase relative to all time downloads in past 4 weeks"
+    .card-footer-item.tooltip.is-tooltip-bottom data-tooltip="近四周下载数增长"
       small
         span.icon: i.fa.fa-arrow-up
         strong= number_with_delimiter(trend.relative_change_month) + "%"

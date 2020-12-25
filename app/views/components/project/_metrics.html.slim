@@ -2,7 +2,7 @@
   .label
     span &nbsp;
     strong
-      | Popularity
+      | 活跃度
   .column: .metrics
     = metrics_row project, :rubygem_downloads, :github_repo_stargazers_count, :github_repo_forks_count, :github_repo_watchers_count
 
@@ -11,7 +11,7 @@
     .label
       span &nbsp;
       strong
-        | Releases
+        | 版本(Releases)
     .column: .metrics
       = metrics_row project, :rubygem_current_version, :rubygem_releases_count, :rubygem_first_release_on, :rubygem_latest_release_on
 
@@ -21,7 +21,7 @@
       .label
         span &nbsp;
         strong
-          | Issues
+          | 问题(Issues)
       .column: .metrics
         = metrics_row project, :github_repo_open_issues_count, :github_repo_closed_issues_count, :github_repo_total_issues_count, :github_repo_issue_closure_rate
 
@@ -38,7 +38,7 @@
     .label
       span &nbsp;
       strong
-        | Development
+        | 开发(Development)
     .column: .metrics
       = metrics_row project, :github_repo_primary_language, :rubygem_licenses, :github_repo_average_recent_committed_at, :rubygem_reverse_dependencies_count
 
@@ -47,7 +47,7 @@
     .label
       span &nbsp;
       strong
-        | Activity
+        | 活动(Activity)
     .column: .metrics
       = metrics_row project, :github_repo_issue_closure_rate, :github_repo_pull_request_acceptance_rate, :github_repo_average_recent_committed_at, :rubygem_reverse_dependencies_count
 

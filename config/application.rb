@@ -48,6 +48,10 @@ module Rubytoolbox
 
     config.http_connect = true
 
+    config.time_zone = 'Beijing'
+    config.i18n.available_locales = %i[zh-CN en]
+    config.i18n.default_locale = :"zh-CN"
+
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins "*"

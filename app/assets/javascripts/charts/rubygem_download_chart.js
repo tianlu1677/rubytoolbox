@@ -7,7 +7,7 @@ var rubygemDownloadChart = function(selector, totalDownloads, monthlyDownloads) 
       datasets: [
         {
           type: "line",
-          label: "Total Downloads",
+          label: "总下载量",
           yAxisID: "A",
           data: totalDownloads,
           fill: true,
@@ -17,7 +17,7 @@ var rubygemDownloadChart = function(selector, totalDownloads, monthlyDownloads) 
         },
         {
           type: "bar",
-          label: "Downloads in previous 4 weeks",
+          label: "近四周下载量",
           yAxisID: "B",
           data: monthlyDownloads,
           fill: true,
