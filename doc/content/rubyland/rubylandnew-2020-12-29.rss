@@ -1,0 +1,2526 @@
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:blogChannel="http://backend.userland.com/blogChannelModule">
+  <channel>
+    <title>Rubyland</title>
+    <link>http://www.rubyland.news</link>
+    <description>news, opinion, tutorials, about ruby, aggregated</description>
+    <language>en-us</language>
+    <generator>https://github.com/jrochkind/rubyland</generator>
+    <blogChannel:blogRoll>https://rubyland.news/sources.opml</blogChannel:blogRoll>
+    <item>
+      <title>274: Top 10 Review for 2020</title>
+      <source url="https://www.bikeshed.fm">The Bike Shed</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.bikeshed.fm"&gt;The Bike Shed&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;On this week's episode, Chris and Steph reflect on their top themes and technical picks for 2020.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;This episode is brought to you by:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://scoutapm.com/bikeshed"&gt;ScoutAPM&lt;/a&gt; - Give Scout a try for free today and Scout will donate $5 to the open source project of your choice when you deploy&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.expressvpn.com/bikeshed"&gt;ExpressVPN&lt;/a&gt; - Click through to can get an extra 3 months free on a one-year package.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://tailwindcss.com/"&gt;Tailwind CSS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://getbem.com/"&gt;BEM CSS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://styled-components.com/"&gt;Styled Components&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/css-modules/css-modules"&gt;css-modules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.bikeshed.fm/252"&gt;BikeShed Episode: I'm a Designer Now&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.saeloun.com/2020/06/17/rails-active-model-errors.html"&gt;ActiveModel Error Objects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.razer.com/streaming-cameras/razer-kiyo/RZ19-02320100-R3M1"&gt;Razer Kiyo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://store.uprightpose.com/products/upright-go2"&gt;Upright Go 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://svelte.dev/"&gt;Svelte&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html"&gt;Phoenix Live View&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://laravel-livewire.com/"&gt;Laravel Livewire&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stimulus.hotwire.dev/"&gt;Stimulus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inertiajs.com/"&gt;Inertia.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Sponsored By:&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://www.expressvpn.com/BIKESHED"&gt;ExpressVPN&lt;/a&gt;: &lt;a href="https://www.expressvpn.com/BIKESHED"&gt;Click through to get get an extra three months FREE on a one-year package!&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://scoutapm.com/bikeshed"&gt;Scout&lt;/a&gt;: &lt;a href="https://scoutapm.com/bikeshed"&gt;Give Scout a try for free today…&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a href="https://github.com/sponsors/thoughtbot"&gt;Support…&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Tue, 29 Dec 2020 05:15:00 -0000</pubDate>
+      <guid isPermaLink="false">5e182573-e043-4671-9fd5-265e38b6a9a7</guid>
+      <link>https://www.bikeshed.fm/274</link>
+    </item>
+    <item>
+      <title>SIGAVDI #90: Chicken soup edition</title>
+      <source url="https://avdi.codes">avdi.codes</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://avdi.codes"&gt;avdi.codes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hello friends,&lt;/p&gt;
+
+
+
+&lt;p&gt;I’m back in Tennessee, having recently weathered a (gorgeous) mountain snowfall and a (less gorgeous) fever over Christmas. In my client work I’ve been working a lot on Rails test profiling and optimization, something I’m hoping to bring to RubyTapas in upcoming weeks.&lt;/p&gt;
+
+
+
+&lt;span&gt;&lt;/span&gt;
+
+
+
+&lt;div class="tve_content_lock tve_lock_hide tve_lead_lock"&gt;
+                &lt;div class="tve_lead_lock_shortcode"&gt;&lt;/div&gt;
+                &lt;div class="tve_lead_locked_content"&gt;
+&lt;div class="tve_lead_locked_overlay"&gt;&lt;/div&gt;
+
+
+
+&lt;img src="https://i2.wp.com/avdi.codes/wp-content/uploads/2020/12/PXL_20201226_153139042.jpg?resize=770%2C578&amp;amp;ssl=1" alt="" class="wp-image-12831"&gt;
+
+
+
+&lt;p&gt;I have also been adopted by a local anole lizard, who presumably finds the indoor climate more conducive to being cold-blooded. I have named him &lt;a href="https://www.youtube.com/watch?v=Oe3FG4EOgyU"&gt;Schnappi&lt;/a&gt;. He likes to jump on my face right as I’m dozing off. I’m assuming this is a gesture of friendship.&lt;/p&gt;
+
+
+
+&lt;img src="https://i1.wp.com/avdi.codes/wp-content/uploads/2020/12/PXL_20201225_160257177.jpg?resize=770%2C770&amp;amp;ssl=1" alt="" class="wp-image-12832"&gt;
+
+
+
+&lt;h3&gt;What’s Good&lt;/h3&gt;
+
+
+
+&lt;p&gt;I did a work-inspired deep dive into advanced Dockerfile topics recently, so most of…&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      <pubDate>Tue, 29 Dec 2020 00:35:35 -0000</pubDate>
+      <guid isPermaLink="true">https://avdi.codes/?p=12830</guid>
+      <link>https://avdi.codes/sigavdi-90-chicken-soup-edition/</link>
+    </item>
+    <item>
+      <title>How to run RSpec with headless Chrome/Chromium on Alpine Linux</title>
+      <source url="https://www.codewithjason.com">Code with Jason</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.codewithjason.com"&gt;Code with Jason&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;The post &lt;a href="https://www.codewithjason.com/run-rspec-headless-chrome-chromium-alpine-linux/"&gt;How to run RSpec with headless Chrome/Chromium on Alpine Linux&lt;/a&gt; appeared first on &lt;a href="https://www.codewithjason.com"&gt;Code with Jason&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 28 Dec 2020 22:14:32 -0000</pubDate>
+      <guid isPermaLink="true">http://www.codewithjason.com/?p=1490</guid>
+      <link>https://www.codewithjason.com/run-rspec-headless-chrome-chromium-alpine-linux/</link>
+    </item>
+    <item>
+      <title>Rails: Following and Notifications</title>
+      <source url="https://www.johnnunemaker.com/">John Nunemaker</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.johnnunemaker.com/"&gt;John Nunemaker&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;For the curious, here is a quick introduction to the feature.&lt;/p&gt;&lt;div&gt;&lt;/div&gt;&lt;p&gt;Ok, now you have the bird's eye view. Let's get into the database schema and the code. Along the way, I'll also take you down a winding path that includes academic papers and some future ideas.&lt;/p&gt;&lt;h3&gt;The Connection&lt;/h3&gt;&lt;p&gt;The heart of following is a &lt;strong&gt;connection&lt;/strong&gt;. A connection connects a &lt;strong&gt;consumer&lt;/strong&gt; to a &lt;strong&gt;producer&lt;/strong&gt;. The producer is the thing that creates the &lt;strong&gt;events&lt;/strong&gt; that the consumer wants to be notified about. &lt;/p&gt;&lt;pre&gt;&lt;code class="language-ruby"&gt;create_table "connections", force: :cascade do |t|
+  t.integer "consumer_id", null: false
+  t.string "consumer_type", limit: 50, null: false
+  t.integer "producer_id", null: false
+  t.string "producer_type", limit: 50, null: false
+  t.datetime…&lt;/code&gt;&lt;/pre&gt;</description>
+      <pubDate>Mon, 28 Dec 2020 20:44:11 -0000</pubDate>
+      <guid isPermaLink="false">5fdc0a015afe79003938d9b4</guid>
+      <link>https://www.johnnunemaker.com/rails-following-and-notifications/</link>
+    </item>
+    <item>
+      <title>How to Generate a Sitemap for Your Phoenix App</title>
+      <source url="https://glaucocustodio.github.io">Glauco Custódio</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://glaucocustodio.github.io"&gt;Glauco Custódio&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;You've got your app built with &lt;a href="https://www.phoenixframework.org/"&gt;Phoenix Framework&lt;/a&gt; now you want to generate a sitemap for it.&lt;/p&gt;
+
+&lt;p&gt;Googling one can find ways to &lt;a href="https://medium.com/@ricardoruwer/create-dynamic-sitemap-xml-in-elixir-and-phoenix-6167504e0e4b"&gt;generate a sitemap dynamically&lt;/a&gt; by creating a route/controller just for that.&lt;/p&gt;
+
+&lt;p&gt;However, in this post, I am gonna show you another approach: generating a sitemap via script and serving it statically.&lt;/p&gt;
+
+&lt;h3&gt;Install sitemap&lt;/h3&gt;
+
+&lt;p&gt;Add &lt;a href="https://hex.pm/packages/sitemap"&gt;sitemap&lt;/a&gt; to your list of dependencies in &lt;code&gt;mix.exs&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-elixir"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="n"&gt;deps&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="p"&gt;[{&lt;/span&gt;&lt;span class="ss"&gt;:sitemap&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"~&amp;gt; 1.1"&lt;/span&gt;&lt;span class="p"&gt;}]&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ensure sitemap is started before your application:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-elixir"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="n"&gt;application&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;extra_applications:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:sitemap&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Run &lt;code&gt;mix deps.get&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For further instructions check their &lt;a href="https://github.com/ikeikeikeike/sitemap"&gt;readme&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Create the script&lt;/h3&gt;
+
+Let's create the script responsible for generating the sitemap:
+
+&lt;pre&gt;&lt;code class="language-elixir"&gt;&lt;span class="c1"&gt;#…&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <pubDate>Mon, 28 Dec 2020 16:21:27 -0000</pubDate>
+      <guid isPermaLink="true">https://glaucocustodio.github.io/2020/12/28/how-to-generate-a-sitemap-for-your-phoenix-app/</guid>
+      <link>https://glaucocustodio.github.io/2020/12/28/how-to-generate-a-sitemap-for-your-phoenix-app/</link>
+    </item>
+    <item>
+      <title>How to tell an Engineer to avoid the weasel word "like"</title>
+      <source url="https://code.dblock.org">code.dblock.org | tech blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://code.dblock.org"&gt;code.dblock.org | tech blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;I had a telecom professor in college that said “Euuuuh” every other word during lectures. It was impossible not to notice, and I couldn’t focus on the content anymore. So I counted the “Euuuuh”’s to pass time. The record sat around 150 “Euuuuh” per hour.&lt;/p&gt;
+
+&lt;p&gt;Fast forward to 2020. My speaking and writing have both significantly improved since I joined AWS. I am more concise, making arguments in fewer words. I’ve worked hard on replacing opinions with data. But while I have made progress, I’ve also become more allergic to the worst offenders in weasel and filler words in conversations with fellow Engineers, starting with “like”.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;At 33% this spline is, &lt;strong&gt;like&lt;/strong&gt;, poorly reticulated.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’m fuming.…&lt;/p&gt;</description>
+      <pubDate>Mon, 28 Dec 2020 15:21:09 -0000</pubDate>
+      <guid isPermaLink="true">https://code.dblock.org/2020/12/28/how-to-tell-an-engineer-to-avoid-the-weasel-word-like</guid>
+      <link>https://code.dblock.org/2020/12/28/how-to-tell-an-engineer-to-avoid-the-weasel-word-like.html</link>
+    </item>
+    <item>
+      <title>Year in Review 2020</title>
+      <source url="https://andycroll.com/">Andy Croll</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://andycroll.com/"&gt;Andy Croll&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;2020. It sounds so futuristic. Like jet packs and hoverboards. Not so much.&lt;/p&gt;
+
+&lt;h3&gt;January&lt;/h3&gt;
+
+&lt;p&gt;The new year brought some great engineer candidates for our small team at CoverageBook. We chose &lt;a href="https://twitter.com/EmmaBeynon"&gt;Emma&lt;/a&gt; after she aced our interviews. Unfortunately she had an epic three month notice period, which felt like a long time.&lt;/p&gt;
+
+&lt;h3&gt;February&lt;/h3&gt;
+
+&lt;p&gt;Spoke at &lt;a href="https://2020.rubyparis.org"&gt;Paris RB&lt;/a&gt;, although I slightly object to their slogan “Europe’s #1 Ruby Conference :-).&lt;/p&gt;
+
+&lt;p&gt;I reprised “The Games Developers Play”, talk went well despite some AV issues, which is always a risk with lots of audio and video.&lt;/p&gt;
+
+&lt;p&gt;Got to spend some time chatting to Matz and lost myself running in the outskirts of Paris, although did manage to at least see &lt;em&gt;la Tour&lt;/em&gt; despite starting…&lt;/p&gt;</description>
+      <pubDate>Mon, 28 Dec 2020 15:20:35 -0000</pubDate>
+      <guid isPermaLink="true">https://andycroll.com/other/year-in-review-2020</guid>
+      <link>https://andycroll.com/other/year-in-review-2020/</link>
+    </item>
+    <item>
+      <title>Private Is For Humans</title>
+      <source url="http://www.rubypigeon.com/">Ruby Pigeon</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://www.rubypigeon.com/"&gt;Ruby Pigeon&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;A friend told me a tale about a technical job interview from years
+ago. The feedback he received from the interviewer was that he had
+used &lt;code class="language-plaintext highlighter-rouge"&gt;private&lt;/code&gt; incorrectly. The code was something like this:&lt;/p&gt;
+
+&lt;div class="language-ruby highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;FizzBuzz&lt;/span&gt;
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;generate&lt;/span&gt;
+    &lt;span class="c1"&gt;# ...&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="kp"&gt;private&lt;/span&gt;
+
+    &lt;span class="no"&gt;FIZZ&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;
+    &lt;span class="no"&gt;BUZZ&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# ...&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class="aside"&gt;Constants can be made private using &lt;code class="language-plaintext highlighter-rouge"&gt;private_constant&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The interviewer had correctly identified that the &lt;code class="language-plaintext highlighter-rouge"&gt;FIZZ&lt;/code&gt; and &lt;code class="language-plaintext highlighter-rouge"&gt;BUZZ&lt;/code&gt;
+constants were still publicly accessible. In Ruby, &lt;code class="language-plaintext highlighter-rouge"&gt;private&lt;/code&gt; does not
+affect constants.&lt;/p&gt;
+
+&lt;div class="language-ruby highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span class="c1"&gt;# constants are accessible from outside the class&lt;/span&gt;
+&lt;span class="no"&gt;FizzBuzz&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;FIZZ&lt;/span&gt; &lt;span class="c1"&gt;#=&amp;gt; 3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class="aside"&gt;Class methods are also not affected by &lt;code class="language-plaintext highlighter-rouge"&gt;private&lt;/code&gt;, but can be made
+private using &lt;code class="language-plaintext highlighter-rouge"&gt;private_class_method&lt;/code&gt; or &lt;code class="language-plaintext highlighter-rouge"&gt;class &amp;lt;&amp;lt; self&lt;/code&gt; syntax.&lt;/p&gt;
+
+…</description>
+      <pubDate>Mon, 28 Dec 2020 12:20:26 -0000</pubDate>
+      <guid isPermaLink="true">http://www.rubypigeon.com/posts/private-is-for-humans</guid>
+      <link>http://www.rubypigeon.com/posts/private-is-for-humans/</link>
+    </item>
+    <item>
+      <title>Benchmarking Ruby 2.4 to 3.0</title>
+      <source url="https://gettalong.org/">Posts</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://gettalong.org/"&gt;Posts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I ran some benchmarks using &lt;a href="https://hexapdf.gettalong.org"&gt;HexaPDF&lt;/a&gt; after Ruby 2.4 was released in &lt;a href="https://gettalong.org/blog/2016/ruby24-performance-looking-good.html"&gt;2016&lt;/a&gt; and again after Ruby 2.5
+was releasd in &lt;a href="https://gettalong.org/blog/2017/benchmarking-ruby-2-5.html"&gt;2017&lt;/a&gt;. Since &lt;a href="https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/"&gt;Ruby 3.0.0&lt;/a&gt; was released this Christmas, I think this warrants another
+round of benchmarks. And this time three different real-world benchmarks are used to evaluate
+relative Ruby performance.&lt;/p&gt;
+
+
+&lt;h3&gt;Three Real-world Benchmarks&lt;/h3&gt;
+
+&lt;p&gt;The last two times I just used HexaPDF to evaluate the relative performance of Ruby releases. This
+time I will use three different Rubygems for this task:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;HexaPDF Benchmarks&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;What once started as simple gists is now part of the &lt;a href="https://github.com/gettalong/hexapdf/tree/master/benchmark"&gt;HexaPDF repository&lt;/a&gt;. The benchmark
+descriptions are available on the &lt;a href="https://hexapdf.gettalong.org/documentation/benchmarks/"&gt;HexaPDF website&lt;/a&gt;. I recommend looking at…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+      <pubDate>Mon, 28 Dec 2020 09:24:00 -0000</pubDate>
+      <guid isPermaLink="true">https://gettalong.org/blog/2020/benchmarking-rubies.html</guid>
+      <link>https://gettalong.org/blog/2020/benchmarking-rubies.html</link>
+    </item>
+    <item>
+      <title>CameraX, An Understanding Friend!</title>
+      <source url="https://blog.joshsoftware.com">Josh Software</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://blog.joshsoftware.com"&gt;Josh Software&lt;/a&gt;.&lt;/p&gt;Every mobile developer has at least met with a requirement for a Custom Camera. That’s where it all starts, from learning low level native code to actually understanding Camera API’s and writing a lot of boilers camera configuration code for just adding some buttons for product branding. Even an experienced developer well known to Android’s … &lt;a href="https://blog.joshsoftware.com/2020/12/27/camerax-an-understanding-friend/" class="more-link"&gt;Continue reading &lt;span class="screen-reader-text"&gt;CameraX, An Understanding Friend!&lt;/span&gt;&lt;/a&gt;</description>
+      <pubDate>Sun, 27 Dec 2020 15:32:41 -0000</pubDate>
+      <guid isPermaLink="true">http://blog.joshsoftware.com/?p=6514</guid>
+      <link>https://blog.joshsoftware.com/2020/12/27/camerax-an-understanding-friend/</link>
+    </item>
+    <item>
+      <title>Writing a Ractor-based web server: part II</title>
+      <source url="http://kirshatrov.com/">Kir Shatrov</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://kirshatrov.com/"&gt;Kir Shatrov&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;A few months ago I published a &lt;a href="http://kirshatrov.com/2020/09/08/ruby-ractor-web-server/"&gt;post&lt;/a&gt; about writing a simple web server in Ruby using Ractors. That took only 20 lines of code and it was able to leverage multiple CPUs with Ruby without having to go through the Global Interpreter Lock (&lt;a href="https://en.wikipedia.org/wiki/Global_interpreter_lock"&gt;GIL&lt;/a&gt;). That was a good preview to what the Ractor primitive is going to provide.&lt;/p&gt;
+
+&lt;p&gt;Since then Ruby 3.0 was released and the Ractor implementation has got more mature. In this post, we’ll make our Ractor-based web server do more things.&lt;/p&gt;
+
+&lt;p&gt;By the end of the post, you’ll learn the constraints of Ractors and get familiar with three PRs to MRI that I had to open to make it work.&lt;/p&gt;
+
+&lt;h3&gt;Getting started&lt;/h3&gt;
+
+&lt;p&gt;Here’s what we ended up with in the &lt;a href="http://kirshatrov.com/2020/09/08/ruby-ractor-web-server/"&gt;previous post&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class="language-ruby highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'socket'&lt;/span&gt;
+
+&lt;span class="n"&gt;pi…&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description>
+      <pubDate>Sun, 27 Dec 2020 15:21:06 -0000</pubDate>
+      <guid isPermaLink="true">http://kirshatrov.com/2020/12/27/ractor-web-server-part-two</guid>
+      <link>http://kirshatrov.com/2020/12/27/ractor-web-server-part-two/</link>
+    </item>
+    <item>
+      <title>Kafka for Rubyists Mini Course: Consuming and Performance</title>
+      <source url="https://karolgalanciak.com/">Karol Galanciak - Distributed Systems Architect and Ruby on Rails expert</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://karolgalanciak.com/"&gt;Karol Galanciak - Distributed Systems Architect and Ruby on Rails expert&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This is the second part of the Kafka For Rubyists mini course. If you are interested in other parts of the course, please check them out &lt;a href="https://karolgalanciak.com/blog/2020/12/20/kafka-for-rubyists-mini-course/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h3&gt;2. Consuming and Performance&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=-MG9Qf-WJrA"&gt;Video&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://speakerdeck.com/azdaroth/kafka-for-rubyists-consuming-and-performance"&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Sun, 27 Dec 2020 10:00:00 -0000</pubDate>
+      <guid isPermaLink="true">https://karolgalanciak.com/blog/2020/12/27/kafka-for-rubyists-mini-course-consuming-and-performance</guid>
+      <link>https://karolgalanciak.com/blog/2020/12/27/kafka-for-rubyists-mini-course-consuming-and-performance/</link>
+    </item>
+    <item>
+      <title>The hidden cost of a Ruby threads leakage</title>
+      <source url="https://mensfeld.pl">Running with Ruby</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://mensfeld.pl"&gt;Running with Ruby&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Bug hunting&lt;/h3&gt;
+&lt;p&gt;Recently I’ve been working with one small application that would gradually become slower and slower. While there were many reasons for it to happen, I found one of them interesting.&lt;/p&gt;
+&lt;p&gt;To give you a bit of context: the application was a simple single topic legacy Kafka consumer. I rewrote it to Karafka, and all of the logic looks like this:&lt;/p&gt;
+&lt;pre class="brush: ruby; title: ; notranslate"&gt;
+class EventsConsumer &amp;lt; Karafka::BaseConsumer
+  def initialize(...)
+    super
+    @processor = Processor.new
+  end
+
+  def consume
+    @processor.call(params_batch.payloads)
+  end
+end
+&lt;/pre&gt;
+&lt;p&gt;And the processor looks like so (I removed all the irrelevant code):&lt;/p&gt;
+&lt;pre class="brush: ruby; title: ; notranslate"&gt;
+class Processor
+  def initialize
+    @queue = Queue.new
+    @worker = Thread.new { work }
+ …&lt;/pre&gt;</description>
+      <pubDate>Sat, 26 Dec 2020 15:46:05 -0000</pubDate>
+      <guid isPermaLink="true">https://mensfeld.pl/?p=5097</guid>
+      <link>https://mensfeld.pl/2020/12/the-hidden-cost-of-a-ruby-threads-leakage/</link>
+    </item>
+    <item>
+      <title>Ruby 3.0</title>
+      <source url="https://rubyreferences.github.io/rubychanges/">Ruby Changes</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://rubyreferences.github.io/rubychanges/"&gt;Ruby Changes&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Highlights:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ruby 3.0 is a major language release. The core team worked hard to preserve backward compatibility while delivering some huge and exciting new features.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Full separation of keyword arguments&lt;/li&gt;
+  &lt;li&gt;Ractors: Thread-alike object implementing the actor model, and finally lifting the GVL (Global Virtual machine Lock) and enabling true concurrency&lt;/li&gt;
+  &lt;li&gt;Non-blocking IO with Fibers&lt;/li&gt;
+  &lt;li&gt;Type declarations (in separate files)&lt;/li&gt;
+  &lt;li&gt;Pattern matching:
+    &lt;ul&gt;
+      &lt;li&gt;No longer experimental&lt;/li&gt;
+      &lt;li&gt;Two flavors for one-line pattern matching: &lt;code&gt;=&amp;gt;&lt;/code&gt; (aka rightward assignment) and &lt;code&gt;in&lt;/code&gt; (aka boolean check)&lt;/li&gt;
+      &lt;li&gt;Find patterns&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“Endless” methods&lt;/li&gt;
+  &lt;li&gt;GC auto-compaction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href="https://rubyreferences.github.io/rubychanges/3.0.html"&gt;Read more »&lt;/a&gt;&lt;/p&gt;
+</description>
+      <pubDate>Fri, 25 Dec 2020 20:21:23 -0000</pubDate>
+      <guid isPermaLink="true">https://rubyreferences.github.io/rubychanges//3.0.html</guid>
+      <link>https://rubyreferences.github.io/rubychanges//3.0.html</link>
+    </item>
+    <item>
+      <title>Ruby 3 is released - The list of Ruby 3 features</title>
+      <source url="https://www.bigbinary.com/">BigBinary Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.bigbinary.com/"&gt;BigBinary Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;For all Rubyists,&lt;strong&gt;2020&lt;/strong&gt; was a special year.Why wouldn't it be?Ruby 2 was released in 2013.We have been using Ruby 2.xfor almost 7 yearsandwe have been waiting to seeRuby 3 get released.Finally,the wait is over now.&lt;a href="https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/"&gt;Ruby 3.0.0 has been released&lt;/a&gt;.It's time to unwrap the gift boxand see all the Ruby 3 features we got.&lt;/p&gt;&lt;h3&gt;Ruby 3 major updates&lt;/h3&gt;&lt;p&gt;The number &lt;strong&gt;3&lt;/strong&gt; is very significantin the Ruby 3 release.Be it release version number,making performance 3x faster,or the trio of core contributors(Matz, TenderLove, Koichi).Similarly, there were 3 major goals of Ruby 3: being faster,having better concurrency,andensuring correctness.&lt;/p&gt;&lt;p&gt;&lt;img src="https://www.bigbinary.com/blog_images/ruby-3-features/ruby-3-features.jpg" alt="Ruby 3 features"&gt;&lt;/p&gt;&lt;h4&gt;1. Ruby 3 performance&lt;/h4&gt;&lt;p&gt;One of the major focuses for Ruby 3was the performance.In…&lt;/p&gt;</description>
+      <pubDate>Fri, 25 Dec 2020 13:20:27 -0000</pubDate>
+      <guid isPermaLink="true">https://www.bigbinary.com/blog/ruby-3-features</guid>
+      <link>https://www.bigbinary.com/blog/ruby-3-features</link>
+    </item>
+    <item>
+      <title>HTML over Websockets is all the rage</title>
+      <source url="https://remoteruby.transistor.fm">Remote Ruby</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://remoteruby.transistor.fm"&gt;Remote Ruby&lt;/a&gt;.&lt;/p&gt;
+        [00:00:25] Jason tells us about his busy Black Friday weekend and having to use Rails Autoscale, and Chris mentions Shopify’s graph showing their traffic for the weekend. &lt;br&gt;[00:02:51] Jason tells us what’s new in the Ruby on Rails world and mentions RC2, and Chris tested Jumpstart Pro against RC1. Jason talks about something is wrong with his RC and it may be something with the version of Ruby he’s using. He also tells us about a Full Stack Radio episode with Adam Wathan talking about Screencasting and he found it super helpful. [00:07:22] Chris opens Twitter and Nate Hopkins Tweeted about whatever the new magic DHH has been calling it and DHH responded.   Does this mean the new…</description>
+      <pubDate>Fri, 25 Dec 2020 13:00:00 -0000</pubDate>
+      <guid isPermaLink="false">ce6384c4-816c-4c4b-9fe4-996c9ab629dc</guid>
+      <link>https://share.transistor.fm/s/f769e059</link>
+    </item>
+    <item>
+      <title>Day 25 - hexapdf Gem - Read and Write PDF Documents. Start from Zero or Merge, Extract, Optimize and Much More</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Thomas Leitner
+
+(Open source) software developer from Vienna, Austria. Creator of Kramdown and HexaPDF. Sci-Fi fan.
+
+HexaPDF is a pure Ruby library with an accompanying application for working with PDF files.
+In short, it allows
+
+
+  creating new PDF files,
+  manipulating existing PDF files,
+  merging multiple PDF files into one,
+  extracting meta information, text, images and files from PDF files,
+  securing PDF files by encrypting them and
+  optimizing PDF files for smaller file size or other criteria.
+
+
+HexaPDF was designed with ease of use and performance in mind. It uses lazy loading and lazy computing when possible and tries to produce small PDF files by default.
+
+If you…</description>
+      <pubDate>Fri, 25 Dec 2020 09:22:23 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/25-hexapdf</guid>
+      <link>http://planetruby.github.io/gems/2020/25-hexapdf</link>
+    </item>
+    <item>
+      <title>Ruby 3.0.0 Released</title>
+      <source url="https://www.ruby-lang.org/en/feeds/news.rss">Ruby News</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.ruby-lang.org/en/feeds/news.rss"&gt;Ruby News&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;We are pleased to announce the release of Ruby 3.0.0. From 2015 we developed hard toward Ruby 3, whose goal is performance, concurrency, and Typing. Especially about performance, Matz stated “Ruby3 will be 3 times faster than Ruby2” a.k.a. &lt;a href="https://blog.heroku.com/ruby-3-by-3"&gt;Ruby 3x3&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://cache.ruby-lang.org/pub/media/ruby3x3.png" alt="Optcarrot 3000 frames"&gt;&lt;/p&gt;
+
+&lt;p&gt;With &lt;a href="https://github.com/mame/optcarrot"&gt;Optcarrot benchmark&lt;/a&gt;, which measures single thread performance based on NES’s game emulation workload, it achieved 3x faster performance than Ruby 2.0! These were measured at the environment noted in &lt;a href="https://benchmark-driver.github.io/hardware.html"&gt;benchmark-driver.github.io/hardware.html&lt;/a&gt;. &lt;a href="https://github.com/ruby/ruby/commit/8c510e4095"&gt;Commit 8c510e4095&lt;/a&gt; was used as Ruby 3.0. It may not be 3x faster depending on your environment or benchmark.&lt;/p&gt;
+
+&lt;p&gt;Ruby 3.0.0 covers those goals by&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Performance
+    &lt;ul&gt;
+      &lt;li&gt;MJIT&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Concurrency
+    &lt;ul&gt;
+…&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Fri, 25 Dec 2020 06:20:32 -0000</pubDate>
+      <guid isPermaLink="true">https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/</guid>
+      <link>https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/</link>
+    </item>
+    <item>
+      <title>💎 Issue 240 - Hotwire: the new evolution of Turbolinks from Basecamp</title>
+      <source url="https://ruby.libhunt.com/newsletter">Awesome Ruby Newsletter</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://ruby.libhunt.com/newsletter"&gt;Awesome Ruby Newsletter&lt;/a&gt;.&lt;/p&gt;</description>
+      <pubDate>Thu, 24 Dec 2020 21:42:00 -0000</pubDate>
+      <guid isPermaLink="true">https://ruby.libhunt.com/newsletter/240</guid>
+      <link>https://ruby.libhunt.com/newsletter/240</link>
+    </item>
+    <item>
+      <title>How to Prepare Your Rails App for an Upgrade</title>
+      <source url="https://fastruby.io/blog/">The Rails Tech Debt Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://fastruby.io/blog/"&gt;The Rails Tech Debt Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;em&gt;This article is part of our Upgrade Rails series. To see more of them, &lt;a href="https://fastruby.io/blog/tags/upgrades"&gt;click here&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;This article will cover the most important aspects that you need to know to prepare
+your &lt;a href="http://rubyonrails.org/"&gt;Ruby on Rails&lt;/a&gt; application for working on an upgrade.&lt;/p&gt;
+
+
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://fastruby.io/blog/rails/upgrade/prepare-for-rails-upgrade.html#codecoverage"&gt;Test Coverage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fastruby.io/blog/rails/upgrade/prepare-for-rails-upgrade.html#stageingandproduction"&gt;Staging and Production&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fastruby.io/blog/rails/upgrade/prepare-for-rails-upgrade.html#patchversion"&gt;Patch Version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fastruby.io/blog/rails/upgrade/prepare-for-rails-upgrade.html#incompatabilities"&gt;Incompatabilities&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fastruby.io/blog/rails/upgrade/prepare-for-rails-upgrade.html#dualboot"&gt;Dual Boot&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;1. Code Coverage&lt;/h3&gt;
+
+&lt;p&gt;Not all applications are good candidates for a Rails upgrade project. We strongly advise against upgrading big applications which are running in production with minimal test coverage.&lt;/p&gt;
+
+&lt;p&gt;Make sure that you have at least 80% test coverage before starting the upgrade project. If you don't have a solid test suite (or a dedicated QA team), you will likely find many problems…&lt;/p&gt;</description>
+      <pubDate>Thu, 24 Dec 2020 17:22:36 -0000</pubDate>
+      <guid isPermaLink="true">https://fastruby.io/blog/rails/upgrade/prepare-for-rails-upgrade</guid>
+      <link>https://fastruby.io/blog/rails/upgrade/prepare-for-rails-upgrade.html</link>
+    </item>
+    <item>
+      <title>Logging tricks: duplicate and broadcast</title>
+      <source url="https://blog.klimenko.site/">The Thoughtnotes | Ruby</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://blog.klimenko.site/"&gt;The Thoughtnotes | Ruby&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Everybody loves logs! And the more of them we have, the better. They are so useful! Today I’m going to share a bit non-trivial approach to logging some background process: broadcasting messages into WebSocket channel and combining several loggers to work as a single one seamlessly.&lt;/p&gt;
+
+
+
+&lt;h3&gt;Broadcast your progress&lt;/h3&gt;
+
+&lt;p&gt;Imagine some long-running background process that you’d like to monitor. Let’s assume you already have a nice web dashboard, and you want to display the detailed progress information of what’s happening right now. One of the possible solutions here would be to use WebSocket channel to receive the background job’s progress information and messages in real-time.&lt;/p&gt;
+
+&lt;p&gt;Nice! All we need is to…&lt;/p&gt;</description>
+      <pubDate>Thu, 24 Dec 2020 14:22:10 -0000</pubDate>
+      <guid isPermaLink="true">https://blog.klimenko.site/ruby/2020/12/24/broadcast-and-duplicate-logs</guid>
+      <link>https://blog.klimenko.site/ruby/2020/12/24/broadcast-and-duplicate-logs.html</link>
+    </item>
+    <item>
+      <title>Day 24 - git_reflow Gem - Automate Your Git Workflow for You and Your Team. Build Your Own Git (Command Line) Commands</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Valentino Stoll
+
+Codes up a storm of bits. Blogs about Ruby on the Raspberry Pi, LEDs, and more at Code Name V. Works at Doximity.
+
+DRY’ing up Git Flow
+
+Working with teams on software should be painless and fun!  Git-Reflow can solve some of the following pain points:
+
+
+  “Who’s working on the some-crazy-branch-name? What is it?  Do we still need it?”
+  Checks out new branch “Ugh, let me open up Pivotal Tracker and start this story”
+  Commits last change on feature branch and pushes to remote “Ok, now I’ll just switch contexts a few times to create a PR with links to project tracking.”… 10 minutes later… “Done!”
+  Switches to browser, looking for tab with open PR… got it! Tests…</description>
+      <pubDate>Thu, 24 Dec 2020 11:21:58 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/24-git-reflow</guid>
+      <link>http://planetruby.github.io/gems/2020/24-git-reflow</link>
+    </item>
+    <item>
+      <title>Webpack VS Sprockets</title>
+      <source url="https://www.ombulabs.com/blog/">OmbuLabs Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.ombulabs.com/blog/"&gt;OmbuLabs Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Since the release of Rails 6, &lt;strong&gt;Webpack&lt;/strong&gt; is the default JavaScript bundler for new Rails apps. We all struggled at first coming from a &lt;strong&gt;Sprockets&lt;/strong&gt; background, and more often than not, we, as Rails developers, tried to avoid making JavaScript changes so we wouldn't have to deal with it.&lt;/p&gt;
+
+&lt;p&gt;In this post, I'll try to explain some basic concepts and ideas from the point of view of a Rails developer used to working with the Assets Pipeline, comparing how to do the same thing on both.&lt;/p&gt;
+
+
+
+&lt;h3&gt;Glossary&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;Bundler&lt;/strong&gt; is an application that can process, compile and pack assets like JavaScript, CSS, Images, Videos, etc.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://webpack.js.org/"&gt;Webpack&lt;/a&gt; is a bundler that runs on NodeJS.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/rails/webpacker"&gt;Webpacker&lt;/a&gt; is a gem that helps connect Rails with…&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/rails/sprockets"&gt;Spro…&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Wed, 23 Dec 2020 21:20:36 -0000</pubDate>
+      <guid isPermaLink="true">https://www.ombulabs.com/blog/learning/webpack/webpack-vs-sprockets</guid>
+      <link>https://www.ombulabs.com/blog/learning/webpack/webpack-vs-sprockets.html</link>
+    </item>
+    <item>
+      <title>076 - Heuristics for Object-Oriented Design in Ruby with Tyler Williams</title>
+      <source url="https://www.codewithjason.com/rails-with-jason-podcast">Rails with Jason</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.codewithjason.com/rails-with-jason-podcast"&gt;Rails with Jason&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;In this episode I talk with Tyler Williams, Software Engineer at Home Game Poker, about the contents of a blog post he recently wrote entitled Heuristics for Object-Oriented Design in Ruby. Tyler and I discuss some of the ideas in his blog post, most of which came from Sandi Metz's book Practical Object-Oriented Design in Ruby (POODR).&lt;/p&gt;
+
+&lt;p&gt;Links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ogdenstudios.xyz/blog/heuristics-for-object-oriented-design-in-ruby/"&gt;Tyler's blog post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.codewithjason.com/logical-arguments-programmers/"&gt;Intro to logical arguments for programmers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+      </description>
+      <pubDate>Wed, 23 Dec 2020 19:22:13 -0000</pubDate>
+      <guid isPermaLink="false">e2444383-8856-4115-b560-bdc3c38edba7</guid>
+      <link>http://railswithjason.simplecast.fm/tyler-williams-2</link>
+    </item>
+    <item>
+      <title>How to Favicon in 2021: Six files that fit most needs</title>
+      <source url="https://evilmartians.com/chronicles">Martian Chronicles, Evil Martians’ team blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://evilmartians.com/chronicles"&gt;Martian Chronicles, Evil Martians’ team blog&lt;/a&gt;.&lt;/p&gt;&lt;em&gt;Author: &lt;/em&gt;Andrey Sitnik, Author of PostCSS and Autoprefixer, Lead Frontend Developer at Evil Martians
+
+  &lt;p&gt;It is time to rethink how we cook a set of favicons for modern browsers and stop the icon generator madness. Currently, frontend developers have to deal with 20+ static PNG files just to display a tiny website logo in a browser tab or on a touchscreen. Read on to see how to take a smarter approach and adopt a minimal set of icons that fits most modern needs.&lt;/p&gt;
+
+
+&lt;p&gt;The favicons proved to be a more exhaustive topic that anyone could wish for, so I also summarized a whole article in just two code snippets for those who suffered enough and know exactly what to do. Still, I recommend geeking out to…&lt;/p&gt;</description>
+      <pubDate>Wed, 23 Dec 2020 18:22:37 -0000</pubDate>
+      <guid isPermaLink="true">https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs</guid>
+      <link>https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs</link>
+    </item>
+    <item>
+      <title>Catch 404 urls in Next.js and write them to firebase</title>
+      <source url="https://www.bigbinary.com/">BigBinary Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.bigbinary.com/"&gt;BigBinary Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;We recently jumped on the &lt;a href="https://www.netlify.com/jamstack/"&gt;Jamstack&lt;/a&gt;bandwagon and moved our BigBinary website to use &lt;a href="https://nextjs.org"&gt;next.js&lt;/a&gt;.We also migrated &lt;a href="http://bigbinary.com/blog"&gt;BigBinary Blog&lt;/a&gt; to using next.js.&lt;/p&gt;&lt;p&gt;In the process of migration we knew we might have missed handling a few urls.We wanted to know all the urls which are resulting in 404 now.&lt;/p&gt;&lt;p&gt;Tradtionally a static site is not able to catch all the 404s.However with next.js we can capture the urls resulting in 404 and we can write those urls to firebase.&lt;/p&gt;&lt;h3&gt;Setting up Firebase&lt;/h3&gt;&lt;p&gt;Get Started with&lt;a href="https://console.firebase.google.com/"&gt;Firebase&lt;/a&gt;and create an account.Add a project there and then add a "Web app" inside that project.After that, you will find web apps Firebase configuration something like this.&lt;/p&gt;&lt;pre&gt;&lt;code&gt;var firebaseConfig = {apiKey:…&lt;/code&gt;&lt;/pre&gt;</description>
+      <pubDate>Wed, 23 Dec 2020 18:22:01 -0000</pubDate>
+      <guid isPermaLink="true">https://www.bigbinary.com/blog/catch-404-urls-in-nextjs</guid>
+      <link>https://www.bigbinary.com/blog/catch-404-urls-in-nextjs</link>
+    </item>
+    <item>
+      <title>350: A Diverse Array of New Voices with Starr Horne</title>
+      <source url="http://5by5.tv/rubyonrails">Ruby on Rails Podcast</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://5by5.tv/rubyonrails"&gt;Ruby on Rails Podcast&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Starr Horne is co-founder and one of the original developers of Honeybadger - an exception monitoring service with deep ties in the ruby community. Recently she has worked to bring a diverse array of new voices to Honeybadger's blog. She offers insightful advice on producing great content for developers.&lt;/p&gt;
+&lt;p&gt;Links for this episode:&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://www.honeybadger.io" class="link"&gt;Honeybadger | Exception and Uptime Monitoring for Application Developers&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.honeybadger.io/blog" class="link"&gt;The Honeybadger Developer Blog&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.honeybadger.io/blog/write-for-us/" class="link"&gt;Write For Us | Honeybadger Developer Blog&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.honeybadger.io/blog/ruby-concurrency-parallelism/" class="link"&gt;Opening The Ruby Concurrency Toolbox - Honeybadger.io&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.founderquestpodcast.com" class="link"&gt;FounderQuest&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://twitter.com/starrhorne?lang=en" class="link"&gt;Starr (@StarrHorne) | Twitter&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://twitter.com/honeybadgerapp?lang=en" class="link"&gt;Honeybadger.io (@honeybadgerapp) | Twitter&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://twitter.com/sprngr_" class="link"&gt;Episode Introduction and Outro by Michael Springer&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://incompetech.com" class="link"&gt;Episode Music: "Funkorama" by Kevin…&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Brought to you by:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Headspace&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You deserve to feel happier, and Headspace is meditation made simple.&lt;/p&gt;
+
+&lt;p&gt;That’s &lt;a href="https://www.headspace.com/code?code=RAILS"&gt;headspace.com/rails&lt;/a&gt; for a free one month trial with access to Headspace’s full library of meditations for every situation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scout APM&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Give &lt;a href="https://scoutapm.com/rubyonrails"&gt;Scout APM&lt;/a&gt; a try for free today and Scout will donate $5 to the open source…&lt;/p&gt;</description>
+      <pubDate>Wed, 23 Dec 2020 14:00:00 -0000</pubDate>
+      <guid isPermaLink="true">http://5by5.tv/rubyonrails/350</guid>
+      <link>http://5by5.tv/rubyonrails/350</link>
+    </item>
+    <item>
+      <title>How to use Hotwire in Rails</title>
+      <source url="https://gorails.com/episodes">GoRails Screencasts</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://gorails.com/episodes"&gt;GoRails Screencasts&lt;/a&gt;.&lt;/p&gt;Hotwire is the NEW MAGIC that DHH has been teasing about for so long. This episode we'll build the famous Twitter clone using Hotwire to see how it compares to other solutions out there.</description>
+      <pubDate>Wed, 23 Dec 2020 13:28:37 -0000</pubDate>
+      <guid isPermaLink="false">hotwire-rails</guid>
+      <link>https://gorails.com/episodes/hotwire-rails</link>
+    </item>
+    <item>
+      <title>Day 23 - json-next Gem - Read Next Generation JSON Versions (HanSON, SON, JSONX/JSON11, Etc) with Comments, Unquoted Keys, Multi-Line Strings, Trailing Commas, Optional Commas, and More</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Gerald Bauer
+
+A code monkey and enthusiastic collector (and publisher) of open football and beer data. Skills include Ruby, SQLite and CSV. Spec lead of CSV &amp;lt;3 JSON.
+
+Let’s start with a quiz:
+
+Q: What’s your favorite text (“human”/non-binary)
+data exchange format?
+
+
+  (A) JSON
+  (B) XML
+  (C) HTML
+  (D) YAML
+  (E) TOML/INI
+  (F) SQL
+  (G) CSV
+  (H) Other, please tell!
+
+
+If you picked (A) JSON - let’s continue with a question:
+
+What’s missing in JSON?
+
+
+  Comments, Comments, Comments
+  Unquoted Keys
+  Multi-Line Strings
+    
+      a) Folded – Folds Newlines
+      b) Unfolded
+    
+  
+  Trailing Commas in Arrays and Objects
+
+
+More:
+
+
+  Date/DateTime/Timestamp Type
+  Optional…</description>
+      <pubDate>Wed, 23 Dec 2020 13:21:39 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/23-json-next</guid>
+      <link>http://planetruby.github.io/gems/2020/23-json-next</link>
+    </item>
+    <item>
+      <title>RUBY 481: Why We Worry About All the Wrong Things with Hilary Stohs-Krause</title>
+      <source url="http://devchat.tv">All Ruby Podcasts by Devchat.tv</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://devchat.tv"&gt;All Ruby Podcasts by Devchat.tv&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Hilary Stohs-Krause addresses the things that we have strong emotional reactions to as developers that maybe we shouldn't worry about them. She also leads a discussion with the panel around when fear is a good thing.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Panels&lt;/h3&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Dave Kimura&lt;/li&gt;
+	&lt;li&gt;John Epperson&lt;/li&gt;
+	&lt;li&gt;Luke Stutters&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Guest&lt;/h3&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Hilary Stohs-Krause&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Sponsors&lt;/h3&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="http://www.audibletrack.com/click.track?CID=102175&amp;amp;AFID=475401&amp;amp;ADID=454213&amp;amp;SID=%27%3E%3Cimg"&gt;Audible.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Links&lt;/h3&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy"&gt;Cognitive behavioral therapy&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Win%E2%80%93stay,_lose%E2%80%93switch"&gt;Win–stay, lose–switch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Picks&lt;/h3&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;John - &lt;a href="https://www.imdb.com/title/tt0106145/"&gt;Star Trek: Deep Space Nine&lt;/a&gt;
+&lt;/li&gt;
+	&lt;li&gt;John- AppleCare Service&lt;/li&gt;
+	&lt;li&gt;John -&lt;a href="https://bitwarden.com/"&gt;Bitwarden&lt;/a&gt;
+&lt;/li&gt;
+	&lt;li&gt;Luke - &lt;a href="https://en.wikipedia.org/wiki/Star_Trek:_Picard"&gt;&lt;em&gt;Star Trek: Picard&lt;/em&gt;&lt;/a&gt;
+&lt;/li&gt;
+	&lt;li&gt;Luke- &lt;a href="https://www.youtube.com/watch?v=atr9l6UpdFY"&gt;CAT GAMES - STRING STRING THING (FOR CATS ONLY)&lt;/a&gt;
+&lt;/li&gt;
+	&lt;li&gt;Dave - &lt;a href="https://homebridge.io/"&gt;Homebridge&lt;/a&gt;
+&lt;/li&gt;
+	&lt;li&gt;Dave- &lt;a href="https://www.railsstore.com"&gt;Rails Store&lt;/a&gt;
+&lt;/li&gt;
+	&lt;li&gt;Hilary -&lt;a href="https://github.com/stefankroes/ancestry"&gt;GitHub&lt;/a&gt;
+&lt;/li&gt;
+	&lt;li&gt;Hillary- &lt;a href="https://en.wikipedia.org/wiki/Star_Trek:_The_Next_Generation"&gt;&lt;em&gt;Star Trek: The Next Generation&lt;/em&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+</description>
+      <pubDate>Wed, 23 Dec 2020 11:00:00 -0000</pubDate>
+      <guid isPermaLink="false">ce5b9bab-d0b4-4dc6-b218-cfaf9bfdda39</guid>
+      <link>https://devchat.tv/ruby-rogues/ruby-481-hilary-stohs-krause/</link>
+    </item>
+    <item>
+      <title>214: The Righteous Mind with Rylan Bowers</title>
+      <source url="https://www.greaterthancode.com">Greater Than Code</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.greaterthancode.com"&gt;Greater Than Code&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;01:26 - Rylan’s Superpower: Helping People &amp;amp; Giving Back to Community&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;“The rising tide lifts all boats.”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;03:01 - &lt;a href="https://en.wikipedia.org/wiki/The_Righteous_Mind"&gt;The Righteous Mind&lt;/a&gt; / Making and Rationalizing Choices&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Jonathan_Haidt"&gt;Jonathan Haidt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Moral_psychology"&gt;Moral Psychology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://en.wikipedia.org/wiki/The_Happiness_Hypothesis"&gt;The Happiness Hypothesis&lt;/a&gt; (The Elephant Metaphor)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://en.wikipedia.org/wiki/Social_intuitionism"&gt;Social Intuitionism&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;09:11 - An Example of a Moral Reaction &lt;strong&gt;(CW Beastiality)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;10:26 - Humans as Individuals vs Humans as Species / Increasing Group-Level Cohesion&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Homo_duplex#:%7E:text=Homo%20duplex%20is%20a%20view,other%20elements%20generated%20by%20society."&gt;Homo Duplex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://courses.lumenlearning.com/boundless-management/chapter/types-of-leaders/#:%7E:text=Transactional%20leadership%20works%20within%20set,and%20is%20more%20future%2Doriented.&amp;amp;text=Transformational%20leadership%20focuses%20on%20motivating,a%20vision%20of%20the%20future."&gt;Transactional Leadership vs Transformational Leadership&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.tgroups.org"&gt;T-Groups: Resources for Interpersonal Skill Development&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;19:43 - Bridging the Gap Politically&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Thinking Empathatically &lt;/li&gt;
+&lt;li&gt;“Addressing the Elephant”&lt;/li&gt;
+&lt;li&gt;CivilPolitics.org: Educating the Public on…&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Wed, 23 Dec 2020 10:00:00 -0000</pubDate>
+      <guid isPermaLink="false">b93fe584-9105-48a5-904c-af2b856f75ff</guid>
+      <link>https://www.greaterthancode.com/the-righteous-mind</link>
+    </item>
+    <item>
+      <title>Hotwire</title>
+      <source url="https://www.driftingruby.com">Drifting Ruby Screencasts</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.driftingruby.com"&gt;Drifting Ruby Screencasts&lt;/a&gt;.&lt;/p&gt;Hotwire is the newest magic which takes a different approach to  building modern web applications without using much JavaScript.</description>
+      <pubDate>Wed, 23 Dec 2020 07:21:11 -0000</pubDate>
+      <guid isPermaLink="false">tag:www.driftingruby.com,2005:Episode/280</guid>
+      <link>https://www.driftingruby.com/episodes/hotwire</link>
+    </item>
+    <item>
+      <title>Live Recording: Hotwire Release Day</title>
+      <source url="https://remoteruby.transistor.fm">Remote Ruby</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://remoteruby.transistor.fm"&gt;Remote Ruby&lt;/a&gt;.&lt;/p&gt;
+        &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://hotwire.dev"&gt;Hotwire&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=-SVv7KRWcAc&amp;amp;feature=youtu.be"&gt;The live stream&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+      </description>
+      <pubDate>Tue, 22 Dec 2020 23:11:35 -0000</pubDate>
+      <guid isPermaLink="false">77be76d1-04f3-4f97-9dff-74be4a8f16f0</guid>
+      <link>https://share.transistor.fm/s/881772b9</link>
+    </item>
+    <item>
+      <title>An Introduction to Go Tooling</title>
+      <source url="https://www.honeybadger.io/blog">Honeybadger Developer Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.honeybadger.io/blog"&gt;Honeybadger Developer Blog&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;An overview of Go tooling&lt;/h3&gt;
+
+&lt;p&gt;Tooling is generally considered one of the stronger aspects of the Go
+ecosystem. The &lt;code&gt;go&lt;/code&gt; command is the gateway to many of the tools that will be
+discussed in this post.&lt;/p&gt;
+
+&lt;p&gt;By learning about each of the tools discussed here, you'll become much more
+efficient when working on Go projects and perform common tasks quickly and
+reliably.&lt;/p&gt;
+
+&lt;h4&gt;Viewing environmental variables&lt;/h4&gt;
+
+&lt;p&gt;The &lt;code&gt;go env&lt;/code&gt; command is used to display information about the current Go environment.
+Here's a sample of what this command outputs:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight go"&gt;&lt;code&gt;&lt;span class="n"&gt;GO111MODULE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"on"&lt;/span&gt;
+&lt;span class="n"&gt;GOARCH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"amd64"&lt;/span&gt;
+&lt;span class="n"&gt;GOBIN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"/home/ayo/go/bin"&lt;/span&gt;
+&lt;span class="n"&gt;GOCACHE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"/home/ayo/.cache/go-build"&lt;/span&gt;
+&lt;span class="n"&gt;GOENV&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"/home/ayo/.config/go/env"&lt;/span&gt;
+&lt;span class="n"&gt;GOEXE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;""&lt;/span&gt;
+&lt;span class="n"&gt;GOFLAGS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;""&lt;/span&gt;
+&lt;span class="n"&gt;GOHOSTARCH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"amd64"&lt;/span&gt;
+&lt;span class="n"&gt;GOHOSTOS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"li…&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <pubDate>Tue, 22 Dec 2020 22:21:44 -0000</pubDate>
+      <guid isPermaLink="true">https://www.honeybadger.io/blog/ruby-to-go-5/</guid>
+      <link>https://www.honeybadger.io/blog/ruby-to-go-5/</link>
+    </item>
+    <item>
+      <title>3.2.3 Released</title>
+      <source url="http://blog.rubygems.org/">RubyGems Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://blog.rubygems.org/"&gt;RubyGems Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;RubyGems 3.2.3 fixes a long standing bug in the gem client.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class="language-plaintext highlighter-rouge"&gt;gem install&lt;/code&gt; now doesn’t try to forcefully install the latest version of the
+target gem if the current ruby or rubygems version doesn’t meet its
+&lt;code class="language-plaintext highlighter-rouge"&gt;required_ruby_version&lt;/code&gt; or &lt;code class="language-plaintext highlighter-rouge"&gt;required_rubygems_version&lt;/code&gt; requirements,
+respectively. Instead, it will try to install the newest version that supports
+those.&lt;/p&gt;
+
+&lt;p&gt;As a result, running &lt;code class="language-plaintext highlighter-rouge"&gt;gem install rails&lt;/code&gt; on ruby 2.4 now installs rails 5.2.4.4,
+the latest rails that supports ruby 2.4, instead of raising an error.&lt;/p&gt;
+
+&lt;p&gt;You may have needed to update your workflows running old rubies with something
+like the following to workaround this issue:&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;gem install bundler -v '~&amp;gt; 1.17'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Indeed, when we dropped support…&lt;/p&gt;</description>
+      <pubDate>Tue, 22 Dec 2020 20:20:53 -0000</pubDate>
+      <guid isPermaLink="true">http://blog.rubygems.org/2020/12/22/3.2.3-released</guid>
+      <link>http://blog.rubygems.org/2020/12/22/3.2.3-released.html</link>
+    </item>
+    <item>
+      <title>Day 22 - active_record-events Gem - Complete? Record Your Own Timestamps in Active Record Models with has_event Macro, Automagically</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Bartosz Pieńkowski
+
+Timestamping in Active Record models
+
+Recording a timestamp in order to mark that an event occurred to an object is a common practice when dealing with Active Record models.
+Active Record itself gives us a good example of such an approach.
+It automatically stores the time when a record was created or updated in the created_at and updated_at fields.
+
+Similarly, we can create custom timestamp fields by adding datetime columns in the database.
+Yet in order to conveniently manage such fields, we would need to accompany each of them with a bunch of methods in the model class.
+The more timestamp fields we want to manage, the more methods we need.
+As a result, the…</description>
+      <pubDate>Tue, 22 Dec 2020 09:21:54 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/22-active-record-events</guid>
+      <link>http://planetruby.github.io/gems/2020/22-active-record-events</link>
+    </item>
+    <item>
+      <title>273: Revisiting 2019, A Top 10 Review</title>
+      <source url="https://www.bikeshed.fm">The Bike Shed</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.bikeshed.fm"&gt;The Bike Shed&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;On this week's episode, Steph and Chris begin wrapping up 2020 with a review of their 2019 top 10 list. They share what's changed, what's stayed the same, and what they'd like to see more of in the coming year.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;This episode is brought to you by:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://scoutapm.com/bikeshed"&gt;ScoutAPM&lt;/a&gt; - Give Scout a try for free today and Scout will donate $5 to the open source project of your choice when you deploy&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://Indeed.com/bikeshed"&gt;Indeed&lt;/a&gt; - Click through and get started with a free seventy five dollar credit for your first job post&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.bikeshed.fm/226"&gt;Last year's top 10 countdown list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ergodox-ez.com/"&gt;ErgoDox EZ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mechanicalkeyboards.com/shop/index.php?c=171&amp;amp;l=product_list"&gt;Leopold FC750&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://shop.keyboard.io/products/keyboardio-atreus"&gt;Keybordio Atreus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://prettier.io/"&gt;Prettier&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/prettier/plugin-ruby"&gt;Prettier Ruby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://elm-lang.org/"&gt;Elm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=hHzWG1FltaE"&gt;Code Hospitality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://testing-library.com/"&gt;Testing Library&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Become a &lt;a href="https://thoughtbot.com/sponsorship"&gt;Sponsor&lt;/a&gt; of The Bike Shed!&lt;/p&gt;&lt;p&gt;Sponsored By:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;
+&lt;a href="https://Indeed.com/bikeshed"&gt;Indeed&lt;/a&gt;: &lt;a href="https://Indeed.com/bikeshed"&gt;Click through…&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 22 Dec 2020 05:15:00 -0000</pubDate>
+      <guid isPermaLink="false">b0532a90-ffa6-476f-92aa-e724f6c55043</guid>
+      <link>https://www.bikeshed.fm/273</link>
+    </item>
+    <item>
+      <title>When Giants Clash: Kubernetes vs Docker Swarm</title>
+      <source url="https://blog.engineyard.com">Engine Yard Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://blog.engineyard.com"&gt;Engine Yard Blog&lt;/a&gt;.&lt;/p&gt;&lt;div class="hs-featured-image-wrapper"&gt; 
+ &lt;a href="https://blog.engineyard.com/when-giants-clash-kubernetes-vs-docker-swarm" title="" class="hs-featured-image-link"&gt; &lt;img src="https://blog.engineyard.com/hubfs/DNN-LMS-1.png" alt="docker swarm, kubernetes" class="hs-featured-image"&gt; &lt;/a&gt; 
+&lt;/div&gt;    
+&lt;p&gt;According to a 2020 report from &lt;a href="https://www.datadoghq.com/container-report/"&gt;&lt;span&gt;DataDog&lt;/span&gt;&lt;/a&gt;, nearly 90% of containers are run using container orchestration tools. What’s more interesting is that in 2018, only 50% of Docker environments were orchestrated.&lt;/p&gt;    
+&lt;img src="https://track.hubspot.com/__ptq.gif?a=4572587&amp;amp;k=14&amp;amp;r=https%3A%2F%2Fblog.engineyard.com%2Fwhen-giants-clash-kubernetes-vs-docker-swarm&amp;amp;bu=https%253A%252F%252Fblog.engineyard.com&amp;amp;bvt=rss" alt=""&gt;</description>
+      <pubDate>Tue, 22 Dec 2020 04:25:27 -0000</pubDate>
+      <guid isPermaLink="true">https://blog.engineyard.com/when-giants-clash-kubernetes-vs-docker-swarm</guid>
+      <link>https://blog.engineyard.com/when-giants-clash-kubernetes-vs-docker-swarm</link>
+    </item>
+    <item>
+      <title>Day 21 - addressable Gem - The Uniform Resource Identifier (URI) Class that Should be Standard (Incl. Templates 'n' More)</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Bradley Schaefer
+
+Engineering Manager at Stitch Fix, a dad, a son, a brother, a long-time Ruby programmer, and Team Oxford Comma. Blogs at Soulcutter.
+
+What is Addressable?
+
+Addressable is an implementation of Uniform Resource Identifiers (URIs), including a parser, an object representing a URI, and URI Templates (RFC 6570). This gem has quietly become the 25th most-downloaded ruby gem as-of the writing of this article, with over 283 million downloads. Nevertheless many experienced Rubyists aren’t familiar with this library - it’s a true hidden gem.
+
+How is it so popular without people knowing about it?
+
+What makes addressable popular is that it’s a low-level library that is a…</description>
+      <pubDate>Mon, 21 Dec 2020 18:22:12 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/21-addressable</guid>
+      <link>http://planetruby.github.io/gems/2020/21-addressable</link>
+    </item>
+    <item>
+      <title>Rails: Easy Sitemaps</title>
+      <source url="https://www.johnnunemaker.com/">John Nunemaker</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.johnnunemaker.com/"&gt;John Nunemaker&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;A simple way to improve your SEO is letting google know what is available. Sure they crawl you automatically, but nothing is perfect. The easiest way to give them the info they need is to create sitemaps and submit them to &lt;a href="http://search.google.com/search-console"&gt;Google's Search Console&lt;/a&gt; tool. &lt;/p&gt;&lt;p&gt;The most simple way to start with sitemaps in rails is to create a sitemaps controller. To begin, it'll have two actions, but it can easily grow over time if necessary. &lt;/p&gt;&lt;pre&gt;&lt;code class="language-ruby"&gt;class SitemapsController &amp;lt; ApplicationController
+  def index
+    respond_to do |format|
+      format.xml
+    end
+  end
+
+  def pages
+    respond_to do |format|
+      format.xml
+    end
+  end
+end
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;Note&lt;/strong&gt;: Make sure that if you require authentication in ApplicationController, you…&lt;/blockquote&gt;</description>
+      <pubDate>Mon, 21 Dec 2020 18:09:00 -0000</pubDate>
+      <guid isPermaLink="false">5fe0dc865afe79003938d9bc</guid>
+      <link>https://www.johnnunemaker.com/rails-easy-sitemaps/</link>
+    </item>
+    <item>
+      <title>Adding Multifactor Authentication in Rails 6 with Rodauth</title>
+      <source url="https://janko.io/">Janko’s Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://janko.io/"&gt;Janko’s Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Multi-factor authentication or MFA (generalized two-factor authentication or
+2FA) is a method of authentication where the user is required to provide two or
+more pieces of evidence (“factors”) in order to be granted access. Typically
+the user would first prove knowledge of something only they &lt;em&gt;know&lt;/em&gt; (e.g. their
+password), and then prove posession of something only they &lt;em&gt;own&lt;/em&gt; (e.g. another
+device). This provides an extra layer of security for the user’s account.&lt;/p&gt;
+
+&lt;p&gt;Most common multifactor authentication methods include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;TOTP&lt;/strong&gt; (Time-based One-Time Passwords) – user has an app installed on
+their device that displays the authentication code, which is refreshed every
+30 seconds&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;SMS…&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Mon, 21 Dec 2020 15:20:56 -0000</pubDate>
+      <guid isPermaLink="true">https://janko.io/adding-multifactor-authentication-in-rails-with-rodauth</guid>
+      <link>https://janko.io/adding-multifactor-authentication-in-rails-with-rodauth/</link>
+    </item>
+    <item>
+      <title>Day 21 - super_diff Gem - A More Helpful Way to View Differences Between Complex Data Structures in Test Spec(ification)s</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Elliot Winkler
+
+A foodie, music nerd, aspiring polyglot, computer whisperer and full-stack web developer with years of experience at product companies and consultancies emphasizing in Ruby on Rails. Works with talented folks at Tuft &amp;amp; Needle selling great products for helping you sleep at night. Loves to learn new things and has a few different side projects going on at any given time.
+
+What is Super Diff?
+
+Super Diff is a library that plugs into RSpec in order to give you more meaningful output when an expectation fails by providing a diff of the expected and actual data that is more complete than the one provided by RSpec.
+
+What’s the problem?
+
+Say we’re building a Ruby class…</description>
+      <pubDate>Mon, 21 Dec 2020 11:22:55 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/21-super_diff</guid>
+      <link>http://planetruby.github.io/gems/2020/21-super_diff</link>
+    </item>
+    <item>
+      <title>Ruby 3.0.0 RC1 Released</title>
+      <source url="https://www.ruby-lang.org/en/feeds/news.rss">Ruby News</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.ruby-lang.org/en/feeds/news.rss"&gt;Ruby News&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;We are pleased to announce the release of Ruby 3.0.0-rc1.&lt;/p&gt;
+
+&lt;p&gt;It introduces a number of new features and performance improvements.&lt;/p&gt;
+
+&lt;h3&gt;Static Analysis&lt;/h3&gt;
+
+&lt;h4&gt;RBS&lt;/h4&gt;
+
+&lt;p&gt;RBS is a language to describe the types of Ruby programs.&lt;/p&gt;
+
+&lt;p&gt;Type checkers including TypeProf and other tools supporting RBS will understand Ruby programs much better with RBS definitions.&lt;/p&gt;
+
+&lt;p&gt;You can write down the definition of classes and modules: methods defined in the class, instance variables and their types, and inheritance/mix-in relations.&lt;/p&gt;
+
+&lt;p&gt;The goal of RBS is to support commonly seen patterns in Ruby programs and it allows writing advanced types including union types, method overloading, and generics. It also supports duck typing with &lt;em&gt;int…&lt;/em&gt;&lt;/p&gt;</description>
+      <pubDate>Sun, 20 Dec 2020 16:20:58 -0000</pubDate>
+      <guid isPermaLink="true">https://www.ruby-lang.org/en/news/2020/12/20/ruby-3-0-0-rc1-released/</guid>
+      <link>https://www.ruby-lang.org/en/news/2020/12/20/ruby-3-0-0-rc1-released/</link>
+    </item>
+    <item>
+      <title>This week in Rails: benchmark anywhere, bugfixes and more!</title>
+      <source url="https://weblog.rubyonrails.org/">Riding Rails</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://weblog.rubyonrails.org/"&gt;Riding Rails&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Hi there, it is &lt;a href="https://twitter.com/gregmolnar"&gt;Greg&lt;/a&gt;, bringing you the latest news about Rails!&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href="https://weblog.rubyonrails.org/2020/12/9/Rails-6-1-0-release/"&gt;Rails 6.1 released! Horizontal Sharding, Multi-DB Improvements, Strict Loading, Destroy Associations in Background, Error Objects, and more!&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Rails 6.1 has been released and wow does it have a lot of great stuff! The changes include improvements to multiple databases, adding support for destroying associations in jobs instead of in-memory, turning errors into objects, and so much more.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href="https://github.com/rails/rails/pull/40734"&gt;Add benchmark method that can be called from anywhere&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;This PR includes the existing &lt;em&gt;ActiveSupport::Benchmarkable&lt;/em&gt; into the &lt;em&gt;Rails&lt;/em&gt; module, to make it accessible from anywhere (background jobs etc).&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href="https://github.com/rails/rails/pull/38452"&gt;Add config.action_view.image_loading&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Browser…&lt;/p&gt;</description>
+      <pubDate>Sun, 20 Dec 2020 13:20:37 -0000</pubDate>
+      <guid isPermaLink="true">https://weblog.rubyonrails.org/2020/12/20/this-week-in-rails-rails-6-1-benchmark-anywhere-bugfixes-and-more</guid>
+      <link>https://weblog.rubyonrails.org/2020/12/20/this-week-in-rails-rails-6-1-benchmark-anywhere-bugfixes-and-more/</link>
+    </item>
+    <item>
+      <title>Kafka for Rubyists Mini Course</title>
+      <source url="https://karolgalanciak.com/">Karol Galanciak - Distributed Systems Architect and Ruby on Rails expert</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://karolgalanciak.com/"&gt;Karol Galanciak - Distributed Systems Architect and Ruby on Rails expert&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;I’ve been recently planning to record a couple of tutorials for my team in &lt;a href="https://www.bookingsync.com"&gt;BookingSync&lt;/a&gt;, focusing mostly on monitoring and some other more advanced aspects of &lt;strong&gt;Kafka&lt;/strong&gt; and &lt;strong&gt;Karafka&lt;/strong&gt;. But if I was already recording something, then why not make it available publicly so that more developers could benefit from it?  So, in the end, I decided to make a bit more effort and recorded this &lt;strong&gt;mini-course&lt;/strong&gt;, which will be available for everyone, for free ;).&lt;/p&gt;
+
+
+
+&lt;p&gt;This course consists of 5 blocks (including intro):&lt;/p&gt;
+
+&lt;h3&gt;0. Intro to course&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=OK8k-krza0Y"&gt;Intro&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;1. Fundamentals&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1.1 Intro to Kafka
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=kuNKQgWdl8g"&gt;Video&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://speakerdeck.com/azdaroth/kafka-for-rubyists-intro-to-kafka"&gt;Slides&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;1.2. Modelling topics and publishing messages
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=e1g8D7wAIA8"&gt;Video&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://speakerdeck.com/azdaroth/kafka-for-rubyists-topics-and-publishing-messages"&gt;Slides&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;1.3.…&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Sun, 20 Dec 2020 11:21:43 -0000</pubDate>
+      <guid isPermaLink="true">https://karolgalanciak.com/blog/2020/12/20/kafka-for-rubyists-mini-course</guid>
+      <link>https://karolgalanciak.com/blog/2020/12/20/kafka-for-rubyists-mini-course/</link>
+    </item>
+    <item>
+      <title>Kafka for Rubyists Mini Course: Fundamentals</title>
+      <source url="https://karolgalanciak.com/">Karol Galanciak - Distributed Systems Architect and Ruby on Rails expert</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://karolgalanciak.com/"&gt;Karol Galanciak - Distributed Systems Architect and Ruby on Rails expert&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This is the first part of the Kafka For Rubyists mini course. If you are interested in other parts of the course, please check them out &lt;a href="https://karolgalanciak.com/blog/2020/12/20/kafka-for-rubyists-mini-course/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h3&gt;1. Fundamentals&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1.1 Intro to Kafka
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=kuNKQgWdl8g"&gt;Video&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://speakerdeck.com/azdaroth/kafka-for-rubyists-intro-to-kafka"&gt;Slides&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;1.2. Modelling topics and publishing messages
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=e1g8D7wAIA8"&gt;Video&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://speakerdeck.com/azdaroth/kafka-for-rubyists-topics-and-publishing-messages"&gt;Slides&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;1.3. Karafka in practice:
+    &lt;ul&gt;
+      &lt;li&gt;1.3.1 Producers
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=YCpr-AQlK2I"&gt;Video&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;1.3.2 Consumers
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=ZQ2ls3f_h8k"&gt;Video&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;1.4. Monitoring
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=wpRIpuG8EF4"&gt;Video&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://speakerdeck.com/azdaroth/kafka-for-rubyists-monitoring"&gt;Slides&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Sun, 20 Dec 2020 11:21:43 -0000</pubDate>
+      <guid isPermaLink="true">https://karolgalanciak.com/blog/2020/12/20/kafka-for-rubyists-mini-course-fundamentals</guid>
+      <link>https://karolgalanciak.com/blog/2020/12/20/kafka-for-rubyists-mini-course-fundamentals/</link>
+    </item>
+    <item>
+      <title>Day 20 - lhs and lhc Gems - Easy Active Record-Like Interfaces for Accessing HTTP JSON APIs - Smarter Higher-Level HTTP Service and Lower-Level HTTP Client</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Marco Roth
+
+Full-Stack Web-Developer based in Basel, Switzerland. Building stuff with Ruby, Rails, Stimulus and JavaScript. StimulusReflex core team member.
+
+Introduction
+
+I love Ruby and I think Ruby solved a lot of things elegantly with a ton of features directly built into the standard library. HTTP requests in Ruby with net/http are the only thing that never really clicked for me. In fact net/http has been there forever, but im my experience it never was a blast to work with.
+
+In 2019 I attended a local Ruby Meetup and heard a talk by
+ Sebastian Pape
+about “Smart HTTP Clients”. In that talk Sebastian talked about how they were building HTTP Clients at localsearch.ch and how…</description>
+      <pubDate>Sun, 20 Dec 2020 10:22:21 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/20-lhs-lhc</guid>
+      <link>http://planetruby.github.io/gems/2020/20-lhs-lhc</link>
+    </item>
+    <item>
+      <title>LAZYSODIUM-JAVA: CRYPTOGRAPHY MADE EASY IN JAVA</title>
+      <source url="https://blog.joshsoftware.com">Josh Software</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://blog.joshsoftware.com"&gt;Josh Software&lt;/a&gt;.&lt;/p&gt;Whenever I used to hear about cryptography, I used to feel that something is really difficult to implement. I would need to learn a lot of things to work on it. But, when I came across lazysodium-java library, I found it easy to implement it in java. What is lazysodium-java? Lazysodium-java is library that is built … &lt;a href="https://blog.joshsoftware.com/2020/12/20/lazysodium-java-cryptography-made-easy-in-java/" class="more-link"&gt;Continue reading &lt;span class="screen-reader-text"&gt;LAZYSODIUM-JAVA: CRYPTOGRAPHY MADE EASY IN JAVA&lt;/span&gt;&lt;/a&gt;</description>
+      <pubDate>Sun, 20 Dec 2020 09:50:03 -0000</pubDate>
+      <guid isPermaLink="true">http://blog.joshsoftware.com/?p=6499</guid>
+      <link>https://blog.joshsoftware.com/2020/12/20/lazysodium-java-cryptography-made-easy-in-java/</link>
+    </item>
+    <item>
+      <title>Day 19 - quik Gem - Quick Starter Template Script Wizard - The Missing Code Generator and Project Scaffolder for Gems, Sinatra, Jekyll 'n' More</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Gerald Bauer
+
+Let’s start with a quiz:
+
+Q: How do you get started with creating a new gem?
+
+
+  (A) From zero / scratch ;-)
+  (B) Using bundler with $ bundle gem
+  (C) Using quik with $ quik new gem
+  (D) Using hoe with $ sow (incl. with hoe rake tasks gem)
+  (E) Other (Please Tell).
+
+
+Q: How do you get started with creating a new sinatra app or service?
+
+
+  (A) From zero / scratch ;-)
+  (B) Using padrino with $ padrino g project
+  (C) Using quik with $ quik new sinatra
+  (D) Other (Please Tell).
+
+
+Q: How do you get started with creating a new jekyll theme?
+
+
+  (A) From zero / scratch ;-)
+  (B) Using jekyll with $ jekyll new-theme
+  (C) Using quik with $ quik new jekyll
+  (D)…</description>
+      <pubDate>Sat, 19 Dec 2020 17:21:25 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/19-quik</guid>
+      <link>http://planetruby.github.io/gems/2020/19-quik</link>
+    </item>
+    <item>
+      <title>Andrew's Haml/ERB trailer, TailwindCSS 2.0, and instant Browser Notifcations with CableReady</title>
+      <source url="https://remoteruby.transistor.fm">Remote Ruby</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://remoteruby.transistor.fm"&gt;Remote Ruby&lt;/a&gt;.&lt;/p&gt;
+        [00:00:39] Jason starts off by talking about a Rails app he went back to that he built and hasn’t touched since March. &lt;br&gt;[00:02:05] Jason upgraded Ruby in Rails and then started the Tailwind 2.0 update and was surprised at how easy it was for “most” things. Chris talked about his moment when he upgraded Jumpstart Pro. [00:04:27] Chris mentions patching Webpacker to fix the Webpack DevServer changes and it was not his favorite upgrade. Andrew shares some info about Webpack and why it may not have been working for Chris.  [00:08:44] Chris tells us a fun fact about Rails Webpacker’s master version. Jason tells us an issue he ran into with his app to get PurgeCSS working with…</description>
+      <pubDate>Fri, 18 Dec 2020 13:00:00 -0000</pubDate>
+      <guid isPermaLink="false">9e8ef99f-5247-4b54-b30f-f937170a64fd</guid>
+      <link>https://share.transistor.fm/s/e572fc57</link>
+    </item>
+    <item>
+      <title>Rails 6.1 adds where.associated to check association presence</title>
+      <source url="https://www.bigbinary.com/">BigBinary Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.bigbinary.com/"&gt;BigBinary Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Rails 6.1 simplifies how to check whether an association exists by adding a new &lt;code&gt;associated&lt;/code&gt; method.&lt;/p&gt;&lt;p&gt;Let's see an example of it.&lt;/p&gt;&lt;pre&gt;&lt;code class="language-ruby"&gt;class Account &amp;lt; ApplicationRecord  has_many :users, -&amp;gt; { joins(:contact).where.not(contact_id: nil) }end&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will return all users with contacts.If we rephrase that sentence then we can say that "this will return all users who are associated with contacts".&lt;/p&gt;&lt;p&gt;Let's see how we can do the same with the new &lt;code&gt;associated&lt;/code&gt; method.&lt;/p&gt;&lt;pre&gt;&lt;code class="language-ruby"&gt;class Account &amp;lt; ApplicationRecord  has_many :users, -&amp;gt; { where.associated(:contact) }end&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now we can see that the usage of &lt;code&gt;associated&lt;/code&gt; decreases some of the  syntactic noise we saw in the first example. This method is essentially a syntactic sugar over the …&lt;/p&gt;</description>
+      <pubDate>Fri, 18 Dec 2020 11:20:36 -0000</pubDate>
+      <guid isPermaLink="true">https://www.bigbinary.com/blog/rails-6-1-adds-where-associated-to-check-association-presence</guid>
+      <link>https://www.bigbinary.com/blog/rails-6-1-adds-where-associated-to-check-association-presence</link>
+    </item>
+    <item>
+      <title>Day 18 - henkei Gem - Read Text and Meta Data from Word, PowerPoint, and PDF Files</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Matt Swanson
+
+Contrarian-in-training. Building products. Karl Pilkington is my spirit animal. Hacking on Boring Rails.
+
+Searching within uploaded files
+
+If you’ve ever built an application that involved file uploads, inevitably you will receive a request to be able to search through those files.
+
+While there are plenty of articles and tools for implementing full-text search with Ruby, nearly all of these examples are for searching your database records. But what if you need to search the contents of a PDF? Or a Microsoft Word document? Or even a PowerPoint presentation? Sounds like a nightmare.
+
+The basic strategy for this problem is to extract as much textual content from the…</description>
+      <pubDate>Fri, 18 Dec 2020 10:22:22 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/18-henkei</guid>
+      <link>http://planetruby.github.io/gems/2020/18-henkei</link>
+    </item>
+    <item>
+      <title>Day 18 - dentaku Gem - Parse and Evaluate Math (and Logical Formulas) with a Calculator in a Sandbox, Safely</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Jankees van Woezik
+
+A freelance full stack maker from the Netherlands with a love for building products. Co-founder of Stekker.app and Timi.app.
+
+Evaluate math and logical formulas
+
+This gem is not something you need for every project, but it’s a fun one.
+
+I’m building a Ruby on Rails app for Stekker.app. Creating invoices for charging sessions of electric vehicles is one of the things we do. Every customer can have a different contract and those contracts can have different pricing structures.
+
+For instance, this is one of our formulas:
+
+minutes * costPerMinute + kwhVolume * costPerKwh
+
+
+You probably wonder how that evaluates to a price for a charging session?
+
+Enter…</description>
+      <pubDate>Fri, 18 Dec 2020 09:22:57 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/18-dentaku</guid>
+      <link>http://planetruby.github.io/gems/2020/18-dentaku</link>
+    </item>
+    <item>
+      <title>How to run a PostgreSQL database in a Docker container</title>
+      <source url="https://www.codewithjason.com">Code with Jason</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.codewithjason.com"&gt;Code with Jason&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;Why you would want to do this&lt;/h3&gt;
+&lt;p&gt;There are two main reasons for Dockerizing an application: for production use and for development use.&lt;/p&gt;
+&lt;p&gt;When Dockerizing an application for development, sometimes you might want to package up every single thing in the development environment. For example, in a Rails app, you might want to run each of PostgreSQL, Redis, and Ruby/Rails inside containers.&lt;/p&gt;
+&lt;h4&gt;The drawbacks of Dockerizing everything&lt;/h4&gt;
+&lt;p&gt;But then again you might not want to do that. To continue with the Rails app example, it can be very slow to e.g. run your tests inside a Docker container every single time you want to run a test.&lt;/p&gt;
+&lt;p&gt;You may instead wish to run PostgreSQL and Redis inside containers but leave…&lt;/p&gt;</description>
+      <pubDate>Fri, 18 Dec 2020 02:39:26 -0000</pubDate>
+      <guid isPermaLink="true">http://www.codewithjason.com/?p=1487</guid>
+      <link>https://www.codewithjason.com/run-postgresql-database-docker-container/</link>
+    </item>
+    <item>
+      <title>November 2020 Monthly Update</title>
+      <source url="https://rubytogether.org/news">Ruby Together News</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://rubytogether.org/news"&gt;Ruby Together News&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hello! Welcome to the monthly update. During November, our work was supported by &lt;a href="https://www.zendesk.com"&gt;Zendesk&lt;/a&gt;, &lt;a href="http://multithreaded.stitchfix.com/"&gt;Stitch Fix&lt;/a&gt;, &lt;a href="https://www.digitalocean.com"&gt;DigitalOcean&lt;/a&gt;, and many others.&lt;/p&gt;
+
+&lt;h3&gt;ruby together news&lt;/h3&gt;
+
+&lt;p&gt;In November, Ruby Together was supported by 41 different companies, including Ruby member &lt;a href="https://zendesk.com"&gt;Zendesk&lt;/a&gt; and Sapphire member &lt;a href="https://stripe.com"&gt;Stripe&lt;/a&gt;. 1 company joined as a new member.&lt;/p&gt;
+
+&lt;p&gt;On top of those companies, Dan Milne signed up as a new developer member. In total, we were supported by 102 developer members. Thanks to all of our members for making everything that we do possible. &amp;lt;3&lt;/p&gt;
+
+&lt;h3&gt;rubygems &amp;amp; bundler news&lt;/h3&gt;
+
+&lt;p&gt;In November, we worked on the &lt;a href="https://github.com/rubygems/rfcs/pull/29"&gt;Bundler Version Locking RFC&lt;/a&gt; that allows a user to specify a required Bundler version in the Gemfile/gemspec with a working &lt;a href="https://github.com/rubygems/rfcs/pull/29#issuecomment-731333194"&gt;p…&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 17 Dec 2020 22:24:19 -0000</pubDate>
+      <guid isPermaLink="false">73</guid>
+      <link>https://rubytogether.org/news/2020/12/november-2020-monthly-update</link>
+    </item>
+    <item>
+      <title>💎 Issue 239 - Prettier for Ruby v1.0 now released</title>
+      <source url="https://ruby.libhunt.com/newsletter">Awesome Ruby Newsletter</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://ruby.libhunt.com/newsletter"&gt;Awesome Ruby Newsletter&lt;/a&gt;.&lt;/p&gt;</description>
+      <pubDate>Thu, 17 Dec 2020 21:42:00 -0000</pubDate>
+      <guid isPermaLink="true">https://ruby.libhunt.com/newsletter/239</guid>
+      <link>https://ruby.libhunt.com/newsletter/239</link>
+    </item>
+    <item>
+      <title>3.2.2 Released</title>
+      <source url="http://blog.rubygems.org/">RubyGems Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://blog.rubygems.org/"&gt;RubyGems Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;RubyGems 3.2.2 includes bug fixes and enhancements.&lt;/p&gt;
+
+&lt;p&gt;To update to the latest RubyGems you can run:&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;gem update --system
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you need to upgrade or downgrade please follow the &lt;a href="http://docs.seattlerb.org/rubygems/UPGRADING_rdoc.html"&gt;how to upgrade/downgrade
+RubyGems&lt;/a&gt; instructions.  To install RubyGems by hand see the
+&lt;a href="https://rubygems.org/pages/download"&gt;Download RubyGems&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Bug fixes:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fix issue where CLI commands making more than one request to
+rubygems.org needing an OTP code would crash or ask for the code twice.
+Pull request #4162 by sonalkr132&lt;/li&gt;
+  &lt;li&gt;Fix building rake extensions that require openssl. Pull request #4165 by
+deivid-rodriguez&lt;/li&gt;
+  &lt;li&gt;Fix &lt;code class="language-plaintext highlighter-rouge"&gt;gem update --system&lt;/code&gt; displaying too many changelog entries. Pull
+request #4145 by deivid-rodriguez&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;=== 3.2.1 / 2020-12-14&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Enhancemen…&lt;/em&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 17 Dec 2020 17:20:42 -0000</pubDate>
+      <guid isPermaLink="true">http://blog.rubygems.org/2020/12/17/3.2.2-released</guid>
+      <link>http://blog.rubygems.org/2020/12/17/3.2.2-released.html</link>
+    </item>
+    <item>
+      <title>A bumper roundup of 2020</title>
+      <source url="https://rubyweekly.com/">Ruby Weekly</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://rubyweekly.com/"&gt;Ruby Weekly&lt;/a&gt;.&lt;/p&gt;
+
+  
+
+    
+    
+    
+    
+    
+  
+
+
+
+
+
+  
+  &lt;div&gt;    
+    
+&lt;p&gt;#532 — December 17, 2020&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://rubyweekly.com/link/100483/rss"&gt;Read on the Web&lt;/a&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;🙂  For every other newsletters I write, this is the final week of the year, but with Ruby 3.0 being released this week, Ruby is a special exception! Watch out for a special bonus issue during the holidays ;-)&lt;/p&gt;
+      &lt;p&gt;This week, however, is a roundup of the most popular items of 2020 along with a feature and interview (don't miss it!) on using Ruby serverlessly on AWS Lambda.&lt;/p&gt;
+      
+      &lt;p&gt;Thanks for your continued support, and if you have anything suitable for the special Ruby 3.0 edition, reply and let me know!&lt;br&gt;__&lt;br&gt;&lt;em&gt;Peter Cooper, your editor&lt;/em&gt;&lt;/p&gt;
+
+    
+    &lt;p&gt;Ruby Weekly&lt;/p&gt;
+
+  &lt;img src="https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60/eetnm6nbflzry78xjodf.jpg"&gt;
+
+
+&lt;p&gt;The most visited&lt;br&gt;Ruby Weekly…&lt;/p&gt;
+&lt;/div&gt;</description>
+      <pubDate>Thu, 17 Dec 2020 15:20:36 -0000</pubDate>
+      <guid isPermaLink="true">https://rubyweekly.com/issues/532</guid>
+      <link>https://rubyweekly.com/issues/532</link>
+    </item>
+    <item>
+      <title>Dissecting Factory Bot’s factory definition syntax</title>
+      <source url="https://www.codewithjason.com">Code with Jason</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.codewithjason.com"&gt;Code with Jason&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;Mysterious syntax&lt;/h3&gt;
+&lt;p&gt;If you’ve used Factory Bot at all, you’ve seen syntax like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-ruby"&gt;FactoryBot.define do
+  factory :user do
+    first_name { 'John' }
+    last_name { 'Smith' }
+    email { 'john.smith@example.com' }
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When I was first getting started with Rails and I wasn’t very familiar with Ruby, I would look at these files and understand what’s going on conceptually but I would have no idea what’s going on &lt;i&gt;syntactically&lt;/i&gt;.&lt;/p&gt;
+&lt;h4&gt;Why I didn’t understand this code&lt;/h4&gt;
+&lt;p&gt;There were three barriers to my understanding at that early stage of my Ruby experience:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ruby’s &lt;b&gt;optional parentheses&lt;/b&gt; feature, although it can help code be very expressive, can also make it hard for beginners to tell what’s what.&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let’s look at a modified example that will make some…&lt;/p&gt;</description>
+      <pubDate>Thu, 17 Dec 2020 15:05:59 -0000</pubDate>
+      <guid isPermaLink="true">http://www.codewithjason.com/?p=1485</guid>
+      <link>https://www.codewithjason.com/dissecting-factory-bots-factory-definition-syntax/</link>
+    </item>
+    <item>
+      <title>Day 17 - any_login Gem - Speed Up Testing Allowing One-Click Turbologins® Without Passwords as Any User in the System. Switching User (Accounts) Made Easy (and Faster)</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Igor Kasyanchuk
+
+A web and mobile developer from the Ukraine at Rails Jazz. Maintains among other gems rails_db, log_analyzer, active_storage_validations.
+
+What’s any_login?
+
+The any_login gem is a favorite of our quality assurance (QA) team
+and I can’t imagine any project without it.
+
+any_login lets you quickly switch users (with one-click Turbologins® without passwords)
+and log in as any user in your app (in development mode).
+
+Installation
+
+If you’re using Devise (or other supported pre-configured
+auth libraries incl. Authlogic, Clearance or Sorcery that work out-of-the-box),
+for example,
+you can add the any_login gem, add the any_login_here helper to your page
+layout and…</description>
+      <pubDate>Thu, 17 Dec 2020 14:22:27 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/17-any_login</guid>
+      <link>http://planetruby.github.io/gems/2020/17-any_login</link>
+    </item>
+    <item>
+      <title>Load Test Your Rails Apps with Apache JMeter</title>
+      <source url="https://www.honeybadger.io/blog">Honeybadger Developer Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.honeybadger.io/blog"&gt;Honeybadger Developer Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Before we release our software to the end-users, we perform different kinds of tests to ensure that the application is bug-free and meets business requirements. Although we do a lot of testing, we cannot be sure the software is stable without users actually using it. After end-users start using the application, various things can cause the application to not behave as we expect, for some of the following reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User behavior can be unpredictable;&lt;/li&gt;
+&lt;li&gt;Users are distributed across different locations;&lt;/li&gt;
+&lt;li&gt;A large number of users could be using the application at the same time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For large-scale applications, these things are very crucial to know before a full-fledged release. To ensure that our…&lt;/p&gt;</description>
+      <pubDate>Wed, 16 Dec 2020 22:21:52 -0000</pubDate>
+      <guid isPermaLink="true">https://www.honeybadger.io/blog/rails-load-testing-jmeter/</guid>
+      <link>https://www.honeybadger.io/blog/rails-load-testing-jmeter/</link>
+    </item>
+    <item>
+      <title>Rails: insert_all and upsert_all</title>
+      <source url="https://www.johnnunemaker.com/">John Nunemaker</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.johnnunemaker.com/"&gt;John Nunemaker&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;I can't tell you how many times I've either dropped to &lt;a href="https://github.com/github/github-ds"&gt;GitHub::SQL&lt;/a&gt; or added some external gem to do bulk writes (&lt;a href="https://github.com/zdennis/activerecord-import"&gt;activerecord-import&lt;/a&gt; or &lt;a href="https://github.com/seamusabshere/upsert"&gt;upsert&lt;/a&gt;). Often we worry about N+1's and inefficient reads, but completely forget about writes. &lt;/p&gt;&lt;p&gt;Why do we forget about writes? I think the main reason is because writes are so rare in comparison to reads that our apps can usually get away with being inefficient in that area.&lt;/p&gt;&lt;h3&gt;Background&lt;/h3&gt;&lt;p&gt;I've been working on adding webhooks to &lt;a href="https://www.flippercloud.io"&gt;Flipper Cloud&lt;/a&gt; – effectively switching synchronization of Cloud and your app from &lt;strong&gt;pull&lt;/strong&gt; (poll for local sync) to &lt;strong&gt;push&lt;/strong&gt; (webhook for local sync).&lt;/p&gt;&lt;p&gt;Since &lt;a href="https://www.flippercloud.io"&gt;Cloud&lt;/a&gt; is making a request to your app anyway, the webhook response seemed like a good time…&lt;/p&gt;</description>
+      <pubDate>Wed, 16 Dec 2020 18:22:03 -0000</pubDate>
+      <guid isPermaLink="false">5fda2bf45afe79003938d7ec</guid>
+      <link>https://www.johnnunemaker.com/rails-insert_all-and-upsert_all/</link>
+    </item>
+    <item>
+      <title>349: From Air Traffic Controller to Tech Lead with John Cech</title>
+      <source url="http://5by5.tv/rubyonrails">Ruby on Rails Podcast</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://5by5.tv/rubyonrails"&gt;Ruby on Rails Podcast&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Based in Portland, Oregon, John Cech is a Senior Ruby Developer working at Planet Argon. John works on a wide-range of client projects as a Tech Lead and provides mentorship to interns and junior developers having started out there as a junior, himself.&lt;/p&gt;
+&lt;p&gt;Links for this episode:&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://www.planetargon.com" class="link"&gt;Planet Argon: Software Development with Ruby on Rails&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.planetargon.com/internship" class="link"&gt;Internship - Planet Argon&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://5by5.tv/rubyonrails/john@planetargon.com" class="link"&gt;Email John @ john@planetargon.com &lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://incompetech.com" class="link"&gt;Episode Music: "Funkorama" by Kevin MacLeod&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://twitter.com/sprngr_" class="link"&gt;Episode Introduction and Outro by Michael Springer&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Brought to you by:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Command Line Heroes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Command Line Heroes is a podcast that tells the epic true tales of developers, programmers, hackers, geeks, and open source rebels who are revolutionizing the technology…&lt;/p&gt;</description>
+      <pubDate>Wed, 16 Dec 2020 14:00:00 -0000</pubDate>
+      <guid isPermaLink="true">http://5by5.tv/rubyonrails/349</guid>
+      <link>http://5by5.tv/rubyonrails/349</link>
+    </item>
+    <item>
+      <title>Top 5 Ruby Blog Posts in 2020 from AppSignal</title>
+      <source url="https://blog.appsignal.com">Ruby Magic by AppSignal</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://blog.appsignal.com"&gt;Ruby Magic by AppSignal&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;There’s no doubt that 2020 is a year we’re all looking forward to leave behind. Let’s grab a stroopwafel and think a bit about nice things and the people who spent their time sharing their knowledge with you, even in a year like this.&lt;/p&gt;
+&lt;p&gt;For today’s post, we’ve compiled a Ruby list with top 5 posts that received the most attention from you. Let’s hit it off with &lt;a href="https://www.youtube.com/watch?v=cCqEyJc-wdk"&gt;some nice tunes in the background&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Top 5 Ruby Blog Posts in 2020 💎&lt;/h3&gt;
+
+&lt;h4&gt;&lt;a href="https://blog.appsignal.com/2020/06/17/using-service-objects-in-ruby-on-rails.html"&gt;Using Service Objects in Ruby on Rails&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;There’s a lot of functionality that your app needs to handle, but that logic doesn’t necessarily belong in the controller or even the model. Some examples include checking out with a cart, registering for the site, or starting a…&lt;/p&gt;</description>
+      <pubDate>Wed, 16 Dec 2020 12:20:51 -0000</pubDate>
+      <guid isPermaLink="false">/2020/12/16/top-5-ruby-posts-in-2020-from-appsignal.html</guid>
+      <link>https://blog.appsignal.com/2020/12/16/top-5-ruby-posts-in-2020-from-appsignal.html</link>
+    </item>
+    <item>
+      <title>Day 16 - bridgetown Gem - Build Websites (and Apps) the Classic (Static) Compiler Way - Use the Latest JavaScript (Yes, Webpack Out-of-the-Box) or CSS Packages - Fast and Secure By Default</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Pascal Wengerter
+
+A self-taught software developer, and digital all-rounder. Loves democracy ‘n’ open source software. Black lives matter supporter. Co-founded the open source startup Matestack. Working as a freelancer while looking for a role in (digital) product management.
+
+The motivation: Keeping Jekyll up-to-date in the modern web (and apps) world (built with the latest JavScript and CSS packages)
+
+When 
+Jared White (from Whitefusion)
+ figured that Jekyll, arguably the most popular and well-known (static) website generator in the Ruby community, continues to focus on maintaining extensive backwards-compatibility and will therefore not deliver the modern developer…</description>
+      <pubDate>Wed, 16 Dec 2020 11:21:42 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/16-bridgetown</guid>
+      <link>http://planetruby.github.io/gems/2020/16-bridgetown</link>
+    </item>
+    <item>
+      <title>213: This Is Me with Cher</title>
+      <source url="https://www.greaterthancode.com">Greater Than Code</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.greaterthancode.com"&gt;Greater Than Code&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;CONTENT WARNING: Eating Disorders, Substance Abuse &amp;amp; Addiction&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;01:12 - Cher’s Superpower: Making and Collecting Hot Sauce&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mayoclinic.org/diseases-conditions/gastroparesis/symptoms-causes/syc-20355787#:%7E:text=Gastroparesis%20is%20a%20condition%20that,food%20through%20your%20digestive%20tract."&gt;Gastroparesis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hobby vs Coping Mechanism&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;04:33 - Good Ideas Can Come From Anywhere&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Drive to Execute&lt;/li&gt;
+&lt;li&gt;Becoming a Mentor/Leader&lt;/li&gt;
+&lt;li&gt;Curiosity and Understanding the Big Picture&lt;/li&gt;
+&lt;li&gt;Seeking Feedback From Others While Introspecting Feedback From Yourself&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;12:50 - Bravery, Enduring, and Overcoming; Eradicating Stigmas and Breaking Stereotypes&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Impostor_syndrome"&gt;Impostor Syndrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blowing the Top Off Gatekeep-y Assumptions in Tech&lt;/li&gt;
+&lt;li&gt;Rawness and Integrity&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://twitter.com/dabit3"&gt;Nader Dabit&lt;/a&gt; &amp;amp; &lt;a href="https://twitter.com/kurtkemple"&gt;Kurt Kemple&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;“You’re not alone,” “I’m not special,” and “You can get here too.”&lt;/li&gt;
+&lt;li&gt;Using Your Journey to Empower Yourself and…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;30:12 - Struggle, Opportunity, and Recognizing White Privilege&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Activating Empathy&lt;/li&gt;
+&lt;li&gt;Manifesting Goodness&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Reflections:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;John:&lt;/strong&gt; The…&lt;/p&gt;</description>
+      <pubDate>Wed, 16 Dec 2020 10:00:00 -0000</pubDate>
+      <guid isPermaLink="false">cda2194c-0b00-42e9-9da0-16d34ba104cf</guid>
+      <link>https://www.greaterthancode.com/this-is-me</link>
+    </item>
+    <item>
+      <title>Five Things To Be Grateful For in the Ruby Together Community</title>
+      <source url="https://rubytogether.org/news">Ruby Together News</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://rubytogether.org/news"&gt;Ruby Together News&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Five Things To Be Grateful For in the Ruby Together Community&lt;/h3&gt;
+
+&lt;p&gt;It’s hard to believe that December is here. Even more mind-boggling: in the next few weeks we’ll be winding down a decade. This was a tough year. We want to commend and thank all of the developers who helped us maintain healthy projects and a kind community in a year where no connection or offer of support was taken for granted.&lt;/p&gt;
+
+&lt;p&gt;It might be easy for any of us to list all the ways this year seemed to limit us. We’d love to offer you a moment to reflect with us on what we’re grateful for in the Ruby Together community.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Five years of Ruby Together!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We can’t let the end of this year pass without acknowledging our five year…&lt;/p&gt;</description>
+      <pubDate>Tue, 15 Dec 2020 20:43:54 -0000</pubDate>
+      <guid isPermaLink="false">72</guid>
+      <link>https://rubytogether.org/news/2020/12/five-things-to-be-grateful-for-in-the-ruby-together-community</link>
+    </item>
+    <item>
+      <title>Updating SolrCloud configuration in ruby</title>
+      <source url="https://bibwild.wordpress.com">ruby – Bibliographic Wilderness</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://bibwild.wordpress.com"&gt;ruby – Bibliographic Wilderness&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We have an app that uses Solr. We currently run a Solr in legacy “not cloud” mode. Our solr configuration directory is on disk on the Solr server, and it’s up to our processes to get our desired solr configuration there, and to update it when it changes. &lt;/p&gt;
+
+
+
+&lt;p&gt;We are in the process of moving to a Solr in “&lt;a href="https://lucene.apache.org/solr/guide/6_6/getting-started-with-solrcloud.html"&gt;SolrCloud mode&lt;/a&gt;“, &lt;em&gt;probably&lt;/em&gt; via the SearchStax managed Solr service. Our Solr “Cloud” might only have one node, but “SolrCloud mode” gives us access to additional API’s for managing your solr configuration, as opposed to writing it directly to disk (which may not be possible at all in SolrCloud mode? And certainly isn’t using managed SearchStax). &lt;/p&gt;
+
+
+
+&lt;p&gt;That is, the Solr &lt;a href="https://lucene.apache.org/solr/guide/8_6/configsets-api.html"&gt;ConfigSets API&lt;/a&gt;, although…&lt;/p&gt;</description>
+      <pubDate>Tue, 15 Dec 2020 18:00:58 -0000</pubDate>
+      <guid isPermaLink="true">http://bibwild.wordpress.com/?p=8964</guid>
+      <link>https://bibwild.wordpress.com/2020/12/15/updating-solrcloud-configuration-in-ruby/</link>
+    </item>
+    <item>
+      <title>The purpose of private methods and when to use them</title>
+      <source url="https://www.codewithjason.com">Code with Jason</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.codewithjason.com"&gt;Code with Jason&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Certain concepts in programming seem to suffer from a poor understanding among many programmers. Private methods are one of those concepts. Mistaken and confused advice on this topic abounds online.&lt;/p&gt;
+&lt;p&gt;In this post I’ll attempt to clear up some misconceptions regarding private methods as well as give my own conception of what private methods are for and when to use them.&lt;/p&gt;
+&lt;h3&gt;The wrong answers you’ll find online&lt;/h3&gt;
+&lt;p&gt;Before I describe my conception of private methods, I’ll discuss some of the wrong answers you can easily find online in hopes of inoculating you against their wrongness.&lt;/p&gt;
+&lt;p&gt;As of this writing, if I google for “purpose of private methods” and click on the first result, the following Stack…&lt;/p&gt;</description>
+      <pubDate>Tue, 15 Dec 2020 15:01:20 -0000</pubDate>
+      <guid isPermaLink="true">http://www.codewithjason.com/?p=1484</guid>
+      <link>https://www.codewithjason.com/purpose-private-methods-use/</link>
+    </item>
+    <item>
+      <title>Rails 6.1 raises an error for impossible camelcase inflections</title>
+      <source url="https://www.bigbinary.com/">BigBinary Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.bigbinary.com/"&gt;BigBinary Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;From Rails 6.1 onwards, the default behaviorof the Rails generatorwhen encountering an impossible "camelCase" inflectionwould be to raise an error, rather than generatinga name that will cause problems.&lt;/p&gt;&lt;h3&gt;What are impossible "camelCase" inflections?&lt;/h3&gt;&lt;p&gt;The&lt;a href="https://api.rubyonrails.org/classes/ActiveSupport/Inflector/Inflections.html"&gt;Rails Inflector&lt;/a&gt;is part of the &lt;code&gt;ActiveSupport&lt;/code&gt; module,and it comes shipped with patterns to transform Ruby strings.This library is responsible for pluralization and/or singularizationof strings.&lt;/p&gt;&lt;p&gt;The Inflector tries its best to provide the desired result givena string. But sometimes, with certain words, it can't provide saythe pluralized version out of the box.&lt;/p&gt;&lt;p&gt;Let's say for example the string is &lt;code&gt;DSL&lt;/code&gt;.The desired plural form is &lt;code&gt;DSLs&lt;/code&gt;.But the Inflector…&lt;/p&gt;</description>
+      <pubDate>Tue, 15 Dec 2020 14:21:01 -0000</pubDate>
+      <guid isPermaLink="true">https://www.bigbinary.com/blog/rails-6-1-raises-error-for-impossible-camelcase-inflections</guid>
+      <link>https://www.bigbinary.com/blog/rails-6-1-raises-error-for-impossible-camelcase-inflections</link>
+    </item>
+    <item>
+      <title>Ruby 3 supports transforming hash keys using a hash argument</title>
+      <source url="https://www.bigbinary.com/">BigBinary Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.bigbinary.com/"&gt;BigBinary Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;From Ruby 3 onwards, the &lt;code&gt;Hash#transform_keys&lt;/code&gt; methodaccepts a hash argument for transformingexisting keys to new keys as specified in the argument.&lt;/p&gt;&lt;h3&gt;Usage before Ruby 3&lt;/h3&gt;&lt;p&gt;The following example shows how we used to apply &lt;code&gt;transform_keys&lt;/code&gt;:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-ruby"&gt;# 1. Declare address hashirb(main)&amp;gt; address = {House: 'Kizhakkethara', house_no: 123, locality: 'India'}=&amp;gt; {:House=&amp;gt;"Kizhakkethara", :house_no=&amp;gt;123, :locality=&amp;gt;"India"}# 2. Lowercase all the keysirb(main)&amp;gt; address.transform_keys(&amp;amp;:downcase)=&amp;gt; {:house=&amp;gt;"Kizhakkethara", :house_no=&amp;gt;123, :locality=&amp;gt;"India"}# 3. Replace a particular key with a new key along with lowercasingirb(main)* address.transform_keys do |key|irb(main)*   new_key = keyirb(main)*   if key ==…&lt;/code&gt;&lt;/pre&gt;</description>
+      <pubDate>Tue, 15 Dec 2020 13:20:56 -0000</pubDate>
+      <guid isPermaLink="true">https://www.bigbinary.com/blog/ruby-3-supports-transforming-hash-keys-using-a-hash-argument</guid>
+      <link>https://www.bigbinary.com/blog/ruby-3-supports-transforming-hash-keys-using-a-hash-argument</link>
+    </item>
+    <item>
+      <title>075 - Puma, Front-End Performance and CLI Apps with Nate Berkopec</title>
+      <source url="https://www.codewithjason.com/rails-with-jason-podcast">Rails with Jason</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.codewithjason.com/rails-with-jason-podcast"&gt;Rails with Jason&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;In this episode I talk with Nate Berkopec, author of The Complete Guide to Rails Performance. Nate and I discuss Puma, front-end performance and building command-line interface (CLI) apps.&lt;/p&gt;
+
+&lt;p&gt;Links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.speedshop.co/"&gt;Speedshop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/nateberkopec"&gt;Nate Berkopec on Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+      </description>
+      <pubDate>Tue, 15 Dec 2020 13:00:00 -0000</pubDate>
+      <guid isPermaLink="false">f8e3a044-7b38-45d8-8482-c28092ec9f83</guid>
+      <link>http://railswithjason.simplecast.fm/nate-berkopec-3</link>
+    </item>
+    <item>
+      <title>Day 15 - avo Gem - (Auto-)Build Beautiful Admin Dashboards and Panels for Your Active Record (Database) Models (Incl. File Attachments) with Configuration in Code</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Adrian Marin
+
+Product-Minded Software Engineer in Bucharest, Romania. Creator of Avo. Lead at Adore Me. Tinkerer at Help with COVID. Works with Ruby &amp;amp; Rails, TypeScript, Vue.js, Electron, PHP &amp;amp; Laravel, Redis.
+
+Building good admins is challenging
+
+It’s even more challenging building them again and again.
+
+Avo is a beautiful next-generation framework that empowers you, the developer, to create fantastic admin panels for your Ruby on Rails apps with the flexibility to fit your needs as you grow.
+
+Out of the box, it has an excellent create, read, update, and delete (CRUD) interface with ordering, filters, and actions. It knows how to handle your Active Record model relations and…</description>
+      <pubDate>Tue, 15 Dec 2020 11:21:23 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/15-avo</guid>
+      <link>http://planetruby.github.io/gems/2020/15-avo</link>
+    </item>
+    <item>
+      <title>272: Hacking the Gibson</title>
+      <source url="https://www.bikeshed.fm">The Bike Shed</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.bikeshed.fm"&gt;The Bike Shed&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;In this week's episode, Chris undertakes long-running background jobs that are performing duplicate work and adding significant load on the database. Steph shares her initial take of the book "Soul of a New Machine", a non-fiction account that chronicles the development of a mini-computer in the 1980s. &lt;/p&gt;
+
+&lt;p&gt;They also dive into the question "how can teams turn a slow, hard to maintain test suite from a liability into an asset?" and touch on how to identify highly-functioning teams.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;This episode is brought to you by:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://scoutapm.com/bikeshed"&gt;ScoutAPM&lt;/a&gt; - Give Scout a try for free today and Scout will donate $5 to the open source project of your choice when you deploy.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://HelloFresh.com/bikeshed80"&gt;HelloFresh&lt;/a&gt; - Visit HelloFresh and use…&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Tue, 15 Dec 2020 05:15:00 -0000</pubDate>
+      <guid isPermaLink="false">fe72afb6-df0d-45cb-8fae-00dc1149e35c</guid>
+      <link>https://www.bikeshed.fm/272</link>
+    </item>
+    <item>
+      <title>Adding Disallowed Deprecations to Rails 6.1</title>
+      <source url="https://blog.testdouble.com/">Test Double | Our Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://blog.testdouble.com/"&gt;Test Double | Our Blog&lt;/a&gt;.&lt;/p&gt;Rails upgrades comprise a solid chunk of the work we do for our clients. Upgrades may not always be the most glamorous task on the list but it can certainly be one of the most strategically valuable for long term maintenance of our apps.</description>
+      <pubDate>Tue, 15 Dec 2020 02:21:41 -0000</pubDate>
+      <guid isPermaLink="true">https://blog.testdouble.com/posts/2020-12-15-adding-disallowed-deprecations-to-rails-6-1/</guid>
+      <link>https://blog.testdouble.com/posts/2020-12-15-adding-disallowed-deprecations-to-rails-6-1/</link>
+    </item>
+    <item>
+      <title>Day 14 - que-scheduler Gem - Light-Weight (Time-Driven) Cron (Background) Job Scheduler for Que - a Job Queue Using the PostgreSQL Database with Advisory Locks for Speed and Reliability</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Harry Lascelles
+
+A performant web application should always make sure it does the heavy lifting outside of user
+requests where possible. Many asynchronous job systems have sprung up to solve this problem,
+such as Resque, Sidekiq, DelayedJob and Que.
+
+However sometimes these workloads are not event driven - they are time driven. For that you need a
+reliable scheduler - you need que-scheduler.
+
+The que-scheduler gem
+
+The que-scheduler gem is a simple and dependable way to get up and running with job scheduler that
+doesn’t require any extra infrastructure. If you are already running the que job
+system, then you are good to go. No Redis is required, no external processes need to be…</description>
+      <pubDate>Mon, 14 Dec 2020 22:22:45 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/14-que-scheduler</guid>
+      <link>http://planetruby.github.io/gems/2020/14-que-scheduler</link>
+    </item>
+    <item>
+      <title>Grouping Events for Later Processing</title>
+      <source url="https://www.mikeperham.com/">Mike Perham</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.mikeperham.com/"&gt;Mike Perham&lt;/a&gt;.&lt;/p&gt;A customer recently wondered how they could handle aggregate events in Sidekiq. They don’t want one background job per event but rather a background job to handle the last N events.
+Let’s pretend we work for an ecommerce vendor and we want to track product clicks: User A clicks on Product B. This is a naive way to show interest in a product or category; we want to store this data for long-term data mining purposes.</description>
+      <pubDate>Mon, 14 Dec 2020 19:20:43 -0000</pubDate>
+      <guid isPermaLink="true">https://www.mikeperham.com/2020/12/14/grouping-events-for-later-processing/</guid>
+      <link>https://www.mikeperham.com/2020/12/14/grouping-events-for-later-processing/</link>
+    </item>
+    <item>
+      <title>3.2.1 Released</title>
+      <source url="http://blog.rubygems.org/">RubyGems Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://blog.rubygems.org/"&gt;RubyGems Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;RubyGems 3.2.1 includes enhancements and bug fixes.&lt;/p&gt;
+
+&lt;p&gt;To update to the latest RubyGems you can run:&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;gem update --system
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you need to upgrade or downgrade please follow the &lt;a href="http://docs.seattlerb.org/rubygems/UPGRADING_rdoc.html"&gt;how to upgrade/downgrade
+RubyGems&lt;/a&gt; instructions.  To install RubyGems by hand see the
+&lt;a href="https://rubygems.org/pages/download"&gt;Download RubyGems&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Enhancements:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added help message for gem i webrick in gem server command. Pull request
+#4117 by hsbt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Bug fixes:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added the missing loading of fileutils same as load_specs. Pull request
+#4124 by hsbt&lt;/li&gt;
+  &lt;li&gt;Fix Resolver::APISet to always include prereleases when necessary. Pull
+request #4113 by deivid-rodriguez&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;=== 3.2.0 / 2020-12-7&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Enhancements:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Do not override Kernel#warn when there is no need.…&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Mon, 14 Dec 2020 16:21:22 -0000</pubDate>
+      <guid isPermaLink="true">http://blog.rubygems.org/2020/12/14/3.2.1-released</guid>
+      <link>http://blog.rubygems.org/2020/12/14/3.2.1-released.html</link>
+    </item>
+    <item>
+      <title>Rails PostgreSQL find by nested JSON / JSONb field</title>
+      <source url="https://blog.eq8.eu/">EquiValent</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://blog.eq8.eu/"&gt;EquiValent&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Imaging Rails model &lt;code&gt;SubscriptionsHistory&lt;/code&gt; with &lt;strong&gt;json&lt;/strong&gt; field &lt;code&gt;data&lt;/code&gt;
+that has nested JSON: &lt;code&gt;subscription.id&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So &lt;code&gt;SubscriptionsHistory.attributes&lt;/code&gt; would return:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{"id"=&amp;gt;654321,
+ "data"=&amp;gt;
+  {"subscription"=&amp;gt;
+    {"id"=&amp;gt;"169lTASJ5wfsY3y3u",
+     "other_field"=&amp;gt;"xxx"},
+   "other_field"=&amp;gt; { ....}
+ "created_at"=&amp;gt;Mon, 14 Dec 2020 02:00:19 UTC +00:00,
+ "updated_at"=&amp;gt;Mon, 14 Dec 2020 02:00:19 UTC +00:00}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so in order to find &lt;code&gt;subscription_history.data&lt;/code&gt; where &lt;code&gt;subscription.id&lt;/code&gt; is equal to &lt;code&gt;169lTASJ5wfsY3y3u&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-ruby"&gt;SubscriptionsHistory.where("data-&amp;gt;'subscription'-&amp;gt;&amp;gt;'id' = ?", '169lTASJ5wfsY3y3u')
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://makandracards.com/makandra/37851-how-to-query-postgresql-s-json-fields-from-rails"&gt;https://makandracards.com/makandra/37851-how-to-query-postgresql-s-json-fields-from-rails&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Mon, 14 Dec 2020 15:20:43 -0000</pubDate>
+      <guid isPermaLink="true">https://blog.eq8.eu/til/rails-postgresql-find-by-nested-json-jsonb</guid>
+      <link>https://blog.eq8.eu/til/rails-postgresql-find-by-nested-json-jsonb.html</link>
+    </item>
+    <item>
+      <title>Jekyll 4.2.0 Released</title>
+      <source url="https://jekyllrb.com/">Jekyll • Simple, blog-aware, static sites</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://jekyllrb.com/"&gt;Jekyll • Simple, blog-aware, static sites&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Greetings Jekyllers! Jekyll v4.2.0 is out!&lt;/p&gt;
+
+&lt;p&gt;This release gives you a new hook named &lt;code class="language-plaintext highlighter-rouge"&gt;:post_convert&lt;/code&gt; that allows modifying rendered HTML contents before they are
+placed into the designated layout(s).&lt;/p&gt;
+
+&lt;p&gt;Detecting files that get written into the same destination path has been a part of the diagnostics from &lt;code class="language-plaintext highlighter-rouge"&gt;jekyll doctor&lt;/code&gt;
+for quite some time now. However, v4.2 has integrated that feature into the build process itself.&lt;/p&gt;
+
+&lt;p&gt;On the topic of log output, the &lt;code class="language-plaintext highlighter-rouge"&gt;--verbose&lt;/code&gt; output got a bit more verbose. Instead of just showing &lt;em&gt;documents&lt;/em&gt; that are
+being read, the output will now also show &lt;em&gt;pages&lt;/em&gt; and &lt;em&gt;layouts&lt;/em&gt; that are being read into the site.&lt;/p&gt;
+
+&lt;p&gt;Additionally, we have stopped overriding the &lt;code class="language-plaintext highlighter-rouge"&gt;site.url&lt;/code&gt; to &lt;code class="language-plaintext highlighter-rouge"&gt;http://localhos…&lt;/code&gt;&lt;/p&gt;</description>
+      <pubDate>Mon, 14 Dec 2020 13:21:53 -0000</pubDate>
+      <guid isPermaLink="true">https://jekyllrb.com/news/2020/12/14/jekyll-4-2-0-released</guid>
+      <link>https://jekyllrb.com/news/2020/12/14/jekyll-4-2-0-released/</link>
+    </item>
+    <item>
+      <title>Day 13 - lumione Gem - Money. Money. Money. Convert NZD ($) to USD ($) or EUR (€) to JPY (¥) in Your Terminal using the European Central Bank (ECB) Reference Exchange Rates. No API Key Required. Yes, Works Offline</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Dmitry Maksyoma
+
+A Ruby / Rails freelancer from Auckland, New Zealand. Can’t quit Vim. Into JavaScript and meditation. Tech blog at Ruby Clarity and personal at A Journey to Find Motivation.
+
+How to use Lumione
+
+Lumione, convert 13 New Zealand Dollar (NZD) to US Dollar (USD):
+
+$ lumione 13 nzd usd
+$13.00 NZD ($9.22 USD) (rates updated 3 days ago)
+
+
+Lumione, how many Japanese Yen (JPY) for one Euro (EUR):
+
+$ lumione 1 eur jpy
+€1.00 EUR (¥126 JPY) (rates updated 3 days ago)
+
+
+Lumione, convert 12 Swiss Franc (CHF) to Chinese Yuan Renminbi (CNY):
+
+$ lumione 12 chf cny
+CHF12.00 CHF (¥88.32 CNY) (rates updated 3 days ago)
+
+
+Install with gem install lumione.
+
+What’s unique about…</description>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/13-lumione</guid>
+      <link>http://planetruby.github.io/gems/2020/13-lumione</link>
+    </item>
+    <item>
+      <title>Flutter Interactive Motion Backgrounds</title>
+      <source url="https://blog.joshsoftware.com">Josh Software</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://blog.joshsoftware.com"&gt;Josh Software&lt;/a&gt;.&lt;/p&gt;Have you seen Apple iOS’s parallax wallpaper? If you enable “Perspective Zoom” in your iOS’s wallpaper setting, you’ll find your HomeScreen will respond visually as per your device’s tilt/position. It’s simple eye trickery but it looks impressive. Here is an example of what we’re gonna build today NOTE: All the images in this post are … &lt;a href="https://blog.joshsoftware.com/2020/12/12/flutter-interactive-motion-backgrounds/" class="more-link"&gt;Continue reading &lt;span class="screen-reader-text"&gt;Flutter Interactive Motion Backgrounds&lt;/span&gt;&lt;/a&gt;</description>
+      <pubDate>Sat, 12 Dec 2020 13:44:00 -0000</pubDate>
+      <guid isPermaLink="true">http://blog.joshsoftware.com/?p=6450</guid>
+      <link>https://blog.joshsoftware.com/2020/12/12/flutter-interactive-motion-backgrounds/</link>
+    </item>
+    <item>
+      <title>Day 12 - matestack-ui-core Gem - Write Web Components in an (HTML) Domain-Specific (Mini) Language (DSL) Getting (Automagically) Turned Into Modern (Reactive) Web Views on Top of Vue.js</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Pascal Wengerter
+
+A self-taught software developer, and digital all-rounder. Loves democracy ‘n’ open source software. Black lives matter supporter. Co-founded the open source startup Matestack. Working as a freelancer while looking for a role in (digital) product management.
+
+The idea: Writing web views in pure Ruby
+
+Deeply in love with programming in Ruby and frustrated with the overly complex state of fullstack web development,
+ Jonas Jabari
+started experimenting in late 2017 and ended up creating a prototype that eventually grew into matestack-ui-core and subsequent libraries.
+
+Instead of rendering .erb-views or introducing a separate single-page application (SPA)-framework…</description>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/12-matestack-ui-core</guid>
+      <link>http://planetruby.github.io/gems/2020/12-matestack-ui-core</link>
+    </item>
+    <item>
+      <title>Modeling friendships is hard, Railscasts nostalgia, and reviving ActsAsTenant</title>
+      <source url="https://remoteruby.transistor.fm">Remote Ruby</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://remoteruby.transistor.fm"&gt;Remote Ruby&lt;/a&gt;.&lt;/p&gt;
+        [00:00:47] Jason and Chris talk about modelling friendships in your database models. &lt;br&gt;&lt;br&gt;[00:06:56] Chris brings up building teams and inviting people being tricky.  &lt;br&gt;[00:08:35] Jason talks about using HasFriendship library, which lets you add friendship features to your ActiveRecord models. Chris mentions to Jason about watching a RailsCasts episode on Self-Referential Association by Ryan Bates.&lt;br&gt;&lt;br&gt;[00:13:31] Chris talks about working with an app a long time ago, and he explains how naming your code in your domain saves you a lot of trouble.  &lt;br&gt;[00:18:27] Chris talks about Ryan Bates Tweets he made recently and how people are still watching RailsCasts. Jason brags about something Chris did…</description>
+      <pubDate>Fri, 11 Dec 2020 13:00:00 -0000</pubDate>
+      <guid isPermaLink="false">09a6e916-852b-48ff-a367-59b1471adaae</guid>
+      <link>https://share.transistor.fm/s/31daa094</link>
+    </item>
+    <item>
+      <title>Force Downloading of File in Shrine 3</title>
+      <source url="https://jetrockets.pro/blog">JetRockets</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://jetrockets.pro/blog"&gt;JetRockets&lt;/a&gt;.&lt;/p&gt;</description>
+      <pubDate>Fri, 11 Dec 2020 12:56:03 -0000</pubDate>
+      <guid isPermaLink="true">https://jetrockets.pro/blog/force-downloading-of-file-in-shrine-3</guid>
+      <link>https://jetrockets.pro/blog/force-downloading-of-file-in-shrine-3</link>
+    </item>
+    <item>
+      <title>Improve Code Quality with RuboCop</title>
+      <source url="https://infinum.com/the-capsized-eight">Capsized Eight</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://infinum.com/the-capsized-eight"&gt;Capsized Eight&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Cleaner pull requests, automated knowledge sharing, and easy engagement with open-source software? Sign me up!&lt;/p&gt;
+&lt;p&gt;Modern code reviews are considered a key component in the development lifecycle of any IT organization. &lt;/p&gt;
+
+&lt;p&gt;Yearly case studies performed by various researchers report that it’s one of the main methods for improving code quality, sharing knowledge across the team, increased collaboration as well as greater adherence to coding standards.&lt;/p&gt;
+
+&lt;p&gt;Unlike Fagan’s&lt;a href="https://ieeexplore.ieee.org/document/5388086"&gt; code inspection design&lt;/a&gt; introduced in 1976, most of us employ a more lenient process, which is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;informal&lt;/li&gt;
+&lt;li&gt;asynchronous&lt;/li&gt;
+&lt;li&gt;tool-based&lt;/li&gt;
+&lt;li&gt;focused on reviewing code changes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Results from multiple analysis have shown that the latent defect…&lt;/p&gt;</description>
+      <pubDate>Fri, 11 Dec 2020 11:21:29 -0000</pubDate>
+      <guid isPermaLink="true">https://infinum.com/the-capsized-eight/485</guid>
+      <link>https://infinum.com/the-capsized-eight/code-quality-rubocop</link>
+    </item>
+    <item>
+      <title>Rails 6.1 allows associations to support destroy_async option with dependent key</title>
+      <source url="https://www.bigbinary.com/">BigBinary Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.bigbinary.com/"&gt;BigBinary Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;In Rails 6.1, Rails will enqueue a background job todestroy associated records if &lt;code&gt;dependent: :destroy_async&lt;/code&gt;is setup.&lt;/p&gt;&lt;p&gt;Let's consider the following example.&lt;/p&gt;&lt;pre&gt;&lt;code class="language-ruby"&gt;class Team &amp;lt; ApplicationRecord  has_many :players, dependent: :destroy_asyncendclass Player &amp;lt; ApplicationRecord  belongs_to :teamend&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now, if we call &lt;code&gt;destroy&lt;/code&gt; method on an instance ofclass &lt;code&gt;Team&lt;/code&gt; Rails would enqueue an asynchronous job to delete theassociated &lt;code&gt;players&lt;/code&gt; records.&lt;/p&gt;&lt;p&gt;We can verify this asynchronous job with a following test case.&lt;/p&gt;&lt;pre&gt;&lt;code class="language-ruby"&gt;class TeamTest &amp;lt; ActiveSupport::TestCase  include ActiveJob::TestHelper  test "destroying a record destroys the associations using a background job" do    team = Team.create!(name: "Portugal", manager: "Fernando…&lt;/code&gt;&lt;/pre&gt;</description>
+      <pubDate>Fri, 11 Dec 2020 09:20:33 -0000</pubDate>
+      <guid isPermaLink="true">https://www.bigbinary.com/blog/rails-6-1-allows-associations-to-support-destroy_async-option-with-dependent-key</guid>
+      <link>https://www.bigbinary.com/blog/rails-6-1-allows-associations-to-support-destroy_async-option-with-dependent-key</link>
+    </item>
+    <item>
+      <title>Day 11 - boring_generators Gem - 10x Development - Speed-Up Your Coding By Automating and Generating Boring Setups</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Abhay Nikam
+
+A software developer at AngelList. Working on Ruby on Rails, React and GraphQL. Currently learning TypeScript and React Native. Looking for help with Boring Generators and React Trix Rich Text Editor (RTE).
+
+Problem Statement
+
+Have you ever started a hobby/adventure project and spent half of the initial time in boring configurations and installation of gems and libraries? Yeah. I have been in similar situation. When you start a project you have tons of thought to be processed and ideas that needs attention than working on boring setup and I wanted to counter this problem.
+
+The easiest solution to such problems is to create a simple starter application template…</description>
+      <pubDate>Fri, 11 Dec 2020 00:00:00 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/11-boring-generators</guid>
+      <link>http://planetruby.github.io/gems/2020/11-boring-generators</link>
+    </item>
+    <item>
+      <title>November 2020 RubyGems Updates</title>
+      <source url="http://blog.rubygems.org/">RubyGems Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://blog.rubygems.org/"&gt;RubyGems Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Welcome to the RubyGems monthly update! As part of our efforts at &lt;a href="http://rubytogether.org/"&gt;Ruby Together&lt;/a&gt;, we publish a recap of the work that we’ve done the previous month. Read on to find out what updates were made to RubyGems and RubyGems.org in November.&lt;/p&gt;
+
+&lt;h3&gt;RubyGems News&lt;/h3&gt;
+
+&lt;p&gt;In November, we worked on the &lt;a href="https://github.com/rubygems/rfcs/pull/29"&gt;Bundler Version Locking RFC&lt;/a&gt; that allows a user to specify a required Bundler version in the Gemfile/gemspec with a working &lt;a href="https://github.com/rubygems/rfcs/pull/29#issuecomment-731333194"&gt;proof of concept&lt;/a&gt;. We also made improvements to platform support by enabling the &lt;code class="language-plaintext highlighter-rouge"&gt;specific_platform&lt;/code&gt; functionality by default, and decided to delay the change to resolve all Gemfile platforms automatically in addition to that, we made the following improvements and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;fixed a missing require…&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Thu, 10 Dec 2020 22:21:00 -0000</pubDate>
+      <guid isPermaLink="true">http://blog.rubygems.org/2020/12/09/november-rubygems-update</guid>
+      <link>http://blog.rubygems.org/2020/12/09/november-rubygems-update.html</link>
+    </item>
+    <item>
+      <title>💎 Issue 238 - Rails 6.1: Horizontal Sharding, Multi-DB Improvements, Strict Loading, Destroy Associations in Background, Error Objects, and more!</title>
+      <source url="https://ruby.libhunt.com/newsletter">Awesome Ruby Newsletter</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://ruby.libhunt.com/newsletter"&gt;Awesome Ruby Newsletter&lt;/a&gt;.&lt;/p&gt;</description>
+      <pubDate>Thu, 10 Dec 2020 21:42:00 -0000</pubDate>
+      <guid isPermaLink="true">https://ruby.libhunt.com/newsletter/238</guid>
+      <link>https://ruby.libhunt.com/newsletter/238</link>
+    </item>
+    <item>
+      <title>Rails 6.1 and Ruby 3.0.0 preview 2</title>
+      <source url="https://rubyweekly.com/">Ruby Weekly</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://rubyweekly.com/"&gt;Ruby Weekly&lt;/a&gt;.&lt;/p&gt;
+
+  
+
+    
+    
+    
+    
+    
+  
+
+
+
+
+
+  
+  &lt;div&gt;    
+    
+&lt;p&gt;#531 — December 10, 2020&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://rubyweekly.com/link/100052/rss"&gt;Read on the Web&lt;/a&gt;&lt;/p&gt;
+
+    
+    &lt;p&gt;Ruby Weekly&lt;/p&gt;
+
+  &lt;a href="https://rubyweekly.com/link/100053/rss"&gt;&lt;img src="https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60/v1607606920/fipdrxyvzrwxeraq4guw.png"&gt;&lt;/a&gt;
+
+
+
+  
+  &lt;p&gt;&lt;span&gt;&lt;a href="https://rubyweekly.com/link/100053/rss" title="weblog.rubyonrails.org"&gt;Rails 6.1 Released&lt;/a&gt;&lt;/span&gt; — The newest Rails train has just pulled into the station! If your app needs the flexibility of per-database connection switching or &lt;a href="https://rubyweekly.com/link/100054/rss"&gt;horizontal sharding&lt;/a&gt;, this is a compelling update. We also get strict loading associations (stop N+1s in their tracks), &lt;a href="https://rubyweekly.com/link/100055/rss"&gt;delegated Active Record types&lt;/a&gt; (as a rather nicer alternative to STI), and performance improvements all round. Here’s &lt;a href="https://rubyweekly.com/link/100056/rss"&gt;a table showing if you’re ready&lt;/a&gt; to upgrade apps on various versions of Rails to the new version.&lt;/p&gt;
+  &lt;p&gt;Official Rails Blog &lt;/p&gt;
+
+
+
+  
+  &lt;p&gt;&lt;span&gt;&lt;a href="https://rubyweekly.com/link/100057/rss" title="www.ruby-lang.org"&gt;Ruby 3.0.0 Preview 2 Released&lt;/a&gt;&lt;/span&gt; — Are you ready for the…&lt;/p&gt;
+&lt;/div&gt;</description>
+      <pubDate>Thu, 10 Dec 2020 15:20:52 -0000</pubDate>
+      <guid isPermaLink="true">https://rubyweekly.com/issues/531</guid>
+      <link>https://rubyweekly.com/issues/531</link>
+    </item>
+    <item>
+      <title>Climbing Steep hills, or adopting Ruby 3 types with RBS</title>
+      <source url="https://evilmartians.com/chronicles">Martian Chronicles, Evil Martians’ team blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://evilmartians.com/chronicles"&gt;Martian Chronicles, Evil Martians’ team blog&lt;/a&gt;.&lt;/p&gt;&lt;em&gt;Author: &lt;/em&gt;Vladimir Dementyev, Lead Developer at Evil Martians
+
+  &lt;p&gt;With Ruby 3.0 just around the corner, let’s take a look at one of the highlights of the upcoming release: &lt;a href="https://github.com/ruby/rbs"&gt;Ruby Type Signatures&lt;/a&gt;. Yes, types are coming to our favorite dynamic language! Let’s see how to take advantage of them by adding types to a real-world open source project and looking at the finer points of the process.&lt;/p&gt;
+
+
+&lt;p&gt;It is not the first time I cover Ruby types: about a year ago, I had the first taste of &lt;a href="https://sorbet.org"&gt;Sorbet&lt;/a&gt; and shared my experience in the &lt;a href="https://evilmartians.com/chronicles/sorbetting-a-gem"&gt;very same Martian blog&lt;/a&gt;. At the end of my Sorbet post, I promised to give another Ruby type checker a try: &lt;a href="https://github.com/soutaro/steep"&gt;Steep&lt;/a&gt;. So, here I am, paying my debts!&lt;/p&gt;
+
+&lt;h3&gt;RBS in a nutshell&lt;/h3&gt;
+
+
+
+&lt;p&gt;RBS is an…&lt;/p&gt;</description>
+      <pubDate>Thu, 10 Dec 2020 13:20:52 -0000</pubDate>
+      <guid isPermaLink="true">https://evilmartians.com/chronicles/climbing-steep-hills-or-adopting-ruby-types</guid>
+      <link>https://evilmartians.com/chronicles/climbing-steep-hills-or-adopting-ruby-types</link>
+    </item>
+    <item>
+      <title>Setting Up AppSignal Monitoring for a Ruby on Rails Application</title>
+      <source url="https://blog.appsignal.com">Ruby Magic by AppSignal</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://blog.appsignal.com"&gt;Ruby Magic by AppSignal&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;As we’re doing our best to make monitoring easy, we’ve wanted to make more content that would really &lt;strong&gt;show&lt;/strong&gt; and not just tell you how easy it is to set up monitoring with AppSignal.&lt;/p&gt;
+&lt;p&gt;We’ve been collaborating with &lt;a href=""&gt;Leigh Hallday&lt;/a&gt; on making this video for you that will show you everything you need to know about the setup process. We’ll be posting more videos like this on &lt;a href="https://www.youtube.com/channel/UCaiU0x1JVGBpZPXypwkAGbw"&gt;our YouTube channel&lt;/a&gt;, so you should subscribe to it if you’d like to get notifications about future videos. You know how that works 😉&lt;/p&gt;
+
+&lt;h3&gt;What’s In the Video&lt;/h3&gt;
+&lt;p&gt;In this video, Leigh will show you how easy it is to integrate AppSignal into a Rails application. He covers installation and setup, how to troubleshoot and fix performance…&lt;/p&gt;</description>
+      <pubDate>Thu, 10 Dec 2020 13:20:47 -0000</pubDate>
+      <guid isPermaLink="false">/2020/12/10/setting-up-appsignal-monitoring-for-a-ruby-on-rails-application.html</guid>
+      <link>https://blog.appsignal.com/2020/12/10/setting-up-appsignal-monitoring-for-a-ruby-on-rails-application.html</link>
+    </item>
+    <item>
+      <title>Bundler v2.2: Multiplatform, Funding, and more.</title>
+      <source url="http://bundler.io/blog">Bundler Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://bundler.io/blog"&gt;Bundler Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;After an intense year of work, we’re finally ready to announce the release of
+the final version of bundler 2.2, right in time to be included with Christmas’
+eve Ruby 3.0 release.&lt;/p&gt;
+
+&lt;h3&gt;Multiplatform support&lt;/h3&gt;
+
+&lt;p&gt;Historically, bundler has had issues when it comes to choosing and prioritizing
+platform specific versions of gems during resolution. With this release, we have
+made several improvements in this regard and we expect to ship a much more user
+friendly behavior here.&lt;/p&gt;
+
+&lt;p&gt;Huge thanks to &lt;a href="https://github.com/kou"&gt;@kou&lt;/a&gt; for contributing awesome fixes in
+this area, and to &lt;a href="https://github.com/larskanis"&gt;@larskanis&lt;/a&gt; for early testing
+the improvements and giving us feedback.&lt;/p&gt;
+
+&lt;p&gt;Bundler now needs to record the specific platform it used to resolve a given
+&lt;code&gt;Gemfile&lt;/code&gt; in…&lt;/p&gt;</description>
+      <pubDate>Thu, 10 Dec 2020 12:21:04 -0000</pubDate>
+      <guid isPermaLink="true">http://bundler.io/blog/2020/12/09/bundler-v2-2.html</guid>
+      <link>http://bundler.io/blog/2020/12/09/bundler-v2-2.html</link>
+    </item>
+    <item>
+      <title>3.2.0 Released</title>
+      <source url="http://blog.rubygems.org/">RubyGems Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://blog.rubygems.org/"&gt;RubyGems Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;RubyGems 3.2.0 includes bug fixes, deprecations, performance, minor enhancements, bug fixes, performance, major enhancements, minor enhancements, bug fixes and deprecations.&lt;/p&gt;
+
+&lt;p&gt;To update to the latest RubyGems you can run:&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;gem update --system
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you need to upgrade or downgrade please follow the &lt;a href="http://docs.seattlerb.org/rubygems/UPGRADING_rdoc.html"&gt;how to upgrade/downgrade
+RubyGems&lt;/a&gt; instructions.  To install RubyGems by hand see the
+&lt;a href="https://rubygems.org/pages/download"&gt;Download RubyGems&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;Enhancements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Do not override Kernel#warn when there is no need. Pull request #4075 by
+eregon&lt;/li&gt;
+  &lt;li&gt;Update endpoint of gem signin command. Pull request #3840 by sonalkr132&lt;/li&gt;
+  &lt;li&gt;Omit deprecated commands from command help output. Pull request #4023 by
+landongrindheim&lt;/li&gt;
+  &lt;li&gt;Suggest alternatives in &lt;code class="language-plaintext highlighter-rouge"&gt;ge…&lt;/code&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Thu, 10 Dec 2020 11:21:15 -0000</pubDate>
+      <guid isPermaLink="true">http://blog.rubygems.org/2020/12/10/3.2.0-released</guid>
+      <link>http://blog.rubygems.org/2020/12/10/3.2.0-released.html</link>
+    </item>
+    <item>
+      <title>How to install TailwindCSS 2 on Rails 6</title>
+      <source url="https://rubyyagi.com/">Ruby Yagi 🐐</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://rubyyagi.com/"&gt;Ruby Yagi 🐐&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;a href="https://blog.tailwindcss.com/tailwindcss-v2"&gt;TailwindCSS v2.0&lt;/a&gt; was released on 19 November 2020 🎉, but it had a few changes that requires some tweak to install and use it on Rails 6, such as the requirement of PostCSS 8 and Webpack 5. As of current (10 December 2020), Rails 6 comes with webpack 4 and PostCSS 7, which doesn’t match the requirement of TailwindCSS v2.&lt;/p&gt;
+
+&lt;p&gt;If we install TailwindCSS v2 directly on a Rails 6 app using &lt;code class="language-plaintext highlighter-rouge"&gt;yarn add tailwindcss &lt;/code&gt;, we might get a error (PostCSS plugin tailwindcss requires PostCSS 8) like this when running the server :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://rubyyagi.s3.amazonaws.com/17-tailwindcss2-rails6/tailwind-postcss-error.png" alt="postcss8 error"&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;This tutorial will guide you on &lt;strong&gt;how to install and use TailwindCSS 2 on Rails 6 using new Webpacker version(v5+)&lt;/strong&gt;. If webpack / webpacker v5+ breaks your current Rails app javascript…&lt;/p&gt;</description>
+      <pubDate>Thu, 10 Dec 2020 10:21:56 -0000</pubDate>
+      <guid isPermaLink="true">https://rubyyagi.com/tailwindcss2-rails6</guid>
+      <link>https://rubyyagi.com/tailwindcss2-rails6/</link>
+    </item>
+    <item>
+      <title>Day 10 - happy_gemfile Gem - Stop House Keeping Your Gemfile. (Auto-)Format Your Gems Sorted from A to Z and by Groups. (Auto-)Clean up the Clutter. Happy Gemfile Day!</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;
+Written by  Mike Rogers
+
+A Rubyist, a menace, a web hygienist. Working on Typo CI, a spellchecker for Pull Requests. Looking for help with Ruby Starter Kits, a way for people to get Ruby up and running with just docker.
+
+What is happy_gemfile?
+
+The happy_gemfile is an awesome gem that sorts your projects Gemfile. It strips comments, organises the groups &amp;amp; then alphabetises everything.
+
+It’s kind of a radical, but I’ve really started to like this approach.
+
+How do you use it?
+
+$ gem install happy_gemfile
+$ happy_gemfile all
+
+
+Install the gem onto your machine, then run happy_gemfile all in your terminal and you’re good, that will rewrite your Gemfile to be super organised!
+
+Why would you…</description>
+      <pubDate>Thu, 10 Dec 2020 00:00:00 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/10-happy-gemfile</guid>
+      <link>http://planetruby.github.io/gems/2020/10-happy-gemfile</link>
+    </item>
+    <item>
+      <title>Bonus! Day 10 - parslet Gem - Build Your Own Language Parsers (and Lexers) with Parsing Expression Grammars (PEGs)</title>
+      <source url="http://planetruby.github.io/gems/">25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://planetruby.github.io/gems/"&gt;25 Days of Ruby Gems - Ruby Advent Calendar 2020, December 1st - December 25th&lt;/a&gt;.&lt;/p&gt;Day 10 - parslet Gem - Build Your Own Language Parsers (and Lexers) with Parsing Expression Grammars (PEGs)
+
+Written by  Rachel Green
+
+A web developer based in Houston, Texas with experience in building business-to-business (B2B), e-commerce, and enterprise applications. Admin for the Ruby on Rails Slack group and also involved with civic engagement and advocacy efforts and passionate about the potential for tech to do good for others.
+
+Welcome to our exploration of building parsers in Ruby!  How do you do that, you ask?  Well, using the gem Parslet!
+
+Parslet is a gem that allows developers to create parsers for string inputs using parsing expression grammar, or PEG.  This is just the…</description>
+      <pubDate>Thu, 10 Dec 2020 00:00:00 -0000</pubDate>
+      <guid isPermaLink="true">http://planetruby.github.io/gems/2020/10-parslet</guid>
+      <link>http://planetruby.github.io/gems/2020/10-parslet</link>
+    </item>
+    <item>
+      <title>348: Chef Acquired and Leading from the Front (Brittany &amp; Nick)</title>
+      <source url="http://5by5.tv/rubyonrails">Ruby on Rails Podcast</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://5by5.tv/rubyonrails"&gt;Ruby on Rails Podcast&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Nicholas Schwaderer joined Brittany to discuss Chef's acquisition and how Brittany has been newly leading the Frontend team at TextUs. They wrap up with a recap of the Ryan Bates/Digital Ocean saga and a mystery topic.&lt;/p&gt;
+&lt;p&gt;Links for this episode:&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://investors.progress.com/news-releases/news-release-details/progress-announces-acquisition-chef" class="link"&gt;Progress Announces Acquisition of Chef | Progress Software&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://news.ycombinator.com/item?id=25048608" class="link"&gt;Hacker News | Ryan Bates &amp;amp; Digital Ocean&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://twitter.com/rbates/status/1331379415008247808" class="link"&gt;Digital Ocean Makes Amends | Stimulus Reflex Donation&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://incompetech.com" class="link"&gt;Episode Music: "Funkorama" by Kevin MacLeod&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://twitter.com/sprngr_" class="link"&gt;Episode Introduction and Outro by Michael Springer&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Brought to you by:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Scout APM&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Give &lt;a href="https://scoutapm.com/rubyonrails"&gt;Scout APM&lt;/a&gt; a try for free today and Scout will donate $5 to the open source project of your choice when you deploy.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 09 Dec 2020 23:21:47 -0000</pubDate>
+      <guid isPermaLink="true">http://5by5.tv/rubyonrails/348</guid>
+      <link>http://5by5.tv/rubyonrails/348</link>
+    </item>
+    <item>
+      <title>Rails 6.1: Horizontal Sharding, Multi-DB Improvements, Strict Loading, Destroy Associations in Background, Error Objects, and more!</title>
+      <source url="https://weblog.rubyonrails.org/">Riding Rails</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://weblog.rubyonrails.org/"&gt;Riding Rails&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Rails 6.1 has been released and wow does it have a lot of great stuff! We’ve been hard
+at work these past few months implementing improvements to multiple databases, adding support for destroying
+associations in jobs instead of in-memory, turning errors into objects, and so much more.&lt;/p&gt;
+
+&lt;p&gt;It’s amazing how Rails has grown over the years and while we have some improvements to make to the
+&lt;a href="https://weblog.rubyonrails.org/2020/5/7/A-May-of-WTFs/"&gt;onboarding process&lt;/a&gt;, Rails has never been better. The features
+in this release focus on adding the functionality you need to keep your application up and running for years to come.&lt;/p&gt;
+
+&lt;p&gt;Let’s look at some of the new functionality:&lt;/p&gt;
+
+&lt;h3&gt;Multi-DB Improvements&lt;/h3&gt;
+
+&lt;h4&gt;Per-database Connection Switching&lt;/h4&gt;
+
+&lt;p&gt;Rails 6.1 provides you with…&lt;/p&gt;</description>
+      <pubDate>Wed, 09 Dec 2020 20:15:00 -0000</pubDate>
+      <guid isPermaLink="true">https://weblog.rubyonrails.org/2020/12/9/Rails-6-1-0-release</guid>
+      <link>https://weblog.rubyonrails.org/2020/12/9/Rails-6-1-0-release/</link>
+    </item>
+    <item>
+      <title>348: Episode 348</title>
+      <source url="http://5by5.tv/rubyonrails">Ruby on Rails Podcast</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://5by5.tv/rubyonrails"&gt;Ruby on Rails Podcast&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Nicholas Schwaderer joined Brittany to discuss Chef's acquisition and how Brittany has been newly leading the Frontend team at TextUs. They wrap up with a recap of the Ryan Bates/Digital Ocean saga and a mystery topic.&lt;/p&gt;
+&lt;p&gt;Links for this episode:&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://investors.progress.com/news-releases/news-release-details/progress-announces-acquisition-chef" class="link"&gt;Progress Announces Acquisition of Chef | Progress Software&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://news.ycombinator.com/item?id=25048608" class="link"&gt;Hacker News | Ryan Bates &amp;amp; Digital Ocean&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://twitter.com/rbates/status/1331379415008247808" class="link"&gt;Digital Ocean Makes Amends | Stimulus Reflex Donation&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://incompetech.com" class="link"&gt;Episode Music: "Funkorama" by Kevin MacLeod&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://twitter.com/sprngr_" class="link"&gt;Episode Introduction and Outro by Michael Springer&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Brought to you by:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Scout APM&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Give &lt;a href="https://scoutapm.com/rubyonrails"&gt;Scout APM&lt;/a&gt; a try for free today and Scout will donate $5 to the open source project of your choice when you deploy.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 09 Dec 2020 16:22:02 -0000</pubDate>
+      <guid isPermaLink="false">Chef Acquired and Leading from the Front (Brittany &amp; Nick)</guid>
+      <link>https://5by5.tv/rubyonrails/348</link>
+    </item>
+    <item>
+      <title>[Akitando] #88 - RANT: Selo de Segurança é Marketing | Entendendo o Fator Humano</title>
+      <source url="https://www.akitaonrails.com">AkitaOnRails.com</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.akitaonrails.com"&gt;AkitaOnRails.com&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;h3&gt;DESCRIÇÃO&lt;/h3&gt;
+
+&lt;p&gt;Esquece Hacker, Mr. Robot, IAs do mal. Vamos entender o principal problema de segurança: o fator humano e como isso leva a processos de segurança que podem ser tudo, menos seguros. E também porque as coisas são como são de acordo com a lei.&lt;/p&gt;
+
+&lt;p&gt;Todo desenvolvedor de software precisa entender esse básico. Segurança não é opcional e você não devia achar que é problema dos outros. Antes de entrar em assuntos mais técnicos, garanta que você entendeu os conceitos deste video.&lt;/p&gt;
+
+&lt;p&gt;ERRATA: vários já apontaram nós comentários e estão certos, sem pensar disse "tigres na África" mas parece que tigres não são comuns na África, então fica a errata.&lt;/p&gt;
+
+&lt;p&gt;Links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vazamento de senhas do Ministério da…&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Wed, 09 Dec 2020 13:57:43 -0000</pubDate>
+      <guid isPermaLink="false">tag:www.akitaonrails.com,2008:Post/5891</guid>
+      <link>https://www.akitaonrails.com/2020/12/08/akitando-88-rant-selo-de-seguranca-e-marketing-entendendo-o-fator-humano</link>
+    </item>
+    <item>
+      <title>212: Diversify Tech with Veni Kunche</title>
+      <source url="https://www.greaterthancode.com">Greater Than Code</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.greaterthancode.com"&gt;Greater Than Code&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;01:17 - Veni’s Superpower: Being Adaptable and Not Giving Up&lt;/p&gt;
+
+&lt;p&gt;02:25 - Going From Coder to Entrepreneur&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://diversifytech.co/"&gt;Diversify Tech&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.womenwhocode.com/"&gt;Women Who Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.codewithveni.com/"&gt;Code With Veni Newsletter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;07:00 - Being Protective and Selective of Company Partnerships&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vetting Companies&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.glassdoor.com/index.htm"&gt;Glassdoor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Talking to Underrepresented Folx at Companies to Ask for Feedback&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;14:05 - Changes Veni Has Seen Over Time re: Hiring Around Diversity and Inclusion&lt;/p&gt;
+
+&lt;p&gt;15:38 - Things Hiring Managers Should and Should NOT Do When Hiring for Diversity&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Look at Metrics&lt;/li&gt;
+&lt;li&gt;Rethink Job Description Requirements&lt;/li&gt;
+&lt;li&gt;Revisit Your Interview Process&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;19:13 - Entry-Level Support&lt;/p&gt;
+
+&lt;p&gt;21:50 - Upholding Integrity &amp;gt; Capitalism&lt;/p&gt;
+
+&lt;p&gt;25:48 - Revenue Transparency&lt;/p&gt;
+
+&lt;p&gt;32:13 -…&lt;/p&gt;</description>
+      <pubDate>Wed, 09 Dec 2020 10:00:00 -0000</pubDate>
+      <guid isPermaLink="false">9655725b-994c-4ce1-882a-343bc3a74321</guid>
+      <link>https://www.greaterthancode.com/diversify-tech</link>
+    </item>
+    <item>
+      <title>Fixing Ruby 2.7 compilation error on Big Sur</title>
+      <source url="https://solnic.codes">solnic.codes</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://solnic.codes"&gt;solnic.codes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We’re in the process of upgrading to Ruby 2.7.2 at &lt;a href="http://castle.io"&gt;castle.io&lt;/a&gt; and today I had to install it on macOS Big Sur. Unfortunately, I hit a compilation error that looked like this:&lt;/p&gt;
+
+
+
+&lt;pre class="EnlighterJSRAW"&gt;$ ruby-install ruby 2.7.2
+# yada yada yada
+compiling dmyext.c
+translating probes probes.d
+. ./vm_opts.h
+compiling array.c
+compiling ast.c
+compiling bignum.c
+compiling class.c
+compiling compar.c
+compiling compile.c
+compile.c:9857:61: error: use of undeclared identifier 'RUBY_FUNCTION_NAME_STRING'
+    if (table == NULL) rb_bug("%s: table is not provided.", RUBY_FUNCTION_NAME_STRING);
+                                                            ^
+compile.c:9859:63: error: use of undeclared identifier…&lt;/pre&gt;</description>
+      <pubDate>Wed, 09 Dec 2020 09:59:54 -0000</pubDate>
+      <guid isPermaLink="true">https://solnic.codes/?p=1245</guid>
+      <link>https://solnic.codes/2020/12/09/fixing-ruby-2-7-compilation-error-on-big-sur/</link>
+    </item>
+    <item>
+      <title>Master RSpec with command line</title>
+      <source url="https://longliveruby.com">Long live Ruby</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://longliveruby.com"&gt;Long live Ruby&lt;/a&gt;.&lt;/p&gt;Using RSpec can be a lot more effective and fun if you know well how many options you have at your disposal. This article will cover more advanced usage of the rspec command and less known options but still useful.
+</description>
+      <pubDate>Wed, 09 Dec 2020 09:21:39 -0000</pubDate>
+      <guid isPermaLink="false">tag:longliveruby.com,2005:Article/16</guid>
+      <link>https://longliveruby.com/articles/rspec-command-line</link>
+    </item>
+    <item>
+      <title>3.1.5 Released</title>
+      <source url="http://blog.rubygems.org/">RubyGems Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://blog.rubygems.org/"&gt;RubyGems Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;RubyGems 3.1.5 includes minor enhancements.&lt;/p&gt;
+
+&lt;p&gt;To update to the latest RubyGems you can run:&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;gem update --system
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you need to upgrade or downgrade please follow the &lt;a href="http://docs.seattlerb.org/rubygems/UPGRADING_rdoc.html"&gt;how to upgrade/downgrade
+RubyGems&lt;/a&gt; instructions.  To install RubyGems by hand see the
+&lt;a href="https://rubygems.org/pages/download"&gt;Download RubyGems&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Minor enhancements:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add GlobalSign Root CA - R3 cert and remove outdated certs. Pull request #4100 by Aditya Prakash.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SHA256 Checksums:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;rubygems-3.1.5.tgz&lt;br&gt;
+6d5605fdbbfdf2284794f8b2680eec948a4c6515c0d1a3e4360c82b8b0b9ee8c&lt;/li&gt;
+  &lt;li&gt;rubygems-3.1.5.zip&lt;br&gt;
+1174f5ddb9467717b8603c5339a8074570f8e45c5bfba513120e478dd2ad7def&lt;/li&gt;
+  &lt;li&gt;rubygems-update-3.1.5.gem&lt;br&gt;
+4c98f4ad8ca2f256cfffefde1739a7b13c6ccb94c40bb321559c0507b9acd2dc&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+      <pubDate>Wed, 09 Dec 2020 07:20:38 -0000</pubDate>
+      <guid isPermaLink="true">http://blog.rubygems.org/2020/12/09/3.1.5-released</guid>
+      <link>http://blog.rubygems.org/2020/12/09/3.1.5-released.html</link>
+    </item>
+    <item>
+      <title>2.7.11 Released</title>
+      <source url="http://blog.rubygems.org/">RubyGems Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://blog.rubygems.org/"&gt;RubyGems Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;RubyGems 2.7.11 includes minor enhancements.&lt;/p&gt;
+
+&lt;p&gt;To update to the latest RubyGems you can run:&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;gem update --system
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you need to upgrade or downgrade please follow the &lt;a href="http://docs.seattlerb.org/rubygems/UPGRADING_rdoc.html"&gt;how to upgrade/downgrade
+RubyGems&lt;/a&gt; instructions.  To install RubyGems by hand see the
+&lt;a href="http://rubygems.org/pages/download"&gt;Download RubyGems&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Minor enhancements:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add GlobalSign Root CA - R3 cert and remove outdated certs. Pull request #4100 by Aditya Prakash.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SHA256 Checksums:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;rubygems-2.7.11.tgz&lt;br&gt;
+732224cc49e82bd4beacbfe6b86384a8a0ed4432f65e7a08a5b2d766059e882f&lt;/li&gt;
+  &lt;li&gt;rubygems-2.7.11.zip&lt;br&gt;
+0eab117e6e57cb10c1d0777e37fea1fa357b5918bdff0e9eb581c16d5d1746f5&lt;/li&gt;
+  &lt;li&gt;rubygems-update-2.7.11.gem&lt;br&gt;
+9383ede21fb93e9ecda251861ab1d7d4d98f26054b4c13364f0f9e26b2a4f290&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+      <pubDate>Wed, 09 Dec 2020 06:20:48 -0000</pubDate>
+      <guid isPermaLink="true">http://blog.rubygems.org/2020/12/09/2.7.11-released</guid>
+      <link>http://blog.rubygems.org/2020/12/09/2.7.11-released.html</link>
+    </item>
+    <item>
+      <title>3.0.9 Released</title>
+      <source url="http://blog.rubygems.org/">RubyGems Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="http://blog.rubygems.org/"&gt;RubyGems Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;RubyGems 3.0.9 includes minor enhancements.&lt;/p&gt;
+
+&lt;p&gt;To update to the latest RubyGems you can run:&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;gem update --system
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you need to upgrade or downgrade please follow the &lt;a href="http://docs.seattlerb.org/rubygems/UPGRADING_rdoc.html"&gt;how to upgrade/downgrade
+RubyGems&lt;/a&gt; instructions.  To install RubyGems by hand see the
+&lt;a href="http://rubygems.org/pages/download"&gt;Download RubyGems&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Minor enhancements:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add GlobalSign Root CA - R3 cert and remove outdated certs. Pull request #4100 by Aditya Prakash.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SHA256 Checksums:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;rubygems-3.0.9.tgz&lt;br&gt;
+625fc3fb8b0fa4a606354a1f6706e5141dff5d504915c9317a664ce2de1ab8f5&lt;/li&gt;
+  &lt;li&gt;rubygems-3.0.9.zip&lt;br&gt;
+2a6fa6ffea02a2e15e45589a3b05569cd173c0408b0268d76dbd117ae33c6f4d&lt;/li&gt;
+  &lt;li&gt;rubygems-update-3.0.9.gem&lt;br&gt;
+3f1a9d099a424488375c51766f95be185ca25e68555ae5513179adbbb82de624&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+      <pubDate>Wed, 09 Dec 2020 06:20:48 -0000</pubDate>
+      <guid isPermaLink="true">http://blog.rubygems.org/2020/12/09/3.0.9-released</guid>
+      <link>http://blog.rubygems.org/2020/12/09/3.0.9-released.html</link>
+    </item>
+    <item>
+      <title>Rails 6.1 allows associations to support destroy_async option with dependent key</title>
+      <source url="https://www.bigbinary.com/">BigBinary Blog</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.bigbinary.com/"&gt;BigBinary Blog&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;em&gt;This blog is part of our &lt;a href="https://blog.bigbinary.com/categories/rails-6-1/"&gt;Rails 6.1 series&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In Rails 6.1, Rails will enqueue a background job to
+destroy associated records if &lt;code class="highlighter-rouge"&gt;dependent: :destroy_async&lt;/code&gt;
+is setup.&lt;/p&gt;
+
+&lt;p&gt;Let’s consider the following example.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-ruby"&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Team&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="no"&gt;ApplicationRecord&lt;/span&gt;
+  &lt;span class="n"&gt;has_many&lt;/span&gt; &lt;span class="ss"&gt;:players&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;dependent: :destroy_async&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Player&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="no"&gt;ApplicationRecord&lt;/span&gt;
+  &lt;span class="n"&gt;belongs_to&lt;/span&gt; &lt;span class="ss"&gt;:team&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, if we call &lt;code class="highlighter-rouge"&gt;destroy&lt;/code&gt; method on an instance of
+class &lt;code class="highlighter-rouge"&gt;Team&lt;/code&gt; Rails would enqueue an asynchronous job to delete the
+associated &lt;code class="highlighter-rouge"&gt;players&lt;/code&gt; records.&lt;/p&gt;
+
+&lt;p&gt;We can verify this asynchronous job with a following test case.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-ruby"&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TeamTest&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="no"&gt;ActiveSupport&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;TestCase&lt;/span&gt;
+  &lt;span class="kp"&gt;include&lt;/span&gt; &lt;span class="no"&gt;ActiveJob&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;TestHelper&lt;/span&gt;
+
+  &lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="s2"&gt;"destroying a record destroys the associations using a background…&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <pubDate>Tue, 08 Dec 2020 21:20:45 -0000</pubDate>
+      <guid isPermaLink="true">https://blog.bigbinary.com/2020/12/08/rails-6-1-allows-associations-to-support-destroy_async-option-with-dependent-key</guid>
+      <link>https://blog.bigbinary.com/2020/12/08/rails-6-1-allows-associations-to-support-destroy_async-option-with-dependent-key.html</link>
+    </item>
+    <item>
+      <title>JRuby 9.2.14.0 Released</title>
+      <source url="https://www.jruby.org">JRuby.org News</source>
+      <description>&lt;p class="rubyland-attribution" data-rubyland-attribution="true"&gt;Originally appeared on &lt;a href="https://www.jruby.org"&gt;JRuby.org News&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;The JRuby community is pleased to announce the release of JRuby 9.2.14.0&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Homepage: &lt;a href="http://www.jruby.org/"&gt;http://www.jruby.org/&lt;/a&gt;
+&lt;/li&gt;
+  &lt;li&gt;Download: &lt;a href="http://www.jruby.org/download"&gt;http://www.jruby.org/download&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;JRuby 9.2.x is compatible with Ruby 2.5.x and stays in sync with C Ruby.  As always there is a mix of miscellaneous fixes so be sure to read the issue list below.  All users are encouraged to upgrade.&lt;/p&gt;
+
+&lt;p&gt;As we are still actively working on 9.3.0.0 we decided to put out another 9.2.x release to fix some of the more recently reported issues.&lt;/p&gt;
+
+&lt;h3&gt;Security&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The WEBrick HTTP server has been updated to 1.6.1 to address CVE-2020-25613. (&lt;a href="https://github.com/jruby/jruby/pull/6462"&gt;#6462&lt;/a&gt;, &lt;a href="https://github.com/jruby/jruby/pull/6463"&gt;#6463&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Standard Library&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;did_you_mean was updated to 1.2.1 to remove some Creative Commons licensed…&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <pubDate>Tue, 08 Dec 2020 20:21:08 -0000</pubDate>
+      <guid isPermaLink="true">https://www.jruby.org/2020/12/08/jruby-9-2-14-0</guid>
+      <link>https://www.jruby.org/2020/12/08/jruby-9-2-14-0.html</link>
+    </item>
+  </channel>
+</rss>

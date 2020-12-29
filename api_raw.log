@@ -1,0 +1,2 @@
+# Logfile created on 2020-12-28 15:28:59 +0800 by logger.rb/66358
+I, [2020-12-28T16:39:59.116938 #40118]  INFO -- : https://api.stackexchange.com/2.2/search?site=stackoverflow&filter=!*1_).BnZb8pdvWlZpJYNyauMekouxK9-RzUNUrwiB&tagged=rails&key=8qwQOrMcRd*4tfCBkiGJEA(( => {"items":[],"has_more":false,"quota_max":10000,"quota_remaining":9993,"page":1,"page_size":30,"total":0,"type":"question"}

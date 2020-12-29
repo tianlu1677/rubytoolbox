@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: //ogp.me/ns# fb: //ogp.me/ns/fb# website: //ogp.me/ns/website#">
+<meta charset="utf-8">
+<meta http-equiv="Content-Language" content="en_US">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruby on Rails Screencast Tutorials  - Page 6 | GoRails</title>
+<link rel="canonical" href="https://gorails.com/episodes" />
+<meta name="stripe-key" content="pk_daFP6nPmDBA00HxJrslPhckbWUZ92" />
+<meta name="google-site-verification" content="ju-3k3BBfiCNNz3Ug59RQi-dTrGY5uI4wG7L8SHNjRo" />
+<meta name="keywords" content="rails, ruby on rails, screencasts, gorails, railscast, railscasts, tips, tricks, tutorials, training, podcasts, programming">
+<meta name="description" content="Screencast tutorials to help you learn Ruby on Rails. Videos to help you learn Ruby, Rails, Javascript, Vue.js, React, PostgreSQL, MySQL, Ubuntu, and more.">
+
+<link rel="author" href="https://plus.google.com/106699287110566383664/posts" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@GoRails" />
+<meta name="twitter:title" content="Ruby on Rails Screencast Tutorials  - Page 6 | GoRails" />
+<meta name="twitter:description" content="Screencast tutorials to help you learn Ruby on Rails. Videos to help you learn Ruby, Rails, Javascript, Vue.js, React, PostgreSQL, MySQL, Ubuntu, and more." />
+<meta name="twitter:creator" content="@excid3" />
+<meta name="twitter:image" content="https://d2i2nj5el4wq1j.cloudfront.net/assets/open-graph-490b60083415dfd5dffd35648488c3f6da8615f7a7386cbd6a123423e98537a7.jpg" />
+<meta property="og:title" content="Ruby on Rails Screencast Tutorials  - Page 6 | GoRails - GoRails" />
+<meta property="og:url" content="https://gorails.com/episodes" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Screencast tutorials to help you learn Ruby on Rails. Videos to help you learn Ruby, Rails, Javascript, Vue.js, React, PostgreSQL, MySQL, Ubuntu, and more." />
+<meta property="og:site_name" content="GoRails" />
+<meta property="og:image" content="https://d2i2nj5el4wq1j.cloudfront.net/assets/open-graph-490b60083415dfd5dffd35648488c3f6da8615f7a7386cbd6a123423e98537a7.jpg" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="pV5E/BOIBnSdU5Gh+SGxleexZMSBa33qv9HIJLVHuYZEREXAIwWDe5xFP0Mp1sLhao8Pl7gCWTMx1HD+MGBtTA==" />
+<meta name="apple-mobile-web-app-title" content="GoRails">
+<meta name="application-name" content="GoRails">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://gorails.com/blog.rss" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-8399719-16"></script>
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" media="all" href="https://d2i2nj5el4wq1j.cloudfront.net/packs/css/application-33445a04.css" data-turbolinks-track="reload" />
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<script src="https://js.stripe.com/v3/" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://js.braintreegateway.com/v2/braintree.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://d2i2nj5el4wq1j.cloudfront.net/packs/js/application-93deb41d4fdf8ecfed51.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://kit.fontawesome.com/e11af360e9.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+<body class="flex flex-col h-screen font-sans antialiased text-gray-900">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-gray-900">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center">
+<a class="flex-shrink-0" href="/">
+<img alt="GoRails Logo" title="GoRails" class="h-4" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/logo-white-3e5fbf04abd820850570b74c273d6973f4da68d3e7e351075220968dd19d798d.svg" />
+</a> <div class="hidden lg:block">
+<div class="ml-6 flex items-baseline">
+<a starts_with="/series" class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none text-gray-300 focus:text-white hover:bg-gray-700 focus:bg-gray-700" href="/series">Topics</a>
+<a starts_with="/episodes" class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none bg-gray-800 text-white" href="/episodes">Lessons</a>
+<a starts_with="/guides" class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none text-gray-300 focus:text-white hover:bg-gray-700 focus:bg-gray-700" href="/guides">Guides</a>
+<a starts_with="/forum" class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none text-gray-300 focus:text-white hover:bg-gray-700 focus:bg-gray-700" href="/forum">Forum</a>
+<span x-data="{ open: false }" @click.away="open = false">
+<a @click="open = !open" class="cursor-pointer ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">More</a>
+<div x-show="open" style="display:none;" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="origin-top-right absolute right-0 mt-4 shadow-lg z-50 w-full">
+<div class="flex bg-white shadow-xs text-sm">
+<div class="w-1/2 p-12 lg:p-16">
+<h6 class="uppercase font-bold text-gray-700 text-xs tracking-wide mb-2">Courses</h6>
+<a target="_blank" class="flex items-center -m-2 p-2 rounded-md hover:bg-gray-100" href="https://courses.gorails.com/advanced-ruby-for-rails-devs?utm_source=gorails">
+<div class="flex items-center">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/icons/icons8-jewel-64-f61f429c05e99b1c2e64f696a7b11ad651f65d002a6cbb913133d6ff152ba74d.png" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-3">
+<h6 class="font-semibold">Advanced Ruby: Behind the Magic</h6>
+<p class="text-gray-600 text-xs">A lot of Ruby code is "magic". We'll explain the magic and see how it works using the powerful tools Ruby gives us.</p>
+</div>
+</div>
+</a>
+<a target="_blank" class="flex items-center -m-2 p-2 rounded-md hover:bg-gray-100" href="https://courses.gorails.com/payments-with-rails-master-class?utm_source=gorails">
+<div class="flex items-center">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/icons/icons8-bank-cards-64-5aa50706ce6937894f5ed9aba8c86aa655de96f11d03c74275a1207763a70ba9.png" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-3">
+<h6 class="font-semibold">Payments with Rails Master Class </h6>
+<p class="text-gray-600 text-xs">Accept subscription and one-time payments with Stripe in your Rails apps</p>
+</div>
+</div>
+</a>
+<a target="_blank" class="flex items-center mt-4 -m-2 p-2 rounded-md hover:bg-gray-100" href="https://store.andrewfomera.com/learn-rails-by-building-instagram/owmsf?utm_source=gorails">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/icons/icons8-picture-64-cef09f1f9ae2a3070272e43cd8a0a97ef6163a39230e2c899537d563aeaf8253.png" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-3">
+<h6 class="font-semibold">Learn Rails by Building Instagram</h6>
+<p class="text-gray-600 text-xs">Building a simplified version of Instagram is a great way to learn Rails.</p>
+</div>
+</a>
+<a target="_blank" class="flex items-center mt-4 -m-2 p-2 rounded-md hover:bg-gray-100" href="https://courses.gorails.com/refactoring-rails?utm_source=gorails">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/refactoring-rails-icon-45dcc69775a0c540c5216e6e34187857eca4f1db2eaa31976a85a3515dd20f3b.svg" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-4">
+<h6 class="font-semibold">Refactoring Rails</h6>
+<p class="text-gray-600 text-xs">Expert advice on keeping Rails apps organized and fast.</p>
+</div>
+</a> </div>
+<div class="w-1/2 p-12 lg:p-16 bg-gray-50">
+<h6 class="uppercase font-bold text-gray-700 text-xs tracking-wide mb-2">Apps</h6>
+<a target="_blank" class="flex items-center -m-2 p-2 rounded-md hover:bg-gray-200" href="https://hatchbox.io/?utm_source=gorails">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/hatchbox-icon-66f4410d17c0532d2bb603ee02a6287a2b071fc77a2cb0c7735eec6b7be92ba5.png" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-4">
+<h6 class="font-semibold">Hatchbox.io</h6>
+<p class="text-gray-600 text-xs">Cheap, easy hosting for Ruby and Rails apps.</p>
+</div>
+</a>
+<a target="_blank" class="flex items-center mt-4 -m-2 p-2 rounded-md hover:bg-gray-200" href="https://jumpstartrails.com/?utm_source=gorails">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/jumpstart-pro-3d3c015164e661e62ce6596c705bb2d0e78a51e145acc6d122293ad79c605b53.svg" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-4">
+<h6 class="font-semibold">Jumpstart Rails Template</h6>
+<p class="text-gray-600 text-xs">Launch your product business way faster with our SaaS template.</p>
+</div>
+</a>
+<a target="_blank" class="flex items-center mt-4 -m-2 p-2 rounded-md hover:bg-gray-200" href="https://applocale.dev/?utm_source=gorails">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/applocale-ed95819ba1d07f52991a9fafdd70fa8aabb9f092a44e7cb230f6a7ab3846d943.svg" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-4">
+<h6 class="font-semibold">AppLocale.dev</h6>
+<p class="text-gray-600 text-xs">Translate your Ruby on Rails apps.</p>
+</div>
+</a>
+<h6 class="uppercase font-bold text-gray-700 text-xs tracking-wide mt-8 mb-2">Podcast</h6>
+<a target="_blank" class="flex items-center -m-2 p-2 rounded-md hover:bg-gray-200" href="https://remoteruby.transistor.fm">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/remote_ruby-350c8fe779082c4f4111da366d919bad45a1df2721d0d9263bafc7346e3d0fd2.jpg" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-4">
+ <h6 class="font-semibold">Remote Ruby Podcast</h6>
+<p class="text-gray-600 text-xs">A weekly podcast on web development and building products with Ruby, Rails, Javascript, and more.</p>
+</div>
+</a> </div>
+</div>
+</div>
+</span>
+</div>
+</div>
+</div>
+<div class="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
+<div class="max-w-lg w-full lg:max-w-xs">
+<form action="/search" accept-charset="UTF-8" method="get">
+<label for="search" class="sr-only">Search</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+</svg>
+</div>
+<input type="text" name="q" id="q" placeholder="Search" class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-700 placeholder-gray-400 focus:outline-none focus:bg-white sm:text-sm transition duration-150 ease-in-out" />
+</div>
+</form> </div>
+</div>
+<div class="hidden lg:block">
+<div class="ml-4 flex items-center md:ml-6">
+<span class="mx-2 inline-flex rounded-md shadow-sm">
+<a class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150" href="/users/sign_up">Sign up</a>
+</span>
+<span class="mx-2 inline-flex rounded-md shadow-sm">
+<a class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-300 hover:bg-gray-700 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150" href="/users/sign_in">Log in</a>
+</span>
+</div>
+</div>
+<div class="-mr-2 flex lg:hidden">
+<button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+<svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+<path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+<path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+</svg>
+</button>
+</div>
+</div>
+</div>
+<div :class="{'block': open, 'hidden': !open}" class="hidden lg:hidden">
+<div class="px-2 pt-2 pb-3 sm:px-3">
+<a class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" href="/series">Topics</a>
+<a class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" href="/episodes">Lessons</a>
+<a class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" href="/guides">Guides</a>
+<a class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" href="/forum">Forum</a>
+</div>
+<div class="pt-4 pb-3 border-t border-gray-700">
+<div class="mt-3 px-2" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
+<a class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" role="menuitem" href="/users/sign_in">Log in</a>
+<a class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" role="menuitem" href="/users/sign_up">Sign up</a>
+</div>
+</div>
+</div>
+</nav>
+<header class="bg-gray-800 shadow-sm">
+<div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+<h1 class="leading-6 font-semibold text-white text-sm">
+<a class="font-normal text-gray-300" href="/episodes">All Lessons</a>
+</h1>
+</div>
+</header>
+<main class="flex-grow bg-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 mb-10 grid sm:grid-cols-12 gap-6">
+<div class="sm:col-span-9">
+<div class="bg-white shadow p-4 sm:rounded-lg">
+<div class="rounded-md p-4 group" id="episode_328">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/dependency-injection-ruby?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/9f0be09c50c904521e3855974c6488d2.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">5:33</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/dependency-injection-ruby?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+How to use Dependency Injection in Ruby
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#326
+·
+<time datetime="2020-01-08T06:00:00Z" data-local="time" data-format="%b %d, %Y">Jan 08, 2020</time>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">Dependency Injection is a common technique for making your code more flexible and testable by removing strict dependencies upon other classes, modules, and other types of dependencies in your code</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="328">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="328">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="328">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+0
+</span> </div>
+</div>
+</div>
+</div>
+</div><hr class="border-gray-100 my-4" />
+<div class="rounded-md p-4 group" id="episode_327">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/how-to-use-stubs-minitest?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/5f7e2580eb08678b7a1f1cfc8ecb6478.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">7:03</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/how-to-use-stubs-minitest?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+How to use Test Stubs with Minitest
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#325
+·
+<time datetime="2019-12-30T06:00:00Z" data-local="time" data-format="%b %d, %Y">Dec 30, 2019</time>
+<span class="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-red-100 text-red-800">Pro</span>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">Test stubs are very handy when you want to mock out the response to a method call. This allows your tests to be more reliable and skip long running or unnecessary method calls.</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="327">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="327">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="327">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+0
+</span> </div>
+</div>
+</div>
+</div>
+</div><hr class="border-gray-100 my-4" />
+<div class="rounded-md p-4 group" id="episode_326">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/brittle-tests-hardcoded-values?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/c236e13642fe8eb7ea110e0203445643.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">4:50</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/brittle-tests-hardcoded-values?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+Fixing Brittle Tests: Avoid Hardcoded Values
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#324
+·
+<time datetime="2019-12-23T13:00:00Z" data-local="time" data-format="%b %d, %Y">Dec 23, 2019</time>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">Test suites often become brittle over time where small changes end up breaking various tests. One way to avoid that is by avoiding using hardcoded values in your test suite.</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="326">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="326">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="326">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/

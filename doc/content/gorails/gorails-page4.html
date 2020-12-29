@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: //ogp.me/ns# fb: //ogp.me/ns/fb# website: //ogp.me/ns/website#">
+<meta charset="utf-8">
+<meta http-equiv="Content-Language" content="en_US">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruby on Rails Screencast Tutorials  - Page 4 | GoRails</title>
+<link rel="canonical" href="https://gorails.com/episodes" />
+<meta name="stripe-key" content="pk_daFP6nPmDBA00HxJrslPhckbWUZ92" />
+<meta name="google-site-verification" content="ju-3k3BBfiCNNz3Ug59RQi-dTrGY5uI4wG7L8SHNjRo" />
+<meta name="keywords" content="rails, ruby on rails, screencasts, gorails, railscast, railscasts, tips, tricks, tutorials, training, podcasts, programming">
+<meta name="description" content="Screencast tutorials to help you learn Ruby on Rails. Videos to help you learn Ruby, Rails, Javascript, Vue.js, React, PostgreSQL, MySQL, Ubuntu, and more.">
+
+<link rel="author" href="https://plus.google.com/106699287110566383664/posts" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@GoRails" />
+<meta name="twitter:title" content="Ruby on Rails Screencast Tutorials  - Page 4 | GoRails" />
+<meta name="twitter:description" content="Screencast tutorials to help you learn Ruby on Rails. Videos to help you learn Ruby, Rails, Javascript, Vue.js, React, PostgreSQL, MySQL, Ubuntu, and more." />
+<meta name="twitter:creator" content="@excid3" />
+<meta name="twitter:image" content="https://d2i2nj5el4wq1j.cloudfront.net/assets/open-graph-490b60083415dfd5dffd35648488c3f6da8615f7a7386cbd6a123423e98537a7.jpg" />
+<meta property="og:title" content="Ruby on Rails Screencast Tutorials  - Page 4 | GoRails - GoRails" />
+<meta property="og:url" content="https://gorails.com/episodes" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Screencast tutorials to help you learn Ruby on Rails. Videos to help you learn Ruby, Rails, Javascript, Vue.js, React, PostgreSQL, MySQL, Ubuntu, and more." />
+<meta property="og:site_name" content="GoRails" />
+<meta property="og:image" content="https://d2i2nj5el4wq1j.cloudfront.net/assets/open-graph-490b60083415dfd5dffd35648488c3f6da8615f7a7386cbd6a123423e98537a7.jpg" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="7eN8cJqN2p85YP2/yI3eOQTgPug4hzs9Zxtma0VB8vNGjrcOKTKZfnSb3LEE77k54L/s0K6TJB6ZUFu//N1f/A==" />
+<meta name="apple-mobile-web-app-title" content="GoRails">
+<meta name="application-name" content="GoRails">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://gorails.com/blog.rss" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-8399719-16"></script>
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" media="all" href="https://d2i2nj5el4wq1j.cloudfront.net/packs/css/application-33445a04.css" data-turbolinks-track="reload" />
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<script src="https://js.stripe.com/v3/" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://js.braintreegateway.com/v2/braintree.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://d2i2nj5el4wq1j.cloudfront.net/packs/js/application-93deb41d4fdf8ecfed51.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://kit.fontawesome.com/e11af360e9.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+<body class="flex flex-col h-screen font-sans antialiased text-gray-900">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-gray-900">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center">
+<a class="flex-shrink-0" href="/">
+<img alt="GoRails Logo" title="GoRails" class="h-4" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/logo-white-3e5fbf04abd820850570b74c273d6973f4da68d3e7e351075220968dd19d798d.svg" />
+</a> <div class="hidden lg:block">
+<div class="ml-6 flex items-baseline">
+<a starts_with="/series" class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none text-gray-300 focus:text-white hover:bg-gray-700 focus:bg-gray-700" href="/series">Topics</a>
+<a starts_with="/episodes" class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none bg-gray-800 text-white" href="/episodes">Lessons</a>
+<a starts_with="/guides" class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none text-gray-300 focus:text-white hover:bg-gray-700 focus:bg-gray-700" href="/guides">Guides</a>
+<a starts_with="/forum" class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none text-gray-300 focus:text-white hover:bg-gray-700 focus:bg-gray-700" href="/forum">Forum</a>
+<span x-data="{ open: false }" @click.away="open = false">
+<a @click="open = !open" class="cursor-pointer ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">More</a>
+<div x-show="open" style="display:none;" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="origin-top-right absolute right-0 mt-4 shadow-lg z-50 w-full">
+<div class="flex bg-white shadow-xs text-sm">
+<div class="w-1/2 p-12 lg:p-16">
+<h6 class="uppercase font-bold text-gray-700 text-xs tracking-wide mb-2">Courses</h6>
+<a target="_blank" class="flex items-center -m-2 p-2 rounded-md hover:bg-gray-100" href="https://courses.gorails.com/advanced-ruby-for-rails-devs?utm_source=gorails">
+<div class="flex items-center">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/icons/icons8-jewel-64-f61f429c05e99b1c2e64f696a7b11ad651f65d002a6cbb913133d6ff152ba74d.png" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-3">
+<h6 class="font-semibold">Advanced Ruby: Behind the Magic</h6>
+<p class="text-gray-600 text-xs">A lot of Ruby code is "magic". We'll explain the magic and see how it works using the powerful tools Ruby gives us.</p>
+</div>
+</div>
+</a>
+<a target="_blank" class="flex items-center -m-2 p-2 rounded-md hover:bg-gray-100" href="https://courses.gorails.com/payments-with-rails-master-class?utm_source=gorails">
+<div class="flex items-center">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/icons/icons8-bank-cards-64-5aa50706ce6937894f5ed9aba8c86aa655de96f11d03c74275a1207763a70ba9.png" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-3">
+<h6 class="font-semibold">Payments with Rails Master Class </h6>
+<p class="text-gray-600 text-xs">Accept subscription and one-time payments with Stripe in your Rails apps</p>
+</div>
+</div>
+</a>
+<a target="_blank" class="flex items-center mt-4 -m-2 p-2 rounded-md hover:bg-gray-100" href="https://store.andrewfomera.com/learn-rails-by-building-instagram/owmsf?utm_source=gorails">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/icons/icons8-picture-64-cef09f1f9ae2a3070272e43cd8a0a97ef6163a39230e2c899537d563aeaf8253.png" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-3">
+<h6 class="font-semibold">Learn Rails by Building Instagram</h6>
+<p class="text-gray-600 text-xs">Building a simplified version of Instagram is a great way to learn Rails.</p>
+</div>
+</a>
+<a target="_blank" class="flex items-center mt-4 -m-2 p-2 rounded-md hover:bg-gray-100" href="https://courses.gorails.com/refactoring-rails?utm_source=gorails">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/refactoring-rails-icon-45dcc69775a0c540c5216e6e34187857eca4f1db2eaa31976a85a3515dd20f3b.svg" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-4">
+<h6 class="font-semibold">Refactoring Rails</h6>
+<p class="text-gray-600 text-xs">Expert advice on keeping Rails apps organized and fast.</p>
+</div>
+</a> </div>
+<div class="w-1/2 p-12 lg:p-16 bg-gray-50">
+<h6 class="uppercase font-bold text-gray-700 text-xs tracking-wide mb-2">Apps</h6>
+<a target="_blank" class="flex items-center -m-2 p-2 rounded-md hover:bg-gray-200" href="https://hatchbox.io/?utm_source=gorails">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/hatchbox-icon-66f4410d17c0532d2bb603ee02a6287a2b071fc77a2cb0c7735eec6b7be92ba5.png" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-4">
+<h6 class="font-semibold">Hatchbox.io</h6>
+<p class="text-gray-600 text-xs">Cheap, easy hosting for Ruby and Rails apps.</p>
+</div>
+</a>
+<a target="_blank" class="flex items-center mt-4 -m-2 p-2 rounded-md hover:bg-gray-200" href="https://jumpstartrails.com/?utm_source=gorails">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/jumpstart-pro-3d3c015164e661e62ce6596c705bb2d0e78a51e145acc6d122293ad79c605b53.svg" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-4">
+<h6 class="font-semibold">Jumpstart Rails Template</h6>
+<p class="text-gray-600 text-xs">Launch your product business way faster with our SaaS template.</p>
+</div>
+</a>
+<a target="_blank" class="flex items-center mt-4 -m-2 p-2 rounded-md hover:bg-gray-200" href="https://applocale.dev/?utm_source=gorails">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/applocale-ed95819ba1d07f52991a9fafdd70fa8aabb9f092a44e7cb230f6a7ab3846d943.svg" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-4">
+<h6 class="font-semibold">AppLocale.dev</h6>
+<p class="text-gray-600 text-xs">Translate your Ruby on Rails apps.</p>
+</div>
+</a>
+<h6 class="uppercase font-bold text-gray-700 text-xs tracking-wide mt-8 mb-2">Podcast</h6>
+<a target="_blank" class="flex items-center -m-2 p-2 rounded-md hover:bg-gray-200" href="https://remoteruby.transistor.fm">
+<img data-src="https://d2i2nj5el4wq1j.cloudfront.net/assets/remote_ruby-350c8fe779082c4f4111da366d919bad45a1df2721d0d9263bafc7346e3d0fd2.jpg" class="h-8 w-8 flex-shrink-0 rounded" />
+<div class="ml-4">
+<h6 class="font-semibold">Remote Ruby Podcast</h6>
+<p class="text-gray-600 text-xs">A weekly podcast on web development and building products with Ruby, Rails, Javascript, and more.</p>
+</div>
+</a> </div>
+</div>
+</div>
+</span>
+</div>
+</div>
+</div>
+<div class="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
+<div class="max-w-lg w-full lg:max-w-xs">
+<form action="/search" accept-charset="UTF-8" method="get">
+<label for="search" class="sr-only">Search</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+</svg>
+</div>
+<input type="text" name="q" id="q" placeholder="Search" class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-700 placeholder-gray-400 focus:outline-none focus:bg-white sm:text-sm transition duration-150 ease-in-out" />
+</div>
+</form> </div>
+</div>
+<div class="hidden lg:block">
+<div class="ml-4 flex items-center md:ml-6">
+<span class="mx-2 inline-flex rounded-md shadow-sm">
+<a class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150" href="/users/sign_up">Sign up</a>
+</span>
+<span class="mx-2 inline-flex rounded-md shadow-sm">
+<a class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-300 hover:bg-gray-700 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150" href="/users/sign_in">Log in</a>
+</span>
+</div>
+</div>
+<div class="-mr-2 flex lg:hidden">
+<button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+<svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+<path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+<path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+</svg>
+</button>
+</div>
+</div>
+</div>
+<div :class="{'block': open, 'hidden': !open}" class="hidden lg:hidden">
+<div class="px-2 pt-2 pb-3 sm:px-3">
+<a class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" href="/series">Topics</a>
+<a class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" href="/episodes">Lessons</a>
+<a class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" href="/guides">Guides</a>
+<a class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" href="/forum">Forum</a>
+</div>
+<div class="pt-4 pb-3 border-t border-gray-700">
+<div class="mt-3 px-2" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
+<a class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" role="menuitem" href="/users/sign_in">Log in</a>
+<a class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" role="menuitem" href="/users/sign_up">Sign up</a>
+</div>
+</div>
+</div>
+</nav>
+<header class="bg-gray-800 shadow-sm">
+<div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+<h1 class="leading-6 font-semibold text-white text-sm">
+<a class="font-normal text-gray-300" href="/episodes">All Lessons</a>
+</h1>
+</div>
+</header>
+<main class="flex-grow bg-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 mb-10 grid sm:grid-cols-12 gap-6">
+<div class="sm:col-span-9">
+<div class="bg-white shadow p-4 sm:rounded-lg">
+<div class="rounded-md p-4 group" id="episode_349">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/rails-group-chat-revised-part-1?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/f868d29c343ed4320121688021dffff1.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">13:09</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/rails-group-chat-revised-part-1?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+Realtime Group Chat with Rails [Revised] - Part 1
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#346
+·
+<time datetime="2020-05-25T05:00:00Z" data-local="time" data-format="%b %d, %Y">May 25, 2020</time>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">An updated version of our Group Chat series using Webpacker, ActionCable, Stimulus.js, and modern Javascript to build a very clean version of realtime group chat in Rails</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="349">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="349">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="349">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+3
+</span> </div>
+</div>
+</div>
+</div>
+</div><hr class="border-gray-100 my-4" />
+<div class="rounded-md p-4 group" id="episode_348">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/throttling-infinite-scroll?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/fe65b920e18767c2b50221748dcb8ad9.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">4:31</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/throttling-infinite-scroll?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+Throttling Infinite Scroll Events in Javascript
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#345
+·
+<time datetime="2020-05-18T05:00:00Z" data-local="time" data-format="%b %d, %Y">May 18, 2020</time>
+<span class="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-red-100 text-red-800">Pro</span>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">Scroll events in Javascript can happen quickly. We want to make sure we don&#39;t request the same page multiple times which we can solve easily by introducing a little throttling.</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="348">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="348">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="348">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+ <g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+0
+</span> </div>
+</div>
+</div>
+</div>
+</div><hr class="border-gray-100 my-4" />
+<div class="rounded-md p-4 group" id="episode_347">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/infinite-scroll-stimulus-js?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/983c6ffca0f1e07317cc13d4e5a8f137.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">15:17</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/infinite-scroll-stimulus-js?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+Infinite Scroll in Rails with Stimulus.js
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#344
+·
+<time datetime="2020-05-11T05:00:00Z" data-local="time" data-format="%b %d, %Y">May 11, 2020</time>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">Adding Infinite Scroll to your Rails app is easy with Stimulus.js, Turbolinks, and Pagy</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="347">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="347">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="347">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+14
+</span> </div>
+</div>
+</div>
+</div>
+</div><hr class="border-gray-100 my-4" />
+<div class="rounded-md p-4 group" id="episode_346">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/rails-drag-and-drop-sortable?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/ffcd7be4e440b73069b720904b245f10.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">13:14</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/rails-drag-and-drop-sortable?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+Drag and Drop sortable lists with Rails &amp; Stimulus JS
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#343
+·
+<time datetime="2020-04-28T05:00:00Z" data-local="time" data-format="%b %d, %Y">Apr 28, 2020</time>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">Drag and drop sortable lists in Rails aren&#39;t too hard using Sortablejs and Stimulus to make wire them up to our backend with acts_as_list</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="346">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="346">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="346">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+14
+</span> </div>
+</div>
+</div>
+</div>
+</div><hr class="border-gray-100 my-4" />
+<div class="rounded-md p-4 group" id="episode_345">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/stimulus-reflex-basics?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/ed14eb9fd2edc374df08e6b8340e9eb9.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">10:11</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/stimulus-reflex-basics?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+Introduction to Stimulus Reflex
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#342
+·
+<time datetime="2020-04-19T05:00:00Z" data-local="time" data-format="%b %d, %Y">Apr 19, 2020</time>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">Stimulus Reflex is one of the coolest new libraries out there. It can update the browser in realtime and allow you to build reactive applications without any Javascript. It&#39;s awesome.</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="345">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="345">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="345">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+38
+</span> </div>
+</div>
+</div>
+</div>
+</div><hr class="border-gray-100 my-4" />
+<div class="rounded-md p-4 group" id="episode_344">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/ruby-module-include-tracking?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/f072ba70fc0804a1819218bf638bb0e5.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">11:52</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/ruby-module-include-tracking?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+Ruby Module Include Tracking
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#341
+·
+<time datetime="2020-04-19T05:00:00Z" data-local="time" data-format="%b %d, %Y">Apr 19, 2020</time>
+<span class="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-red-100 text-red-800">Pro</span>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">Sometimes you might want to keep track of all classes a module was included in. We can do that with a couple nifty tricks to make this work with both regular Ruby modules and Rails concerns.</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="344">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="344">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="344">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+3
+</span> </div>
+</div>
+</div>
+</div>
+</div><hr class="border-gray-100 my-4" />
+<div class="rounded-md p-4 group" id="episode_343">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/webpack-require-context?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/9ce19fb7c3aa120abc5fec2592e011bb.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">18:05</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/webpack-require-context?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+How to use Webpack require.context
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#340
+·
+<time datetime="2020-04-13T05:00:00Z" data-local="time" data-format="%b %d, %Y">Apr 13, 2020</time>
+<span class="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-red-100 text-red-800">Pro</span>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">Webpacker provides some nice tools for loading Javascript in several different ways. We&#39;re looking at require.context to see how to load an entire directory&#39;s set of files easily.</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="343">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="343">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="343">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+2
+</span> </div>
+</div>
+</div>
+</div>
+</div><hr class="border-gray-100 my-4" />
+<div class="rounded-md p-4 group" id="episode_342">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/google-maps-places-autocomplete-with-rails?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/1b530f10b96e33d15aef8debe067d9f3.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">23:11</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/google-maps-places-autocomplete-with-rails?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+Google Maps and Google Places Autocomplete API with Rails, Turbolinks, and Stimulus.js
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#339
+·
+<time datetime="2020-04-06T05:00:00Z" data-local="time" data-format="%b %d, %Y">Apr 06, 2020</time>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">Learn how to implement Google Maps and the Google Places Autocomplete API in Rails compatible with Turbolinks using StimulusJS</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="342">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="342">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="342">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+7
+</span> </div>
+</div>
+</div>
+</div>
+</div><hr class="border-gray-100 my-4" />
+<div class="rounded-md p-4 group" id="episode_341">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/pay-gem-rails?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/26330ceaded84de0c060d4257804e1b0.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">13:27</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/pay-gem-rails?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+How to use the Pay gem to accept Payments in Rails
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+ #338
+·
+<time datetime="2020-03-30T05:00:00Z" data-local="time" data-format="%b %d, %Y">Mar 30, 2020</time>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">A getting started guide on the Pay gem for accepting payments in Rails</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="341">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="341">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="341">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+9
+</span> </div>
+</div>
+</div>
+</div>
+</div><hr class="border-gray-100 my-4" />
+<div class="rounded-md p-4 group" id="episode_340">
+<div class="md:flex">
+<div class="mb-2 md:mb-0 md:w-1/4">
+<a class="episode-thumbnail flex justify-center items-center" href="/episodes/testing-file-uploads-with-shrine?autoplay=1">
+<img data-src="https://embed-ssl.wistia.com/deliveries/90a85449e169438dda2336f421ae9c74.jpg?image_crop_resized=400x240" class="rounded-md img-responsive" src="https://d2i2nj5el4wq1j.cloudfront.net/assets/fallback-096f74926db092c74a2087e9653dd7fc4394aaa7e2f54ef197f450dd03004420.png" />
+<span class="episode-length">22:56</span>
+<div class="hidden group-hover:flex absolute w-full h-full bg-black opacity-50 rounded-md"></div>
+<span class="hidden group-hover:flex absolute text-white">
+<svg class="h-10 w-10 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+<circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+<path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"></path>
+</svg>
+</span>
+</a> </div>
+<div class="md:w-3/4">
+<div class="md:ml-8">
+<a href="/episodes/testing-file-uploads-with-shrine?autoplay=1">
+<h5 class="text-xl font-semibold group-hover:text-indigo-600">
+Testing File Uploads in Rails with Shrine
+</h5>
+<h6 class="text-gray-600 text-sm mt-1 mb-0">
+#337
+·
+<time datetime="2020-03-23T05:00:00Z" data-local="time" data-format="%b %d, %Y">Mar 23, 2020</time>
+<span class="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-red-100 text-red-800">Pro</span>
+</h6>
+<p class="mt-1 mb-0 lh-150 text-muted">Testing file uploads can be tricky, but Shrine makes both file uploading and testing a lot easier than you might expect.</p>
+</a>
+<div class="flex flex-row text-xs mt-2 text-gray-600">
+<span class="inline-flex items-center" data-controller="complete" data-complete-id="340">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4 inline-flex items-center" data-controller="watchlist" data-watchlist-id="340">
+<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,14 L18,14 L18,2 L2,2 L2,14 L6,14 L6,14.0020869 C6,15.1017394 6.89458045,16 7.99810135,16 L12.0018986,16 C13.1132936,16 14,15.1055038 14,14.0020869 L14,14 L14,14 Z M0,1.99079514 C0,0.891309342 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.898212381 20,1.99079514 L20,18.0092049 C20,19.1086907 19.1017876,20 18.0092049,20 L1.99079514,20 C0.891309342,20 0,19.1017876 0,18.0092049 L0,1.99079514 L0,1.99079514 Z M4,4 L16,4 L16,6 L4,6 L4,4 L4,4 Z M4,7 L16,7 L16,9 L4,9 L4,7 L4,7 Z M4,10 L16,10 L16,12 L4,12 L4,10 L4,10 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+</span>
+<span class="ml-4" data-controller="heart" data-heart-id="340">
+<svg class="inline h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"></path></svg>
+</span>
+<span class="ml-4">
+<svg class="inline h-3 w-3 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+<g id="icon-shape">
+<path d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</svg>
+1
+</span> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 text-center">
+<nav class="pagy-nav pagination" role="navigation" aria-label="pager"><span class="page prev"><a href="/episodes?page=3" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span> <span class="page"><a href="/episodes?page=1">1</a></span> <span class="page"><a href="/episodes?page=2">2</a></span> <span class="page"><a href="/episodes?page=3" rel="prev">3</a></span> <span class="page active">4</span> <span class="page"><a href="/episodes?page=5" rel="next">5</a></span> <span class="page"><a href="/episodes?page=6">6</a></span> <span class="page"><a href="/episodes?page=7">7</a></span> <span class="page"><a href="/episodes?page=8">8</a></span> <span class="page gap">&hellip;</span> <span class="page"><a href="/episodes?page=38">38</a></span> <span class="page next"><a href="/episodes?page=5" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span></nav>
+</div>
+</div>
+</div>
+<div class="sm:col-span-3 text-sm forum-thread-filters">
+<form class="mb-4" action="/episodes" accept-charset="UTF-8" method="get">
+<div>
+<div class="mt-1 flex rounded-md shadow-sm">
+<input placeholder="Search episodes" class="form-control rounded-none rounded-l-md mt-0" type="text" name="q" id="q" />
+<button type="submit" class="-ml-px relative inline-flex items-center px-4 border border-gray-300 text-sm leading-5 font-medium rounded-r-md text-gray-700 bg-gray-50 hover:text-gray-500 hover:bg-white focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+<svg class="h-4 w-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+</svg>
+<span class="ml-2">Search</span>
+</button> </div>
+</div>
+</form>
+<h6 class="px-3 py-2 text-gray-400 text-xs font-bold tracking-wide uppercase">Filter By</h6>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150 bg-gray-200 text-gray-900" href="/episodes?page=4">All Episodes</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150 " href="/episodes?free=true&amp;page=4">Free Episodes</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150 " href="/episodes?free=false&amp;page=4">Pro Episodes</a>
+<h6 class="mt-4 px-3 py-2 text-gray-400 text-xs font-bold tracking-wide uppercase">Sort By</h6>
+<a class="sortable text-gray-600 group flex items-center px-3 py-2 text-sm leading-5 font-medium  rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes?direction=desc&amp;sort=number">Published Date</a>
+<a class="sortable text-gray-600 group flex items-center px-3 py-2 text-sm leading-5 font-medium  rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes?direction=desc&amp;sort=hearts_count">Popularity</a>
+<h6 class="mt-4 px-3 py-2 text-gray-400 text-xs font-bold tracking-wide uppercase">Categories</h6>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/ActionCable">ActionCable</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/ActionMailbox">ActionMailbox</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/ActionText">ActionText</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/ActiveRecord">ActiveRecord</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/ActiveStorage">ActiveStorage</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/ActiveSupport">ActiveSupport</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Administration">Administration</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Analytics">Analytics</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/APIs">APIs</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Authentication">Authentication</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Authorization">Authorization</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Background%20Jobs">Background Jobs</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Basics">Basics</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Code%20Review">Code Review</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Comments">Comments</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Complete%20App">Complete App</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Concerns">Concerns</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/CSS">CSS</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/CSV">CSV</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Debugging">Debugging</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Deployment">Deployment</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Design%20Patterns">Design Patterns</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Development">Development</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Email">Email</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Emails">Emails</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Ember">Ember</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Errors">Errors</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/File%20Uploading">File Uploading</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Fixtures">Fixtures</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Forms">Forms</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Frontend">Frontend</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Gems">Gems</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Generators">Generators</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Geocoding">Geocoding</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Hotwire">Hotwire</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Internationalization">Internationalization</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/iOS">iOS</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Javascript">Javascript</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Maps">Maps</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Messaging">Messaging</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Metaprogramming">Metaprogramming</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Middleware">Middleware</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Mobile">Mobile</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Models">Models</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Multitenancy">Multitenancy</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Notifications">Notifications</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/OAuth">OAuth</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Open%20Source">Open Source</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Pagination">Pagination</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Payments">Payments</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Performance">Performance</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Production">Production</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Rack">Rack</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Rails%204.2">Rails 4.2</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Rails%205.0">Rails 5.0</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Rails%205.1">Rails 5.1</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Rails%205.2">Rails 5.2</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Rails%206">Rails 6</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/React%20Native">React Native</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Refactoring">Refactoring</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Routes">Routes</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Ruby">Ruby</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Search">Search</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Security">Security</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Servers">Servers</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Sharing">Sharing</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Sidekiq">Sidekiq</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Testing">Testing</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Timezones">Timezones</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Turbolinks">Turbolinks</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Upgrading">Upgrading</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Views">Views</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/VueJS">VueJS</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Webhooks">Webhooks</a>
+<a class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150" href="/episodes/tagged/Webpacker">Webpacker</a>
+</div>
+</div>
+<form action="https://app.convertkit.com/forms/947399/subscriptions" method="post" data-sv-form="947399" data-uid="24c30e2af0" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Thanks for subscribing!&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;modal&quot;:{&quot;trigger&quot;:null,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:null,&quot;devices&quot;:null,&quot;show_once_every&quot;:null},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;hide&quot;,&quot;custom_content&quot;:null},&quot;slide_in&quot;:{&quot;display_in&quot;:null,&quot;trigger&quot;:null,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:null,&quot;devices&quot;:null,&quot;show_once_every&quot;:null}}}" min-width="400 500 600 700 800">
+<div class="max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+<div class="px-6 py-6 bg-indigo-700 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
+<div class="xl:w-0 xl:flex-1">
+<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-white sm:text-3xl sm:leading-9">
+Want to stay up-to-date with Ruby on Rails?
+</h2>
+<p class="mt-3 max-w-3xl text-lg leading-6 text-indigo-200">
+Join 40,702+ developers who get early access to new tutorials, screencasts, articles, and more.
+</p>
+</div>
+<div class="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8 text-white">
+<div data-element="fields">
+<ul class="text-red-500" data-element="errors" data-group="alert"></ul>
+<div class="text-white sm:flex">
+<input aria-label="Email address" type="email" name="email_address" required class="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out" placeholder="Enter your email" />
+<div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+<button class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
+Subscribe
+</button>
+</div>
+</div>
+</div>
+<p class="mt-3 text-sm leading-5 text-indigo-200">
+We care about the protection of your data. Read our
+<a class="text-white font-medium underline" href="/privacy">
+Privacy Policy.
+</a> </p>
+</div>
+</div>
+</div>
+</form>
+<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+</main>
+<div class="bg-gray-900">
+<div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+<div class="xl:grid xl:grid-cols-3 xl:gap-8">
+<div class="xl:col-span-1">
+<a href="/">
+ <svg class="h-6" version="1.1" viewBox="0 0 373 50" xmlns="http://www.w3.org/2000/svg">
+<title>logo</title>
+<desc>Created with Sketch.</desc>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(0 -1)" fill="#D2D6DC" fill-rule="nonzero">
+<g transform="translate(186.31 25.65) scale(-1 1) rotate(180) translate(-186.31 -24.75)">
+<g transform="translate(72.75 1.125)">
+<path d="m40.946 40.815l-8.686-8.5561c-2.0415 2.0089-4.7964 3.3379-8.6529 3.3379-6.4174 0-10.955-4.9262-10.955-12.024 0-8.2641 5.3481-12.38 11.149-12.38 5.7041 0 8.9775 2.2372 10.274 6.6758h-10.63v9.0112h22.556c0.19575-1.4272 0.26125-2.7886 0.26125-4.083 0-15.136-11.247-22.72-21.91-22.72-14.26 0-24.307 9.7236-24.307 23.496 0 13.807 10.046 23.531 24.307 23.531 7.1944 0 12.737-2.3662 16.594-6.2881" />
+<path d="m61.645 23.573c0-6.935 4.5712-11.731 11.182-11.731 6.6125 0 11.181 4.796 11.181 11.731 0 6.937-4.5688 11.732-11.181 11.732-6.6112 0-11.182-4.7954-11.182-11.732zm35.166 0c0-13.546-9.9512-23.529-23.984-23.529-14.034 0-23.983 9.9829-23.983 23.529 0 13.547 9.949 23.531 23.983 23.531 14.032 0 23.984-9.9834 23.984-23.531" />
+<path d="m125.97 35.21v-8.0704h7.7788c3.045 0 5.2825 1.2638 5.2825 4.0181 0 2.7559-2.2375 4.0522-5.2825 4.0522h-7.7788zm25.508-4.0522c0-7.0005-4.0525-12.023-11.734-13.611l12.348-16.659h-14.519l-10.922 16.107h-0.68v-16.107h-12.318v45.373h20.224c11.539 0 17.601-5.9634 17.601-15.103" />
+<path d="m173.75 20.527h9.3012l-4.635 13.417-4.6662-13.417zm29.2-19.64h-13.062l-3.0125 8.6538h-16.951l-2.9812-8.6538h-12.868l17.178 45.373h14.52l17.178-45.373" />
+<polygon points="205.69 0.88721 218.01 0.88721 218.01 46.26 205.69 46.26" />
+<polyline points="258 0.88721 223.84 0.88721 223.84 46.26 236.15 46.26 236.15 12.23 258 12.23 258 0.88721" />
+<path d="m293.94 32.226c-2.9825 1.6866-7.4862 3.7916-13.094 3.7916-3.305 0-5.8325-0.90675-5.8325-2.9482 0-2.5601 4.6338-2.8194 9.2688-3.7281l1.4588-0.2915c9.365-1.8149 14.13-6.3188 14.13-13.287 0-11.474-9.6912-15.72-19.348-15.72-8.1362 0-15.524 1.9453-20.71 5.6406l6.0275 10.046c3.5962-2.1719 7.9412-4.667 14.844-4.667 3.305 0 5.7362 0.90679 5.7362 3.144 0 2.3662-2.8188 2.7866-8.4575 3.7582l-1.7188 0.292c-10.438 1.7822-14.779 6.2881-14.552 14.326 0.22625 8.6845 7.5188 14.487 18.409 14.487 5.93 0 11.279-0.61662 19.154-4.7651l-5.315-10.079z" />
+</g>
+<polygon points="0 0 30.514 49.398 30.556 48.978 28.185 7.9766" />
+<polygon points="61.027 0 30.514 49.398 30.514 48.809 34.695 7.9766" />
+</g>
+</g>
+</g>
+</svg>
+</a> <p class="mt-8 text-gray-300 text-sm leading-6">
+Ruby on Rails tutorials, guides, and screencasts for web developers learning Ruby, Rails, Javascript, Turbolinks, Stimulus.js, Vue.js, and more.
+<span class="text-xs">Icons by <a href="https://icons8.com/">Icons8</xs>
+</p>
+<div class="mt-8 flex">
+<a href="https://twitter.com/gorails" target="_blank" class="text-gray-400 hover:text-gray-500">
+<span class="sr-only">Twitter</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+</svg>
+</a>
+<a href="https://github.com/gorails-screencasts" target="_blank" class="ml-6 text-gray-400 hover:text-gray-500">
+<span class="sr-only">GitHub</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+ <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+</svg>
+</a>
+</div>
+</div>
+<div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+<div class="md:grid md:grid-cols-2 md:gap-8">
+<div>
+<h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+Solutions
+</h4>
+<ul class="mt-4">
+<li>
+<a class="text-base leading-6 text-gray-300 hover:text-white" href="/episodes">Rails Tutorials</a>
+</li>
+<li class="mt-4">
+<a target="_blank" class="text-base leading-6 text-gray-300 hover:text-white" href="https://courses.gorails.com">Rails Courses</a>
+</li>
+<li class="mt-4">
+<a target="_blank" class="text-base leading-6 text-gray-300 hover:text-white" href="https://jumpstartrails.com">Rails SaaS Template</a>
+</li>
+<li class="mt-4">
+<a target="_blank" class="text-base leading-6 text-gray-300 hover:text-white" href="https://hatchbox.io">Deploy Ruby on Rails</a>
+</li>
+</ul>
+</div>
+<div class="mt-12 md:mt-0">
+<h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+Support
+</h4>
+<ul class="mt-4">
+<li>
+<a class="text-base leading-6 text-gray-300 hover:text-white" href="/pricing">Pricing</a>
+</li>
+<li class="mt-4">
+<a class="text-base leading-6 text-gray-300 hover:text-white" href="/testimonials">Testimonials</a>
+</li>
+<li class="mt-4">
+<a href="https://gorails.uservoice.com/forums/259979-general" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+Help Center
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="md:grid md:grid-cols-2 md:gap-8">
+<div>
+<h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+Company
+</h4>
+<ul class="mt-4">
+<li>
+<a class="text-base leading-6 text-gray-300 hover:text-white" href="/about">About</a>
+</li>
+<li class="mt-4">
+<a class="text-base leading-6 text-gray-300 hover:text-white" href="/blog">Blog</a>
+</li>
+<li class="mt-4">
+<a target="_blank" class="text-base leading-6 text-gray-300 hover:text-white" href="https://remoteruby.transistor.fm/?utm_source=gorails&amp;utm_medium=homepage">Podcast</a>
+</li>
+</ul>
+</div>
+<div class="mt-12 md:mt-0">
+<h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+Legal
+</h4>
+<ul class="mt-4">
+<li class="mt-4">
+<a class="text-base leading-6 text-gray-300 hover:text-white" href="/privacy">Privacy</a>
+</li>
+<li class="mt-4">
+<a class="text-base leading-6 text-gray-300 hover:text-white" href="/terms">Terms</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 border-t border-gray-700 pt-8">
+<p class="text-base leading-6 text-gray-400 xl:text-center">
+&copy; 2020 GoRails, LLC. All rights reserved.
+</p>
+</div>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['ProfitWellObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+  })(window,document,'script','https://dna8twue3dlxq.cloudfront.net/js/profitwell.js','profitwell');
+  profitwell('auth_token', '631ab5d1fb3171ff43ec050548d320b7'); // Your unique Profitwell public API token
+</script>
+</body>
+</html>

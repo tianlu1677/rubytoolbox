@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ruby Weekly Issue 532: December 17, 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="alternate" type="application/rss+xml" title="Ruby Weekly" href="/rss/">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/favicon.png">
+</head>
+<body class="rw dom dom-rw issues 532 issue rw issue">
+  <header class="contained">
+    <nav>
+    <div class="sitename" style="cursor: pointer" onclick="window.location.href='/'"><a href="/">Ruby Weekly</a></div>
+
+    <div class="items">
+        
+            <a href="/issues" class="issues">Archives</a><span class="divider">|</span>
+            <a href="/latest" class="latest">Latest</a><span class="nomobile"><span class="divider">|</span>
+            <a href="/rss/">RSS</a></span>
+        
+    </div>
+  </nav>
+
+</header>
+
+  <main>
+
+
+<section class="contained">
+
+  <div class="nomobile"><div class="subscribe_box" class="">
+<form class="subscribe" action="/subscribe" method="POST">
+  <input type="email" placeholder="Want to subscribe? Enter your address here" class="email" name="email" id="email" /><button class="awesome" type="submit">Subscribe now &raquo;</button>
+  <div class="smallprint">Easy to unsubscribe at any time. Your e-mail address <a href="https://cooperpress.com/spam.html">is safe</a> &mdash; here's <a href="https://cooperpress.com/legal/privacy/">our privacy policy.</a></div>
+  <input type="hidden" name="_csrf" value="oFvB3atqtOhk2Ioiqxluuq4MZVOINQeGcaWgOlldwBk" />
+  
+</form>
+</div>
+
+</div>
+
+  <div class="pager">
+    <div class="prev">
+      
+        <a href="/issues/531">&laquo; Prev</a>
+      
+    </div>
+    <div class="center">
+      <!-- Issue 532 -->
+    </div>
+    <div class="next">
+      
+    </div>
+  </div>
+
+  <div class="issue-html">
+
+  
+
+    
+    
+    
+    
+    
+  
+
+
+
+<!--[if (gte mso 9)|(IE)]>
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" width="600"><tr><td valign="top" style="width: 600px;" bgcolor="#ffffff"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" id="main" width="100%" style="table-layout: fixed; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; max-width: 600px; height: 100% !important; direction: ltr; padding: 0px;">
+  <tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+  <div id="content">    <!-- left/right splitbar -->
+    <table class="el-splitbar" width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr>
+<td width="50%" align="left" style="padding-left: 4px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><p style="font-size: 12px; color: #999999; text-transform: uppercase; line-height: 1.0em; margin-top: 0.8em; margin-bottom: 0.8em;">#532 — December 17, 2020</p></td>
+<td width="50%" align="right" style="padding-right: 4px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><p style="font-size: 12px; text-transform: uppercase; line-height: 1.0em; margin-top: 0.8em; margin-bottom: 0.8em;"><a target="_blank" href="https://rubyweekly.com/link/100483/web" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">Read on the Web</a></p></td>
+</tr></table>
+<!-- normal content section -->
+<table width="100%" cellpadding="0" cellspacing="0" class="content el-content top" style="color: #444; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+<p style="margin-top: 0.8em; margin-bottom: 0.8em; line-height: 1.4em; font-size: 0.9em;">🙂  For every other newsletters I write, this is the final week of the year, but with Ruby 3.0 being released this week, Ruby is a special exception! Watch out for a special bonus issue during the holidays ;-)</p>
+      <p style="margin-top: 0.8em; margin-bottom: 0.8em; line-height: 1.4em; font-size: 0.9em;">This week, however, is a roundup of the most popular items of 2020 along with a feature and interview (don't miss it!) on using Ruby serverlessly on AWS Lambda.</p>
+      
+      <p style="margin-top: 0.8em; margin-bottom: 0.8em; line-height: 1.4em; font-size: 0.9em;">Thanks for your continued support, and if you have anything suitable for the special Ruby 3.0 edition, reply and let me know!<br>__<br><em>Peter Cooper, your editor</em></p>
+</td></tr></table>
+    <!-- masthead -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #cc0000; text-align: center; color: #ffffff; border-top-left-radius: 10px; border-top-right-radius: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" class="el-masthead"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0 12px;"><p style="font-size: 1.8em; font-weight: 600; line-height: 1.0em; margin-top: 0.8em; margin-bottom: 0.8em;">Ruby Weekly</p></td></tr></table>
+<table width="100%" class="el-fullwidthimage" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+  <img src="https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60/eetnm6nbflzry78xjodf.jpg" alt="" width="640" style="border-bottom-color: #cc0000; border-bottom-style: solid; outline: none; height: auto; text-decoration: none; max-width: 100%; line-height: 100%; width: 100%; border-width: 0 0 3px;">
+</td></tr></table>
+<!-- normal content section -->
+<table width="100%" cellpadding="0" cellspacing="0" class="content el-content " style="color: #444; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;"><p style="font-weight: 500; font-size: 1.6em; margin-bottom: 8px; line-height: 1.3em; text-align: center; margin-top: 0.8em;">The most visited<br>Ruby Weekly items of 2020</p></td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0; font-size: 1.05em;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><span class="pretitle">1. </span> <a target="_blank" href="https://rubyweekly.com/link/100484/web" title="codefol.io" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.1em; line-height: 1.4em;">When Should You NOT Use Rails?</a></span> — A practical list of examples where Rails doesn’t necessarily shine compared to the alternatives. Given the number of emails I get asking me to balance non-Rails and Rails content in this newsletter, I'm not surprised this was popular. At the same time, I hear Rails has some tricks up its sleeve that will take it to new places in 2021.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Noah Gibbs </p>
+</td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><span class="pretitle">2. </span> <a target="_blank" href="https://rubyweekly.com/link/100485/web" title="www.driftingruby.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">▶️ Taking VS Code From Editor to IDE</a></span> — I <em>am</em> surprised a video made it into the top links of the year. While Visual Studio Code is a powerful editor on its own, here we got to see how the addition of a few extensions can turn it into a more intelligent IDE. <em>(13 minutes.)</em></p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Drifting Ruby </p>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 4px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="el-subtable " style="margin-top: 15px; border-top-width: 1px; border-top-color: #666; border-top-style: dashed; border-bottom-width: 1px; border-bottom-color: #666; border-bottom-style: dashed; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px;">
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; margin-top: 0 !important;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  <a target="_blank" target="_blank" href="https://rubyweekly.com/link/100486/web" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important;"><img src="https://copm.s3.amazonaws.com/97bdb51b.png" width="110" height="110" style="padding-top: 12px; padding-left: 12px; outline: none; height: auto; text-decoration: none; max-width: 100%; line-height: 100%; border: 0;" align="right" alt="" class="som"></a>
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0; font-size: 1.05em;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100486/web" title="www.jetbrains.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">JetBrains RubyMine 2020.3 Has Been Released</a></span> — New features include Git staging support, interactive hints in the debugger, better tab management, improvements for the latest Ruby version, Rails, code coverage, navigation, and more, all in RubyMine 2020.3.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">JetBrains <span style="text-transform: uppercase; margin-left: 4px; font-size: 0.9em; border-radius: 2px; background-color: #ffc; color: #997 !important; padding: 1px 4px; border: 1px solid #eeb;" class="tag-sponsor">sponsor</span></p>
+</td></tr></table>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 16px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><span class="pretitle">3. </span> <a target="_blank" href="https://rubyweekly.com/link/100487/web" title="pganalyze.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">Effectively Using Materialized Views in Rails</a></span> — Postgres’s views and materialized views provide easy alternative ways of looking at a database’s underlying data through the lens of a persistent query, and working with them in Rails is not too tricky.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Leigh Halliday </p>
+</td></tr></table>
+<!-- normal content section -->
+<table width="100%" cellpadding="0" cellspacing="0" class="content el-content " style="color: #444; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;"><p style="margin-top: 0; background-color: #f0f9ff; font-size: 13px; line-height: 1.4em; margin-bottom: 0.8em; padding: 8px;">By the way, our <a target="_blank" href="https://rubyweekly.com/link/100488/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">Postgres newsletter</a> also has a <a target="_blank" href="https://rubyweekly.com/link/100489/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">best of 2020 roundup</a> this week :-)</p></td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 16px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+<table width="100%" class="el-fullwidthimage" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+  <a target="_blank" href="https://rubyweekly.com/link/100490/web" style="text-decoration: none; color: #0055bb;"><img src="https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60/tdlrxfvarci6lbxxts7q.jpg" alt="" width="640" style="border-top-color: #db9; border-top-style: solid; border-bottom-color: #db9; border-bottom-style: solid; outline: none; height: auto; text-decoration: none; max-width: 100%; line-height: 100%; width: 100%; border-width: 1px 0;"></a>
+</td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><span class="pretitle">4.</span> <a target="_blank" href="https://rubyweekly.com/link/100490/web" title="bugs.ruby-lang.org" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">A Proposal for 'Endless' Method Definitions.. That Made It!</a></span> — I was a bit incredulous when this dropped on April 1st, but it came from a core team member, Matz quite liked the idea, and... it's actually <a target="_blank" href="https://rubyweekly.com/link/100491/web" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important;">ended up in Ruby 3.0</a>, though with a <em>different</em> syntax than originally proposed.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Yusuke Endoh </p>
+</td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><span class="pretitle">5. </span> <a target="_blank" href="https://rubyweekly.com/link/100492/web" title="www.codewithjason.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">How to Dockerize a Rails Application</a></span> — <em>“I had to hear Docker explained about 48,766 times before I finally grasped why it’s useful.”</em> So if you needed that 48,767th time, this tutorial may be for you.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Jason Swett </p>
+</td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><span class="pretitle">6. </span> <a target="_blank" href="https://rubyweekly.com/link/100493/web" title="rubyreferences.github.io" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">Digging Into Ruby 2.7's Changes</a></span> — Built up from the official news and release notes, this is a deeper look at what each of the new Ruby 2.7 features and changes really meant, complete with short code examples. I hope we get a similar roundup for Ruby 3.0!</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Ruby References </p>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 4px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="el-subtable " style="margin-top: 15px; border-top-width: 1px; border-top-color: #666; border-top-style: dashed; border-bottom-width: 1px; border-bottom-color: #666; border-bottom-style: dashed; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px;">
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; margin-top: 0 !important;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0; font-size: 1.05em;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100524/web" title="pganalyze.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">Wondering How You Should Optimize a Particular Postgres Query?</a></span> — pganalyze uses auto_explain to automatically collect EXPLAIN plans. Identify slow sequential scans, sorts on disk &amp; more.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">pganalyze <span style="text-transform: uppercase; margin-left: 4px; font-size: 0.9em; border-radius: 2px; background-color: #ffc; color: #997 !important; padding: 1px 4px; border: 1px solid #eeb;" class="tag-sponsor">sponsor</span></p>
+</td></tr></table>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 16px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+<!-- normal content section -->
+<table width="100%" cellpadding="0" cellspacing="0" class="content el-content items" style="color: #444; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+      <p style="margin-top: 0.8em; margin-bottom: 1.2em; line-height: 1.4em;"><strong style="font-weight: 600;">Honorary mentions:</strong></p>
+      <ol start="7">
+        <li style="margin-bottom: 8px; line-height: 1.4em;"><a target="_blank" href="https://rubyweekly.com/link/100495/web" style="text-decoration: none; color: #0055bb; font-weight: 600;">Exploring Big-O Notation with Ruby</a></li>
+        <li style="margin-bottom: 8px; line-height: 1.4em;"><a target="_blank" href="https://rubyweekly.com/link/100496/web" style="text-decoration: none; color: #0055bb; font-weight: 600;">GitLab On Its Migration from Unicorn to Puma</a></li>
+        <li style="margin-bottom: 8px; line-height: 1.4em;"><a target="_blank" href="https://rubyweekly.com/link/100497/web" style="text-decoration: none; color: #0055bb; font-weight: 600;">How to Perform Concurrent HTTP Requests in Ruby and Rails</a></li>
+        <li style="margin-bottom: 8px; line-height: 1.4em;"><a target="_blank" href="https://rubyweekly.com/link/100498/web" style="text-decoration: none; color: #0055bb; font-weight: 600;">25 Reasons to Switch to Webpacker</a></li>
+        <li style="margin-bottom: 8px; line-height: 1.4em;"><a target="_blank" href="https://rubyweekly.com/link/100499/web" style="text-decoration: none; color: #0055bb; font-weight: 600;"><code style='font-family: menlo, monaco, "Ubuntu Mono", courier, monospace; font-weight: normal; background-color: inherit;'>rails new --minimal</code>: A Minimal Rails App Skeleton Generator</a></li>
+      </ol>
+             
+             <p style="margin-top: 0.8em; margin-bottom: 1.2em; line-height: 1.4em;">Yes, <a target="_blank" href="https://rubyweekly.com/link/100500/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">these go to eleven...</a> ;-)</p>
+    </td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 8px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="el-heading" style="background-color: none !important; text-align: left; margin-top: 15px; color: #333333; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0;"><p style="font-size: 1.6em !important; font-weight: 400 !important; text-transform: none !important; line-height: 1.4em; display: inline-block; border-bottom-width: 6px; border-bottom-color: #f4f4f4; border-bottom-style: solid; margin: 0.5em 0;">🎁 Ruby and Rails Go Serverless</p></td></tr></table>
+<table width="100%" class="el-fullwidthimage" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+  <a target="_blank" href="https://rubyweekly.com/link/100501/web" style="text-decoration: none; color: #0055bb;"><img src="https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60/b8mfjrcclkzseetpb80x.jpg" alt="" width="640" style="outline: none; height: auto; text-decoration: none; max-width: 100%; line-height: 100%; width: 100%; border: 0;"></a>
+</td></tr></table>
+<!-- normal content section -->
+<table width="100%" cellpadding="0" cellspacing="0" class="content el-content " style="color: #444; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;"><p style="margin-top: 0.8em; margin-bottom: 0.8em;">I've been playing with various serverless platforms and systems (<a target="_blank" href="https://rubyweekly.com/link/100502/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">AWS Lambda</a> mostly, but also <a target="_blank" href="https://rubyweekly.com/link/100503/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">Cloudflare Workers</a>, <a target="_blank" href="https://rubyweekly.com/link/100504/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">Netlify Functions</a> and <a target="_blank" href="https://rubyweekly.com/link/100505/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">OpenFaaS</a>) and find them fantastic for running little bits of code in an ops-free style in the cloud. Set and forget type stuff. But when I saw Ken Collins talking about running <em>entire Rails applications</em> with the serverless model, I began to wonder just how viable it was.</p></td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="el-subtable " style="background-color: #fff4ee; margin-top: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px;">
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; margin-top: 0 !important;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0; font-size: 1.05em;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100501/web" title="dev.to" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">Lambda Containers with Rails; A Perfect Match!</a></span> — This is the article where I saw Ken really make his pitch for running Rails apps serverlessly. He also announced that Lamby now works with Lambda’s new support for <a target="_blank" href="https://rubyweekly.com/link/100506/web" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important;">deploying functions in container images</a>.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Ken Collins </p>
+</td></tr></table>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 14px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+<!-- normal content section -->
+<table width="100%" cellpadding="0" cellspacing="0" class="content el-content " style="color: #444; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+      <p style="margin-top: 0.8em; margin-bottom: 0.8em;">This article got me thinking that while we frequently link to things about <em>how</em> to use Ruby serverlessly, we never really explained the <em>why</em> so I wanted to ask Ken some questions...</p>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="el-subtable interview" style="background-color: #F7FAFC; margin-top: 15px; max-width: 540px; margin-left: auto; margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px;">
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; margin-top: 0 !important;"><tr><td style="height: 4px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+<!-- normal content section -->
+<table width="100%" cellpadding="0" cellspacing="0" class="content el-content " style="color: #444; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  <a target="_blank" name="interview" style="text-decoration: none; color: #0055bb; font-weight: 600;"></a>
+<img src="https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60/mprpadidyg0nxfzwphp2.jpg" alt="Ken Collins" width="100" class="byline" style="outline: none; height: auto; text-decoration: none; max-width: 25%; line-height: 100%; float: right; width: 100px; border-radius: 50%; margin: 12px 0 12px 12px; border: 0;">
+
+<p class="byline" style="margin-top: 0.8em; margin-bottom: 0.8em; color: #222; font-weight: bold; line-height: 1.4em; font-size: 1.1em;"><span class="red red2" style="color: #222; text-shadow: 0px 0px 2px #fff; font-size: 1.1em;">💬 A Q&amp;A with…</span><br><span class="name" style="font-size: 1.5em; line-height: 1.5em; color: #C53030;">Ken Collins</span><br><span class="red" style="color: #222; text-shadow: 0px 0px 2px #fff;"> creator of <a target="_blank" href="https://rubyweekly.com/link/100507/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">Lamby</a> and AWS Serverless Hero</span></p>
+
+  <div>
+     
+      <p style="margin-top: 0.8em; margin-bottom: 0.8em;">Ken Collins is an <a target="_blank" href="https://rubyweekly.com/link/100508/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">AWS Serverless Hero</a> and Principal Engineer at <em>Custom Ink</em> where he focuses on growing their DevOps culture within the Ecommerce teams using AWS-first well-architected patterns.</p>
+    
+    <p style="margin-top: 0.8em; margin-bottom: 0.8em;">Ken is a huge advocate for, and pioneer of, running Ruby in serverless environments (<a target="_blank" href="https://rubyweekly.com/link/100502/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">AWS Lambda</a> in particular) and we had some questions for him about how Ruby fares there:</p>
+
+    <p class="question" style="margin-top: 1.5em; margin-bottom: 0px; color: #222; font-weight: bold; line-height: 1.4em; font-size: 1.1em; text-shadow: 0px 0px 2px #fff;">Why should Rubyists consider running Ruby apps serverlessly?</p>
+<p style="margin-top: 0; margin-bottom: 0.8em;">Don't worry, I’m not here to pitch you on microservices or convince you to smash your beloved Rails application into hundreds of little function calls. AWS Lambda is a wonderful deployment target that can host your entire application, similar to Heroku, with little to no internal changes.</p>
+<p style="margin-top: 0.8em; margin-bottom: 0.8em;">Lambda is a commoditized compute platform of the future. Event-driven and deeply integrated within AWS, it allows your Rails architecture to be completely reimagined atop fully managed infrastructure resources like API Gateway, SQS, S3, CloudWatch, VPC NAT Gateways, IAM, and so much more. Using Lambda can help you or your engineering teams learn to "program the cloud”.</p>
+    <p class="question" style="margin-top: 1.5em; margin-bottom: 0px; color: #222; font-weight: bold; line-height: 1.4em; font-size: 1.1em; text-shadow: 0px 0px 2px #fff;">What's the performance like? Are "cold starts" a problem?</p>
+<p style="margin-top: 0; margin-bottom: 0.8em;">Surprisingly excellent! From small infrequently accessed apps to ones that service many millions of requests a day, Rails will do just fine on Lambda. We've found it can meet or beat EC2 while providing better auto scaling options with a little cost reduction too.</p>
+
+<p style="margin-top: 0.8em; margin-bottom: 0.8em;">If you have discounted AWS Lambda because of “cold starts” - please reconsider. First, if cold starts were a problem, you can essentially turn them off with a new feature called 'provisioned concurrency.' But I doubt you will ever need to. Second, the majority of Lambda’s compute lifecycle will have your Rails application fully loaded and warm. An application's 2 to 4 second initialization statistically disappears for avg, p95, and even p99 metrics in high traffic scenarios. Lastly, some may remember that using a VPC with AWS Lambda incurred significant start up penalties. This has been solved since September 2019 and using a VPC now has no startup time cost.</p>
+
+<p style="margin-top: 0.8em; margin-bottom: 0.8em;">In other performance news, AWS just announced that Lambda was working out while staying at home and social distancing. A function can now have up to 10 gigabytes of disk space, <a target="_blank" href="https://rubyweekly.com/link/100509/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">10 gigabytes of memory, and up to 6 vCPUs</a> as memory scales. Since Lambda shards horizontally, akin to one process, we have found that most applications only need 1,792 megabytes of memory equal to 1 vCPU.</p>
+    <p class="question" style="margin-top: 1.5em; margin-bottom: 0px; color: #222; font-weight: bold; line-height: 1.4em; font-size: 1.1em; text-shadow: 0px 0px 2px #fff;">What does <a target="_blank" href="https://rubyweekly.com/link/100507/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">Lamby</a> do and why is it necessary?</p>
+<p style="margin-top: 0; margin-bottom: 0.8em;">Lamby is a simple Rack adapter. It converts Lambda invocation events from different AWS sources like API Gateway or Application Load Balancers and converts them into Rack events. It essentially turns one hash into another.</p>
+<p style="margin-top: 0.8em; margin-bottom: 0.8em;">Though technically not fancy, what this unlocks is kind of mind boggling. By integrating AWS directly to Rails' HTTP layer, we have essentially removed the need for any web server. This includes everything from Apache or NGINX all the way down to Puma or Webrick. As you explore Rails on Lambda, this pattern of evaporating concerns, will be a common theme.</p>
+    <p class="question" style="margin-top: 1.5em; margin-bottom: 0px; color: #222; font-weight: bold; line-height: 1.4em; font-size: 1.1em; text-shadow: 0px 0px 2px #fff;">Ruby didn't become a first class language on AWS Lambda till late in 2018 which hurt its early adoption for serverless use cases. Do you think Ruby has a long term future on serverless platforms?</p>
+<p style="margin-top: 0; margin-bottom: 0.8em;">No matter what happens, Ruby will always be available for Lambda thanks to their new container support and open runtime interface which has been open sourced for Ruby. Currently AWS provides official runtime images for Ruby 2.5 and 2.7, but if your needs ever differ, we can now bring our own OCI (v1 and upward) compatible images to Lambda with the same runtime guarantees.</p>
+<p style="margin-top: 0.8em; margin-bottom: 0.8em;">I believe in AWS. I believe they will provide an official Ruby 3 runtime shortly after its release. I am also very thankful they have supported me and my open source work like Lamby. So if you ask me... they are here for us.</p>
+    
+  </div>
+  
+  <div style="width: 120px; border-top-width: 6px; border-top-color: #C53030; border-top-style: solid;"></div>
+
+<p class="end" style="margin-top: 0.8em; margin-bottom: 0.8em; font-style: italic; font-size: 0.8em; line-height: 1.5em;"><em>Ken Collins is an AWS Serverless Hero and Principal Engineer at <em>Custom Ink.</em> You can follow him <a target="_blank" href="https://rubyweekly.com/link/100510/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">on Twitter — @metaskills</a></em></p>
+</td></tr></table>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 8px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="el-heading" style="background-color: none !important; text-align: left; margin-top: 15px; color: #333333; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0;"><p style="font-size: 1.6em !important; font-weight: 400 !important; text-transform: none !important; line-height: 1.4em; display: inline-block; border-bottom-width: 6px; border-bottom-color: #f4f4f4; border-bottom-style: solid; margin: 0.5em 0;">🛠 Top 5 GitHub Repos We Linked To in 2020</p></td></tr></table>
+<!-- normal content section -->
+<table width="100%" cellpadding="0" cellspacing="0" class="content el-content " style="color: #444; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;"><p style="margin-top: 0.8em; margin-bottom: 0.8em;">Based on unique clicks from unique subscribers — no shenanigans here :-)</p></td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100511/web" title="github.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">Ferrum: Headless Chrome Ruby API</a></span> — If you've used Puppeteer or Playwright in Node.js, this is the same idea in Ruby. It works really well. I've used it on a few projects without complaint.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">RubyCDP </p>
+</td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100512/web" title="github.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">Noticed: Notifications for Rails Apps</a></span> — Supports database, email, Action Cable, Twilio, Slack, and custom delivery methods. There’s <a target="_blank" href="https://rubyweekly.com/link/100513/web" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important;">a 12 minute screencast</a> showing it off too.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Chris Oliver </p>
+</td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100514/web" title="github.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">TruffleRuby: High Performance GraalVM-Powered Ruby</a></span> — Built on GraalVM, TruffleRuby is an up and coming (well, I guess by now it’s just <em>'here'</em>) high performance Ruby implementation that <a target="_blank" href="https://rubyweekly.com/link/100515/web" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important;">passes all the RubyGems tests</a>.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Oracle </p>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 4px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="el-subtable " style="margin-top: 15px; border-top-width: 1px; border-top-color: #666; border-top-style: dashed; border-bottom-width: 1px; border-bottom-color: #666; border-bottom-style: dashed; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px;">
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; margin-top: 0 !important;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0; font-size: 1.05em;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100516/web" title="www.fastruby.io" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">Start 2021 Off Right, Finally Upgrade Your Rails Application with FastRuby.io</a></span></p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">FastRuby.io | Rails Upgrade Services <span style="text-transform: uppercase; margin-left: 4px; font-size: 0.9em; border-radius: 2px; background-color: #ffc; color: #997 !important; padding: 1px 4px; border: 1px solid #eeb;" class="tag-sponsor">sponsor</span></p>
+</td></tr></table>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 16px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100517/web" title="github.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">SuperDiff: View Differences Between Complex Data Structures in RSpec</a></span> — When you’ve got something that’s expected and what actually came back, distinguishing the difference between them can be a pain. This attempts to make it easier.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Elliot Winkler </p>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 12px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+<table width="100%" class="el-fullwidthimage" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+  <a target="_blank" href="https://rubyweekly.com/link/100518/web" style="text-decoration: none; color: #0055bb;"><img src="https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60/mexpatjqtijrr7eifim2.jpg" alt="" width="640" style="border-top-color: #999; border-top-style: solid; border-bottom-color: #999; border-bottom-style: solid; outline: none; height: auto; text-decoration: none; max-width: 100%; line-height: 100%; width: 100%; border-width: 1px 0;"></a>
+</td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100518/web" title="github.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">Super Bombinhas: A Ruby-Powered Platform Game</a></span> — We featured this twice this year as it keeps getting updates. For a Ruby powered game, it’s surprisingly slick and if you’re intrigued at making games (or maybe even just standalone graphical apps) in Ruby, the codebase is well worth scouring (as is the <a target="_blank" href="https://rubyweekly.com/link/100519/web" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important;">MiniGL library</a> its creator has made).</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Victor David Santos </p>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="el-heading" style="background-color: none !important; text-align: left; margin-top: 15px; color: #333333; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0;"><p style="font-size: 1.6em !important; font-weight: 400 !important; text-transform: none !important; line-height: 1.4em; display: inline-block; border-bottom-width: 6px; border-bottom-color: #f4f4f4; border-bottom-style: solid; margin: 0.5em 0;">💻 Jobs</p></td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100520/web" title="www.srpatx.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">Software Developer (Austin, TX)</a></span> — We're a largely ex-Pivotal tech team looking for developers with all levels of experience. If you enjoy learning, collaborating, and creative problem solving then let's talk.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Stronghold Resource Partners </p>
+</td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100521/web" title="neerajsingh621643.typeform.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">Rails Engineer - Top Consultancy (Fully Remote / India)</a></span> — Highly-technical Rails/React/Node firm with a great work/life balance and a popular blog.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">BigBinary.com </p>
+</td></tr></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" class="el-item item  " style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;">
+  
+  <p class="desc" style="color: #444; margin-top: 0.8em; margin-bottom: 0;"><span style="font-weight: 600; font-size: 1.1em; color: #000;" class="mainlink"><a target="_blank" href="https://rubyweekly.com/link/100522/web" title="www.vettery.com" style="text-decoration: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-color: #ddd !important; border-bottom-style: solid !important; font-size: 1.05em;">Find a Job Through Vettery</a></span> — Create a profile on Vettery to connect with hiring managers at startups and Fortune 500 companies. It's free for job-seekers.</p>
+  <p class="name" style="color: #5a5a5a; margin-top: 4px; margin-bottom: 0.8em; text-transform: uppercase; font-size: 12px; line-height: 1.2em;">Vettery </p>
+</td></tr></table>
+<!-- normal content section -->
+<table width="100%" cellpadding="0" cellspacing="0" class="content el-content " style="color: #444; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px 15px;"><p style="line-height: 2em; font-size: 0.8em; color: #999; margin-top: 0.8em; margin-bottom: 0.8em;">ℹ️ <em>Interested in running a job listing in Ruby Weekly? There's <a target="_blank" href="https://rubyweekly.com/link/100523/web" style="text-decoration: none; color: #0055bb; font-weight: 600; border-bottom-width: 1px; border-bottom-color: #00aadd; border-bottom-style: dotted;">more info here</a></em>.</p></td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style="height: 12px; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+</div>
+  </td></tr>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+
+
+</div>
+
+<div class="pager">
+    <div class="prev">
+      
+        <a href="/issues/531">&laquo; Prev</a>
+      
+    </div>
+    <div class="center">
+      <!-- Issue 532 -->
+    </div>
+    <div class="next">
+      
+    </div>
+  </div>
+
+  <div class="subscribe_box" class="">
+<form class="subscribe" action="/subscribe" method="POST">
+  <input type="email" placeholder="Want to subscribe? Enter your address here" class="email" name="email" id="email" /><button class="awesome" type="submit">Subscribe now &raquo;</button>
+  <div class="smallprint">Easy to unsubscribe at any time. Your e-mail address <a href="https://cooperpress.com/spam.html">is safe</a> &mdash; here's <a href="https://cooperpress.com/legal/privacy/">our privacy policy.</a></div>
+  <input type="hidden" name="_csrf" value="oFvB3atqtOhk2Ioiqxluuq4MZVOINQeGcaWgOlldwBk" />
+  
+</form>
+</div>
+
+
+
+</section>
+
+<img src="/open/532/web" />
+
+</main>
+  
+  <script src="/js/app.js"></script>
+  <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-32535004-4','rubyweekly.com');ga('send', 'pageview');
+</script>
+
+</body>
+</html>
