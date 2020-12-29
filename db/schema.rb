@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_30_205823) do
+ActiveRecord::Schema.define(version: 2020_12_29_101132) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
+  enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
 
   create_table "categories", id: false, force: :cascade do |t|
@@ -26,12 +27,8 @@ ActiveRecord::Schema.define(version: 2020_08_30_205823) do
     t.tsvector "name_tsvector"
     t.integer "rank"
     t.tsvector "description_tsvector"
-    t.index ["category_group_permalink"], name: "index_categories_on_category_group_permalink"
     t.index ["created_at"], name: "index_categories_on_created_at"
-    t.index ["description_tsvector"], name: "index_categories_on_description_tsvector", using: :gin
-    t.index ["name_tsvector"], name: "index_categories_on_name_tsvector", using: :gin
     t.index ["permalink"], name: "index_categories_on_permalink", unique: true
-    t.index ["rank"], name: "index_categories_on_rank"
   end
 
   create_table "categorizations", force: :cascade do |t|
@@ -118,11 +115,7 @@ ActiveRecord::Schema.define(version: 2020_08_30_205823) do
     t.string "bugfix_fork_of"
     t.string "bugfix_fork_criteria", default: [], null: false, array: true
     t.boolean "is_bugfix_fork", default: false, null: false
-    t.index ["bugfix_fork_of"], name: "index_projects_on_bugfix_fork_of"
-    t.index ["description_tsvector"], name: "index_projects_on_description_tsvector", using: :gin
-    t.index ["is_bugfix_fork"], name: "index_projects_on_is_bugfix_fork"
     t.index ["permalink"], name: "index_projects_on_permalink", unique: true
-    t.index ["permalink_tsvector"], name: "index_projects_on_permalink_tsvector", using: :gin
     t.index ["rubygem_name"], name: "index_projects_on_rubygem_name", unique: true
     t.check_constraint "(rubygem_name IS NULL) OR ((rubygem_name)::text = (permalink)::text)", name: "check_project_permalink_and_rubygem_name_parity"
   end
@@ -134,12 +127,7 @@ ActiveRecord::Schema.define(version: 2020_08_30_205823) do
     t.integer "absolute_change_month"
     t.decimal "relative_change_month"
     t.decimal "growth_change_month"
-    t.index ["absolute_change_month"], name: "index_rubygem_download_stats_on_absolute_change_month", order: "DESC NULLS LAST"
-    t.index ["date"], name: "index_rubygem_download_stats_on_date"
-    t.index ["growth_change_month"], name: "index_rubygem_download_stats_on_growth_change_month", order: "DESC NULLS LAST"
-    t.index ["relative_change_month"], name: "index_rubygem_download_stats_on_relative_change_month", order: "DESC NULLS LAST"
     t.index ["rubygem_name", "date"], name: "index_rubygem_download_stats_on_rubygem_name_and_date", unique: true
-    t.index ["total_downloads"], name: "index_rubygem_download_stats_on_total_downloads", order: "DESC NULLS LAST"
   end
 
   create_table "rubygem_trends", force: :cascade do |t|
@@ -151,7 +139,6 @@ ActiveRecord::Schema.define(version: 2020_08_30_205823) do
     t.datetime "updated_at", null: false
     t.index ["date", "position"], name: "index_rubygem_trends_on_date_and_position", unique: true
     t.index ["date"], name: "index_rubygem_trends_on_date"
-    t.index ["position"], name: "index_rubygem_trends_on_position"
   end
 
   create_table "rubygems", id: false, force: :cascade do |t|
@@ -179,6 +166,33 @@ ActiveRecord::Schema.define(version: 2020_08_30_205823) do
     t.index ["name"], name: "index_rubygems_on_name", unique: true
   end
 
+  create_table "taggings", id: :serial, force: :cascade do |t|
+    t.integer "tag_id"
+    t.string "taggable_type"
+    t.integer "taggable_id"
+    t.string "tagger_type"
+    t.integer "tagger_id"
+    t.string "context", limit: 128
+    t.datetime "created_at"
+    t.index ["context"], name: "index_taggings_on_context"
+    t.index ["tag_id", "taggable_id", "taggable_type", "context", "tagger_id", "tagger_type"], name: "taggings_idx", unique: true
+    t.index ["tag_id"], name: "index_taggings_on_tag_id"
+    t.index ["taggable_id", "taggable_type", "context"], name: "taggings_taggable_context_idx"
+    t.index ["taggable_id", "taggable_type", "tagger_id", "context"], name: "taggings_idy"
+    t.index ["taggable_id"], name: "index_taggings_on_taggable_id"
+    t.index ["taggable_type"], name: "index_taggings_on_taggable_type"
+    t.index ["tagger_id", "tagger_type"], name: "index_taggings_on_tagger_id_and_tagger_type"
+    t.index ["tagger_id"], name: "index_taggings_on_tagger_id"
+  end
+
+  create_table "tags", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer "taggings_count", default: 0
+    t.index ["name"], name: "index_tags_on_name", unique: true
+  end
+
   add_foreign_key "categories", "category_groups", column: "category_group_permalink", primary_key: "permalink"
   add_foreign_key "categorizations", "categories", column: "category_permalink", primary_key: "permalink"
   add_foreign_key "categorizations", "projects", column: "project_permalink", primary_key: "permalink"
@@ -186,6 +200,7 @@ ActiveRecord::Schema.define(version: 2020_08_30_205823) do
   add_foreign_key "rubygem_download_stats", "rubygems", column: "rubygem_name", primary_key: "name"
   add_foreign_key "rubygem_trends", "rubygem_download_stats"
   add_foreign_key "rubygem_trends", "rubygems", column: "rubygem_name", primary_key: "name"
+  add_foreign_key "taggings", "tags"
   # no candidate create_trigger statement could be found, creating an adapter-specific one
   execute(<<-SQL)
 CREATE OR REPLACE FUNCTION public.categories_update_description_tsvector_trigger()
@@ -260,7 +275,21 @@ DECLARE
     previous_downloads int;
     previous_relative_change decimal;
 BEGIN
-    SELECT total_downloads, relative_change_month INTO previous_downloads, previous_relative_change FROM rubygem_download_stats WHERE rubygem_name = NEW.rubygem_name AND date = NEW.date - 28; IF previous_downloads IS NOT NULL THEN NEW.absolute_change_month := NEW.total_downloads - previous_downloads; IF previous_downloads > 0 THEN NEW.relative_change_month := ROUND((NEW.absolute_change_month * 100.0) / previous_downloads, 2); IF previous_relative_change IS NOT NULL THEN NEW.growth_change_month := NEW.relative_change_month - previous_relative_change; END IF; END IF; END IF;
+    SELECT total_downloads, relative_change_month INTO previous_downloads, previous_relative_change
+      FROM rubygem_download_stats
+      WHERE
+        rubygem_name = NEW.rubygem_name AND date = NEW.date - 28;
+    
+    IF previous_downloads IS NOT NULL THEN
+      NEW.absolute_change_month := NEW.total_downloads - previous_downloads;
+      IF previous_downloads > 0 THEN
+        NEW.relative_change_month := ROUND((NEW.absolute_change_month * 100.0) / previous_downloads, 2);
+    
+        IF previous_relative_change IS NOT NULL THEN
+          NEW.growth_change_month := NEW.relative_change_month - previous_relative_change;
+        END IF;
+      END IF;
+    END IF;
     RETURN NEW;
 END;
 $function$

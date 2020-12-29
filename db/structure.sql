@@ -38,6 +38,20 @@ COMMENT ON EXTENSION citext IS 'data type for case-insensitive character strings
 
 
 --
+-- Name: pg_stat_statements; Type: EXTENSION; Schema: -; Owner: -
+--
+
+CREATE EXTENSION IF NOT EXISTS pg_stat_statements WITH SCHEMA public;
+
+
+--
+-- Name: EXTENSION pg_stat_statements; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON EXTENSION pg_stat_statements IS 'track execution statistics of all SQL statements executed';
+
+
+--
 -- Name: categories_update_description_tsvector_trigger(); Type: FUNCTION; Schema: public; Owner: -
 --
 
@@ -104,7 +118,21 @@ DECLARE
     previous_downloads int;
     previous_relative_change decimal;
 BEGIN
-    SELECT total_downloads, relative_change_month INTO previous_downloads, previous_relative_change FROM rubygem_download_stats WHERE rubygem_name = NEW.rubygem_name AND date = NEW.date - 28; IF previous_downloads IS NOT NULL THEN NEW.absolute_change_month := NEW.total_downloads - previous_downloads; IF previous_downloads > 0 THEN NEW.relative_change_month := ROUND((NEW.absolute_change_month * 100.0) / previous_downloads, 2); IF previous_relative_change IS NOT NULL THEN NEW.growth_change_month := NEW.relative_change_month - previous_relative_change; END IF; END IF; END IF;
+    SELECT total_downloads, relative_change_month INTO previous_downloads, previous_relative_change
+      FROM rubygem_download_stats
+      WHERE
+        rubygem_name = NEW.rubygem_name AND date = NEW.date - 28;
+    
+    IF previous_downloads IS NOT NULL THEN
+      NEW.absolute_change_month := NEW.total_downloads - previous_downloads;
+      IF previous_downloads > 0 THEN
+        NEW.relative_change_month := ROUND((NEW.absolute_change_month * 100.0) / previous_downloads, 2);
+    
+        IF previous_relative_change IS NOT NULL THEN
+          NEW.growth_change_month := NEW.relative_change_month - previous_relative_change;
+        END IF;
+      END IF;
+    END IF;
     RETURN NEW;
 END;
 $$;
@@ -121,8 +149,8 @@ SET default_with_oids = false;
 CREATE TABLE public.ar_internal_metadata (
     key character varying NOT NULL,
     value character varying,
-    created_at timestamp(6) without time zone NOT NULL,
-    updated_at timestamp(6) without time zone NOT NULL
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
 );
 
 
@@ -380,6 +408,75 @@ CREATE TABLE public.schema_migrations (
 
 
 --
+-- Name: taggings; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.taggings (
+    id integer NOT NULL,
+    tag_id integer,
+    taggable_type character varying,
+    taggable_id integer,
+    tagger_type character varying,
+    tagger_id integer,
+    context character varying(128),
+    created_at timestamp without time zone
+);
+
+
+--
+-- Name: taggings_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.taggings_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: taggings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.taggings_id_seq OWNED BY public.taggings.id;
+
+
+--
+-- Name: tags; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.tags (
+    id integer NOT NULL,
+    name character varying,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone,
+    taggings_count integer DEFAULT 0
+);
+
+
+--
+-- Name: tags_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.tags_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: tags_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.tags_id_seq OWNED BY public.tags.id;
+
+
+--
 -- Name: categorizations id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -398,6 +495,20 @@ ALTER TABLE ONLY public.rubygem_download_stats ALTER COLUMN id SET DEFAULT nextv
 --
 
 ALTER TABLE ONLY public.rubygem_trends ALTER COLUMN id SET DEFAULT nextval('public.rubygem_trends_id_seq'::regclass);
+
+
+--
+-- Name: taggings id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.taggings ALTER COLUMN id SET DEFAULT nextval('public.taggings_id_seq'::regclass);
+
+
+--
+-- Name: tags id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.tags ALTER COLUMN id SET DEFAULT nextval('public.tags_id_seq'::regclass);
 
 
 --
@@ -441,17 +552,26 @@ ALTER TABLE ONLY public.schema_migrations
 
 
 --
+-- Name: taggings taggings_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.taggings
+    ADD CONSTRAINT taggings_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: tags tags_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.tags
+    ADD CONSTRAINT tags_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: categorizations_unique_index; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE UNIQUE INDEX categorizations_unique_index ON public.categorizations USING btree (category_permalink, project_permalink);
-
-
---
--- Name: index_categories_on_category_group_permalink; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_categories_on_category_group_permalink ON public.categories USING btree (category_group_permalink);
 
 
 --
@@ -462,31 +582,10 @@ CREATE INDEX index_categories_on_created_at ON public.categories USING btree (cr
 
 
 --
--- Name: index_categories_on_description_tsvector; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_categories_on_description_tsvector ON public.categories USING gin (description_tsvector);
-
-
---
--- Name: index_categories_on_name_tsvector; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_categories_on_name_tsvector ON public.categories USING gin (name_tsvector);
-
-
---
 -- Name: index_categories_on_permalink; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE UNIQUE INDEX index_categories_on_permalink ON public.categories USING btree (permalink);
-
-
---
--- Name: index_categories_on_rank; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_categories_on_rank ON public.categories USING btree (rank);
 
 
 --
@@ -532,38 +631,10 @@ CREATE UNIQUE INDEX index_github_repos_on_path ON public.github_repos USING btre
 
 
 --
--- Name: index_projects_on_bugfix_fork_of; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_projects_on_bugfix_fork_of ON public.projects USING btree (bugfix_fork_of);
-
-
---
--- Name: index_projects_on_description_tsvector; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_projects_on_description_tsvector ON public.projects USING gin (description_tsvector);
-
-
---
--- Name: index_projects_on_is_bugfix_fork; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_projects_on_is_bugfix_fork ON public.projects USING btree (is_bugfix_fork);
-
-
---
 -- Name: index_projects_on_permalink; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE UNIQUE INDEX index_projects_on_permalink ON public.projects USING btree (permalink);
-
-
---
--- Name: index_projects_on_permalink_tsvector; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_projects_on_permalink_tsvector ON public.projects USING gin (permalink_tsvector);
 
 
 --
@@ -574,45 +645,10 @@ CREATE UNIQUE INDEX index_projects_on_rubygem_name ON public.projects USING btre
 
 
 --
--- Name: index_rubygem_download_stats_on_absolute_change_month; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_rubygem_download_stats_on_absolute_change_month ON public.rubygem_download_stats USING btree (absolute_change_month DESC NULLS LAST);
-
-
---
--- Name: index_rubygem_download_stats_on_date; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_rubygem_download_stats_on_date ON public.rubygem_download_stats USING btree (date);
-
-
---
--- Name: index_rubygem_download_stats_on_growth_change_month; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_rubygem_download_stats_on_growth_change_month ON public.rubygem_download_stats USING btree (growth_change_month DESC NULLS LAST);
-
-
---
--- Name: index_rubygem_download_stats_on_relative_change_month; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_rubygem_download_stats_on_relative_change_month ON public.rubygem_download_stats USING btree (relative_change_month DESC NULLS LAST);
-
-
---
 -- Name: index_rubygem_download_stats_on_rubygem_name_and_date; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE UNIQUE INDEX index_rubygem_download_stats_on_rubygem_name_and_date ON public.rubygem_download_stats USING btree (rubygem_name, date);
-
-
---
--- Name: index_rubygem_download_stats_on_total_downloads; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_rubygem_download_stats_on_total_downloads ON public.rubygem_download_stats USING btree (total_downloads DESC NULLS LAST);
 
 
 --
@@ -630,17 +666,80 @@ CREATE UNIQUE INDEX index_rubygem_trends_on_date_and_position ON public.rubygem_
 
 
 --
--- Name: index_rubygem_trends_on_position; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_rubygem_trends_on_position ON public.rubygem_trends USING btree ("position");
-
-
---
 -- Name: index_rubygems_on_name; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE UNIQUE INDEX index_rubygems_on_name ON public.rubygems USING btree (name);
+
+
+--
+-- Name: index_taggings_on_context; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_taggings_on_context ON public.taggings USING btree (context);
+
+
+--
+-- Name: index_taggings_on_tag_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_taggings_on_tag_id ON public.taggings USING btree (tag_id);
+
+
+--
+-- Name: index_taggings_on_taggable_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_taggings_on_taggable_id ON public.taggings USING btree (taggable_id);
+
+
+--
+-- Name: index_taggings_on_taggable_type; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_taggings_on_taggable_type ON public.taggings USING btree (taggable_type);
+
+
+--
+-- Name: index_taggings_on_tagger_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_taggings_on_tagger_id ON public.taggings USING btree (tagger_id);
+
+
+--
+-- Name: index_taggings_on_tagger_id_and_tagger_type; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_taggings_on_tagger_id_and_tagger_type ON public.taggings USING btree (tagger_id, tagger_type);
+
+
+--
+-- Name: index_tags_on_name; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX index_tags_on_name ON public.tags USING btree (name);
+
+
+--
+-- Name: taggings_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX taggings_idx ON public.taggings USING btree (tag_id, taggable_id, taggable_type, context, tagger_id, tagger_type);
+
+
+--
+-- Name: taggings_idy; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX taggings_idy ON public.taggings USING btree (taggable_id, taggable_type, tagger_id, context);
+
+
+--
+-- Name: taggings_taggable_context_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX taggings_taggable_context_idx ON public.taggings USING btree (taggable_id, taggable_type, context);
 
 
 --
@@ -708,6 +807,14 @@ ALTER TABLE ONLY public.categories
 
 ALTER TABLE ONLY public.rubygem_trends
     ADD CONSTRAINT fk_rails_8a29c552ee FOREIGN KEY (rubygem_name) REFERENCES public.rubygems(name);
+
+
+--
+-- Name: taggings fk_rails_9fcd2e236b; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.taggings
+    ADD CONSTRAINT fk_rails_9fcd2e236b FOREIGN KEY (tag_id) REFERENCES public.tags(id);
 
 
 --
@@ -780,6 +887,12 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20190228102103'),
 ('20190508190527'),
 ('20190730194020'),
-('20200830205823');
+('20200830205823'),
+('20201229101127'),
+('20201229101128'),
+('20201229101129'),
+('20201229101130'),
+('20201229101131'),
+('20201229101132');
 
 

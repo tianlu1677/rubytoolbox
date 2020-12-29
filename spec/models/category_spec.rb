@@ -16,12 +16,8 @@
 #
 # Indexes
 #
-#  index_categories_on_category_group_permalink  (category_group_permalink)
-#  index_categories_on_created_at                (created_at)
-#  index_categories_on_description_tsvector      (description_tsvector) USING gin
-#  index_categories_on_name_tsvector             (name_tsvector) USING gin
-#  index_categories_on_permalink                 (permalink) UNIQUE
-#  index_categories_on_rank                      (rank)
+#  index_categories_on_created_at  (created_at)
+#  index_categories_on_permalink   (permalink) UNIQUE
 #
 # Foreign Keys
 #

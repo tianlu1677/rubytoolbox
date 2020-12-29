@@ -19,12 +19,8 @@
 #
 # Indexes
 #
-#  index_projects_on_bugfix_fork_of        (bugfix_fork_of)
-#  index_projects_on_description_tsvector  (description_tsvector) USING gin
-#  index_projects_on_is_bugfix_fork        (is_bugfix_fork)
-#  index_projects_on_permalink             (permalink) UNIQUE
-#  index_projects_on_permalink_tsvector    (permalink_tsvector) USING gin
-#  index_projects_on_rubygem_name          (rubygem_name) UNIQUE
+#  index_projects_on_permalink     (permalink) UNIQUE
+#  index_projects_on_rubygem_name  (rubygem_name) UNIQUE
 #
 # Foreign Keys
 #

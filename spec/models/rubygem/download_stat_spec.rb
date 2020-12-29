@@ -14,12 +14,7 @@
 #
 # Indexes
 #
-#  index_rubygem_download_stats_on_absolute_change_month  (absolute_change_month)
-#  index_rubygem_download_stats_on_date                   (date)
-#  index_rubygem_download_stats_on_growth_change_month    (growth_change_month)
-#  index_rubygem_download_stats_on_relative_change_month  (relative_change_month)
 #  index_rubygem_download_stats_on_rubygem_name_and_date  (rubygem_name,date) UNIQUE
-#  index_rubygem_download_stats_on_total_downloads        (total_downloads)
 #
 # Foreign Keys
 #

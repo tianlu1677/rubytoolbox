@@ -16,7 +16,6 @@
 #
 #  index_rubygem_trends_on_date               (date)
 #  index_rubygem_trends_on_date_and_position  (date,position) UNIQUE
-#  index_rubygem_trends_on_position           (position)
 #
 # Foreign Keys
 #

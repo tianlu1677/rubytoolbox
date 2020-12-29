@@ -7,6 +7,14 @@ GIT
       railties (>= 3.2, < 6.2)
 
 GIT
+  remote: https://github.com/mbleigh/acts-as-taggable-on.git
+  revision: 06bf141730fa19fd2f74499942251ffe1b030b3f
+  branch: master
+  specs:
+    acts-as-taggable-on (6.5.0)
+      activerecord (>= 5.0, < 6.2)
+
+GIT
   remote: https://github.com/tianlu1677/se-api.git
   revision: 18c1e574eb14c6e431603ffc6c4621cabc1d5576
   branch: master
@@ -14,7 +22,7 @@ GIT
     se-api (0.0.0.beta1)
 
 GEM
-  remote: https://gems.ruby-china.com/
+  remote: https://mirrors.tuna.tsinghua.edu.cn/rubygems/
   specs:
     actioncable (6.1.0)
       actionpack (= 6.1.0)
@@ -454,6 +462,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts-as-taggable-on!
   addressable
   annotate
   appsignal
@@ -517,7 +526,6 @@ DEPENDENCIES
   timecop
   truncato
   turbolinks (~> 5)
-  tzinfo-data
   uglifier (>= 1.3.0)
   vcr
   web-console (>= 3.3.0)
